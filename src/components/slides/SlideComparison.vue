@@ -2,101 +2,51 @@
   <div class="slide-comparison animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · págs. 405–407</span>
-        <span class="category-tag">Diagnóstico y Límites</span>
+        <span class="glass-pill">09 · El Límite de la Terapia</span>
+        <span class="category-tag">Conferencia 27 · págs. 405–407</span>
       </div>
       <h2 class="slide-title font-display">
-        Neurosis de Transferencia vs. <span class="text-gold">Neurosis Narcisistas</span>
+        ¿Por qué no Funciona con Todos? <span class="text-gold">Neurosis vs. Psicosis</span>
       </h2>
       <p class="slide-subtitle">
-        El criterio económico de curabilidad y la barrera infranqueable del narcisismo
+        Freud descubrió que el psicoanálisis cura ciertas enfermedades, pero fracasa totalmente en otras:
       </p>
     </div>
 
-    <!-- The Two Diagnostic Blocks -->
-    <div class="comparison-grid">
-      <!-- Left: Neurosis de Transferencia -->
-      <div class="group-box glass-panel accessible-group">
-        <div class="group-header">
-          <div class="group-status accessible font-mono">ACCESIBLES AL PSICOANÁLISIS</div>
-          <h3 class="group-title font-serif">Neurosis de Transferencia</h3>
-          <div class="group-entities font-sans">
-            Histeria de Conversión · Fobias (Histeria de Angustia) · Neurosis Obsesiva
-          </div>
-        </div>
+    <!-- The 2 Groups Side by Side -->
+    <div class="groups-grid">
+      <!-- Group 1: Neurosis de Transferencia (Sí se cura) -->
+      <div class="group-card glass-panel group-yes">
+        <div class="group-badge badge-green font-mono">✅ SÍ SE CURAN CON PSICOANÁLISIS</div>
+        <h3 class="group-title font-serif">Neurosis Comunes</h3>
+        <div class="group-sub">Histeria · Fobias · Neurosis Obsesiva</div>
 
-        <div class="group-metrics">
-          <div class="metric-item">
-            <span class="metric-label">Economía Libidinal:</span>
-            <span class="metric-val text-emerald">Libido de Objeto Activa</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Vínculo con el Analista:</span>
-            <span class="metric-val">Investidura tierna/hostil viva; presta creencia a la palabra</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Pronóstico Analítico:</span>
-            <span class="metric-val text-emerald font-semibold">Curables mediante el dispositivo</span>
-          </div>
-        </div>
-
-        <div class="clinical-quote-mini font-serif">
-          «En las histerias y neurosis obsesivas, el éxito nos da la razón: logramos cancelar represiones y mudar lo inconciente en conciente.»
-        </div>
+        <ul class="group-points">
+          <li><strong>Capacidad de amar/odiar:</strong> Su afecto está orientado hacia afuera (hacia otras personas).</li>
+          <li><strong>Reacción ante el médico:</strong> Desarrollan transferencia viva (amor, rabia o respeto).</li>
+          <li><strong>Resultado:</strong> El terapeuta tiene una palanca emocional para desarmar el síntoma.</li>
+        </ul>
       </div>
 
-      <!-- Right: Neurosis Narcisistas -->
-      <div class="group-box glass-panel inaccessible-group">
-        <div class="group-header">
-          <div class="group-status inaccessible font-mono">INACCESIBLES AL PSICOANÁLISIS CLÁSICO</div>
-          <h3 class="group-title font-serif">Neurosis Narcisistas</h3>
-          <div class="group-entities font-sans">
-            Paranoia · Melancolía · Dementia Praecox (Esquizofrenia)
-          </div>
-        </div>
+      <!-- Group 2: Neurosis Narcisistas / Psicosis (No se cura con análisis clásico) -->
+      <div class="group-card glass-panel group-no">
+        <div class="group-badge badge-red font-mono">❌ NO FUNCIONA EL PSICOANÁLISIS</div>
+        <h3 class="group-title font-serif">Neurosis Narcisistas (Psicosis)</h3>
+        <div class="group-sub">Paranoia · Melancolía profunda · Esquizofrenia</div>
 
-        <div class="group-metrics">
-          <div class="metric-item">
-            <span class="metric-label">Economía Libidinal:</span>
-            <span class="metric-val text-rose">Libido Yoica (Retraída al Yo)</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Vínculo con el Analista:</span>
-            <span class="metric-val">Indiferencia helada; no establecen transferencia</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-label">Pronóstico Analítico:</span>
-            <span class="metric-val text-rose font-semibold">Inmunes al método analítico</span>
-          </div>
-        </div>
-
-        <div class="clinical-quote-mini font-serif">
-          «Rechazan al médico, no con hostilidad, sino con indiferencia. Lo que dice los deja fríos; no podemos curarlos.»
-        </div>
+        <ul class="group-points">
+          <li><strong>Afecto encerrado en sí mismos:</strong> Retiraron todo su interés del mundo exterior hacia su propio Yo.</li>
+          <li><strong>Reacción ante el médico:</strong> Total indiferencia y frialdad; las palabras los dejan helados.</li>
+          <li><strong>Resultado:</strong> Sin transferencia, no hay puente posible para curar.</li>
+        </ul>
       </div>
     </div>
 
-    <!-- The Epistemological Insight Box -->
-    <div class="freud-epiphany glass-panel">
-      <div class="epiphany-header">
-        <span class="epiphany-badge font-display">¿Por qué falla el análisis en las Neurosis Narcisistas?</span>
-      </div>
-      <div class="epiphany-content">
-        <div class="reason-pill">
-          <span class="pill-cross">✕ No es falta de inteligencia</span>
-          <p>Los paranoicos son sumamente sagaces, hiperlógicos y combinatorios (pág. 399).</p>
-        </div>
-        <div class="reason-pill">
-          <span class="pill-cross">✕ No es falta de conciencia de dolor</span>
-          <p>Los melancólicos tienen dolorosa conciencia de estar enfermos y sufren intensamente.</p>
-        </div>
-        <div class="reason-pill highlight-reason">
-          <span class="pill-check">✓ Es la falta de investidura de objeto</span>
-          <p>Sin transferencia, la inteligencia del paciente no presta creencia a la interpretación.</p>
-        </div>
-      </div>
-      <p class="epiphany-footer font-serif">
-        «Un ser humano es accesible también desde su costado intelectual únicamente en la medida en que es capaz de investir libidinosamente objetos; y tememos en la magnitud de su narcisismo una barrera contra la posibilidad de influirlo.» (pág. 405)
+    <!-- Clarification of Freud's Epiphany -->
+    <div class="freud-insight glass-panel">
+      <div class="insight-badge font-display">💡 LA AGUDA OBSERVACIÓN DE FREUD:</div>
+      <p class="insight-text font-serif">
+        «¿Por qué no podemos curar al paranoico? <strong>No es por falta de inteligencia</strong>: los paranoicos son brillantes y sumamente sagaces. Y los melancólicos sufren horriblemente. Fracasamos porque <strong>un ser humano solo es accesible a la palabra si es capaz de amar o interesarse por alguien</strong>. Si su afecto está congelado en sí mismo, ninguna terapia puede entrar.» (pág. 405)
       </p>
     </div>
   </div>
@@ -116,7 +66,7 @@
 }
 
 .slide-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .header-badge-row {
@@ -136,7 +86,7 @@
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -146,40 +96,44 @@
   color: var(--text-muted);
 }
 
-.comparison-grid {
+.groups-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.4rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
-.group-box {
-  padding: 1.2rem;
+.group-card {
+  padding: 1.3rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
 }
 
-.accessible-group {
+.group-yes {
   border-top: 3px solid #10B981;
+  background: rgba(16, 185, 129, 0.04);
 }
 
-.inaccessible-group {
+.group-no {
   border-top: 3px solid #EF4444;
+  background: rgba(239, 68, 68, 0.04);
 }
 
-.group-header {
-  margin-bottom: 0.8rem;
-}
-
-.group-status {
+.group-badge {
   font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.2rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  width: fit-content;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
 }
 
-.group-status.accessible { color: #34D399; }
-.group-status.inaccessible { color: #F87171; }
+.badge-green { background: rgba(16, 185, 129, 0.2); color: #34D399; }
+.badge-red { background: rgba(239, 68, 68, 0.2); color: #F87171; }
 
 .group-title {
   font-size: 1.35rem;
@@ -187,115 +141,54 @@
   margin-bottom: 0.2rem;
 }
 
-.group-entities {
-  font-size: 0.82rem;
+.group-sub {
+  font-size: 0.85rem;
   color: var(--gold-light);
+  margin-bottom: 0.8rem;
+  font-style: italic;
 }
 
-.group-metrics {
+.group-points {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 0.8rem;
-  border-radius: var(--radius-sm);
-}
-
-.metric-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.82rem;
-  gap: 0.5rem;
-}
-
-.metric-label {
-  color: var(--text-dim);
-  font-weight: 600;
-}
-
-.metric-val {
-  color: #E2E8F0;
-  text-align: right;
-}
-
-.text-emerald { color: #34D399; }
-.text-rose { color: #F87171; }
-
-.clinical-quote-mini {
+  gap: 0.6rem;
   font-size: 0.88rem;
-  font-style: italic;
   color: #CBD5E1;
-  line-height: 1.35;
-  border-left: 2px solid rgba(255, 255, 255, 0.15);
-  padding-left: 0.6rem;
+  line-height: 1.4;
+}
+
+.group-points strong {
+  color: #FFFFFF;
+}
+
+.freud-insight {
+  padding: 1rem 1.6rem;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
-.freud-epiphany {
-  padding: 1rem 1.4rem;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid var(--border-gold);
-  margin-top: auto;
-}
-
-.epiphany-badge {
-  font-size: 0.82rem;
+.insight-badge {
+  font-size: 0.78rem;
   font-weight: 800;
   color: var(--gold-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 0.6rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
 }
 
-.epiphany-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr;
-  gap: 1rem;
-  margin-bottom: 0.8rem;
+.insight-text {
+  font-size: 1.05rem;
+  color: #F8FAFC;
+  line-height: 1.45;
 }
 
-.reason-pill {
-  padding: 0.6rem 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: var(--radius-sm);
-}
-
-.reason-pill p {
-  font-size: 0.8rem;
-  color: #CBD5E1;
-  line-height: 1.3;
-  margin-top: 0.2rem;
-}
-
-.pill-cross {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #F87171;
-}
-
-.highlight-reason {
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid var(--border-gold);
-}
-
-.pill-check {
-  font-size: 0.75rem;
-  font-weight: 800;
+.insight-text strong {
   color: var(--gold-light);
-}
-
-.epiphany-footer {
-  font-size: 0.95rem;
-  font-style: italic;
-  color: #FDF4DC;
-  line-height: 1.4;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 0.6rem;
 }
 
 @media (max-width: 1024px) {
-  .comparison-grid, .epiphany-content {
+  .groups-grid {
     grid-template-columns: 1fr;
   }
   .slide-comparison {

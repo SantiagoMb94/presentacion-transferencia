@@ -2,98 +2,73 @@
   <div class="slide-breakdown animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · págs. 399–401</span>
-        <span class="category-tag">Giro Clínico</span>
+        <span class="glass-pill">05 · El Giro Inesperado</span>
+        <span class="category-tag">Conferencia 27 · págs. 399–401</span>
       </div>
       <h2 class="slide-title font-display">
-        El Asombro Clínico: <span class="text-gold">El Giro Imprevisto</span>
+        La Crisis Clínica: <span class="text-gold">Del Amor al Silencio</span>
       </h2>
       <p class="slide-subtitle">
-        «Creíamos haber racionalizado la situación como un problema aritmético; y hete aquí que se filtró algo inesperado...»
+        El imprevisto que desconcertó a Freud: cuando todo parecía ir perfecto...
       </p>
     </div>
 
-    <!-- The Shift Comparison Cards -->
-    <div class="shift-grid">
-      <!-- Card 1: La Primavera del Análisis -->
-      <div 
-        class="shift-card glass-panel phase-spring" 
-        :class="{ focused: activePhase === 1 }"
-        @click="activePhase = 1"
-      >
-        <div class="phase-badge spring-badge">
-          <span class="dot-spring"></span>
-          ETAPA 1 · LA COLABORACIÓN IDÍLICA
-        </div>
-        <h3 class="phase-title font-serif">«La Primavera del Análisis»</h3>
-        <p class="phase-quote font-serif">
-          «El paciente desarrolla un interés particular hacia la persona del médico... es particularmente obsequioso, agradecido y exhibe rasgos meritorios...»
-        </p>
-
-        <ul class="phase-symptoms">
+    <!-- The 2 Contrasting Stages -->
+    <div class="stages-grid">
+      <!-- Stage 1: The Honeymoon -->
+      <div class="stage-card glass-panel honeymoon-card">
+        <div class="stage-badge badge-green">FASE 1 · «LA LUNA DE MIEL»</div>
+        <h3 class="stage-title font-serif">Todo Parece Maravilloso</h3>
+        <ul class="stage-bullets">
           <li>
-            <span class="icon-sym">✨</span>
-            <span><strong>Progreso fulgurante:</strong> Asimila interpretaciones con pasmosa agilidad y acierto.</span>
+            <span class="bullet-icon">🌸</span>
+            <span><strong>El paciente es devoto:</strong> Es amable, puntual, agradecido y halaga al médico sin parar.</span>
           </li>
           <li>
-            <span class="icon-sym">🗣️</span>
-            <span><strong>El coro familiar:</strong> «En casa no habla de otra cosa, tiene el nombre de usted en la boca todo el día».</span>
+            <span class="bullet-icon">🗣️</span>
+            <span><strong>En casa lo confirman:</strong> «En casa no habla de otra cosa, dice que usted es un genio».</span>
           </li>
           <li>
-            <span class="icon-sym">🌿</span>
-            <span><strong>Alivio objetivo:</strong> Desaparecen síntomas con rapidez; médico y paciente celebran el éxito.</span>
+            <span class="bullet-icon">📈</span>
+            <span><strong>Mejoría rápida:</strong> Los síntomas parecen desaparecer como por arte de magia.</span>
           </li>
         </ul>
-        <div class="click-hint">Click para enfocar análisis</div>
+        <div class="stage-footer">Parece que el caso ya está ganado... pero es una trampa.</div>
       </div>
 
-      <!-- Card 2: El Colapso / Resistencia -->
-      <div 
-        class="shift-card glass-panel phase-winter" 
-        :class="{ focused: activePhase === 2 }"
-        @click="activePhase = 2"
-      >
-        <div class="phase-badge winter-badge">
-          <span class="dot-winter"></span>
-          ETAPA 2 · LA CRISIS REPENTINA
-        </div>
-        <h3 class="phase-title font-serif">«Un buen día se estropea...»</h3>
-        <p class="phase-quote font-serif">
-          «Aparecen dificultades: el paciente asevera que <em>nada más se le ocurre</em>. Se comporta como si nunca hubiera hecho el pacto con el médico...»
-        </p>
-
-        <ul class="phase-symptoms">
+      <!-- Stage 2: The Crash -->
+      <div class="stage-card glass-panel crash-card">
+        <div class="stage-badge badge-red">FASE 2 · EL FRENO DE MANO</div>
+        <h3 class="stage-title font-serif">«Un buen día se estropea...»</h3>
+        <ul class="stage-bullets">
           <li>
-            <span class="icon-sym">🛑</span>
-            <span><strong>Mutismo y parálisis:</strong> Suspensión radical de la regla fundamental de la asociación libre.</span>
+            <span class="bullet-icon">🛑</span>
+            <span><strong>Mutismo repentino:</strong> El paciente se calla y jura que <em>«no se le ocurre nada»</em>.</span>
           </li>
           <li>
-            <span class="icon-sym">🔒</span>
-            <span><strong>Reserva pertinaz:</strong> Es evidente que algo le preocupa intensamente, pero se niega a revelarlo.</span>
+            <span class="bullet-icon">👀</span>
+            <span><strong>Olvida la terapia:</strong> Ya no le interesan sus síntomas; solo le obsesiona la persona del médico.</span>
           </li>
           <li>
-            <span class="icon-sym">💥</span>
-            <span><strong>Violenta resistencia:</strong> El interés por curarse se esfuma; solo importa la relación con el médico.</span>
+            <span class="bullet-icon">🔥</span>
+            <span><strong>Feroz resistencia:</strong> O se declara enamorado/a locamente, o entra en desconfianza total.</span>
           </li>
         </ul>
-        <div class="click-hint">Click para enfocar análisis</div>
+        <div class="stage-footer">El tratamiento queda completamente paralizado.</div>
       </div>
     </div>
 
-    <!-- Epistemological Diagnostic Banner -->
-    <div class="diagnostic-banner glass-panel">
-      <div class="diag-icon font-display">DIAGNÓSTICO FREUDIANO</div>
-      <p class="diag-text font-serif">
-        «El paciente ha transferido sobre el médico intensos sentimientos de ternura que ni la conducta de este ni la relación médica justifican. Toda esa proclividad del afecto venía de otra parte, estaba ya preparada en el sujeto, y con motivo del análisis se transfirió sobre el médico.» (pág. 400)
+    <!-- The Revelation in 1 Sentence -->
+    <div class="revelation-box glass-panel">
+      <div class="revelation-title font-display">💡 ¿QUÉ HA OCURRIDO AQUÍ REALMENTE?</div>
+      <p class="revelation-text font-serif">
+        El paciente ha volcado sobre el médico <strong>sentimientos intensísimos (de amor o de rabia) que no son para el médico</strong>. Vienen de su pasado infantil y estaban latentes. Eso es la <strong>TRANSFERENCIA</strong>.
       </p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-
-const activePhase = ref(1);
 </script>
 
 <style scoped>
@@ -113,7 +88,7 @@ const activePhase = ref(1);
 .header-badge-row {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .category-tag {
@@ -127,7 +102,7 @@ const activePhase = ref(1);
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -135,10 +110,9 @@ const activePhase = ref(1);
 .slide-subtitle {
   font-size: 1rem;
   color: var(--text-muted);
-  font-style: italic;
 }
 
-.shift-grid {
+.stages-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
@@ -146,144 +120,106 @@ const activePhase = ref(1);
   flex-grow: 1;
 }
 
-.shift-card {
-  padding: 1.4rem;
+.stage-card {
+  padding: 1.3rem;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
 }
 
-.shift-card:hover {
-  transform: translateY(-4px);
+.honeymoon-card {
+  background: rgba(16, 185, 129, 0.05);
+  border-top: 3px solid #10B981;
 }
 
-.shift-card.focused {
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.25);
+.crash-card {
+  background: rgba(239, 68, 68, 0.05);
+  border-top: 3px solid #EF4444;
 }
 
-.phase-spring.focused {
-  background: rgba(16, 185, 129, 0.06);
-  border-color: #34D399;
-}
-
-.phase-winter.focused {
-  background: rgba(239, 68, 68, 0.06);
-  border-color: #F87171;
-}
-
-.phase-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.72rem;
+.stage-badge {
+  font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 9999px;
-  margin-bottom: 0.8rem;
   width: fit-content;
+  margin-bottom: 0.6rem;
 }
 
-.spring-badge {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34D399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-}
+.badge-green { background: rgba(16, 185, 129, 0.2); color: #34D399; }
+.badge-red { background: rgba(239, 68, 68, 0.2); color: #F87171; }
 
-.winter-badge {
-  background: rgba(239, 68, 68, 0.15);
-  color: #F87171;
-  border: 1px solid rgba(239, 68, 68, 0.3);
-}
-
-.dot-spring {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #34D399;
-}
-
-.dot-winter {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #F87171;
-}
-
-.phase-title {
-  font-size: 1.45rem;
+.stage-title {
+  font-size: 1.35rem;
   color: #FFFFFF;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
-.phase-quote {
-  font-size: 0.98rem;
-  font-style: italic;
-  color: #CBD5E1;
-  line-height: 1.45;
-  margin-bottom: 1rem;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  padding-left: 0.8rem;
-}
-
-.phase-symptoms {
+.stage-bullets {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.65rem;
   flex-grow: 1;
 }
 
-.phase-symptoms li {
+.stage-bullets li {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
-  font-size: 0.88rem;
-  color: #E2E8F0;
+  font-size: 0.9rem;
+  color: #CBD5E1;
   line-height: 1.4;
 }
 
-.icon-sym {
+.bullet-icon {
   font-size: 1rem;
-  margin-top: -0.1rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
 }
 
-.click-hint {
-  font-size: 0.75rem;
+.stage-bullets strong {
+  color: #FFFFFF;
+}
+
+.stage-footer {
+  font-size: 0.8rem;
   color: var(--text-dim);
-  text-align: right;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.5rem;
   margin-top: 0.6rem;
 }
 
-.diagnostic-banner {
-  padding: 0.9rem 1.4rem;
+.revelation-box {
+  padding: 1rem 1.6rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  margin-top: auto;
 }
 
-.diag-icon {
+.revelation-title {
   font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
   color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
 }
 
-.diag-text {
-  font-size: 1.02rem;
-  font-style: italic;
-  color: #FDF4DC;
+.revelation-text {
+  font-size: 1.05rem;
+  color: #F8FAFC;
   line-height: 1.45;
 }
 
+.revelation-text strong {
+  color: var(--gold-light);
+}
+
 @media (max-width: 1024px) {
-  .shift-grid {
+  .stages-grid {
     grid-template-columns: 1fr;
   }
   .slide-breakdown {

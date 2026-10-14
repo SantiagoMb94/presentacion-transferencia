@@ -2,54 +2,53 @@
   <div class="slide-summary animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · Clausura</span>
-        <span class="category-tag">Síntesis Teórico-Clínica</span>
+        <span class="glass-pill">14 · Resumen Final</span>
+        <span class="category-tag">Conclusión Magistral</span>
       </div>
       <h2 class="slide-title font-display">
-        Síntesis Magistral y <span class="text-gold">Clausura</span>
+        Lo que Debes Recordar: <span class="text-gold">3 Lecciones de Oro</span>
       </h2>
       <p class="slide-subtitle">
-        El legado imperecedero de la 27ª Conferencia en la clínica y el pensamiento moderno
+        Las 3 ideas que debes llevarte de la 27ª Conferencia de Sigmund Freud:
       </p>
     </div>
 
-    <!-- The 3 Synthetic Theses -->
+    <!-- 3 Big Clear Cards -->
     <div class="theses-grid">
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">THESIS I</div>
-        <h4 class="thesis-heading font-serif">Inmanencia de la Transferencia</h4>
+        <div class="thesis-num font-mono">LECCIÓN 1</div>
+        <h4 class="thesis-heading font-serif">1. La Transferencia es Inevitable</h4>
         <p class="thesis-body">
-          La transferencia no es un obstáculo contingente ni un error imputable al método: es la exteriorización necesaria y palpitante de la naturaleza de la enfermedad misma.
+          No es un error del médico ni un capricho del paciente: <strong>es la enfermedad misma saliendo a la superficie</strong>. Lo que no podemos recordar, lo actuamos.
         </p>
       </div>
 
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">THESIS II</div>
-        <h4 class="thesis-heading font-serif">La Ética de la Abstinencia</h4>
+        <div class="thesis-num font-mono">LECCIÓN 2</div>
+        <h4 class="thesis-heading font-serif">2. Ni Romance ni Regaño</h4>
         <p class="thesis-body">
-          El analista renuncia a la satisfacción en acto y a la indignación moral: opera transformando la compulsión de repetición en memoria consciente y autonomía subjetiva.
+          El analista renuncia a dos tentaciones: <strong>no cede al amor</strong> y <strong>no se ofende con el odio</strong>. Su trabajo es mostrarle al paciente que está repitiendo su niñez.
         </p>
       </div>
 
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">THESIS III</div>
-        <h4 class="thesis-heading font-serif">La Emancipación del Sujeto</h4>
+        <div class="thesis-num font-mono">LECCIÓN 3</div>
+        <h4 class="thesis-heading font-serif">3. La Meta es la Libertad</h4>
         <p class="thesis-body">
-          Disuelta la neurosis artificial en el vínculo analítico, cesa el influjo del médico. El analista se hace a un lado y el individuo conquista su propia vida.
+          Al resolver el conflicto con el médico, el paciente se libera de sus viejos traumas. <strong>El médico se hace a un lado</strong> y la persona vive con autonomía propia.
         </p>
       </div>
     </div>
 
-    <!-- The Grand Freud Conclusion Quote Box -->
+    <!-- The Climax Freud Quote -->
     <div class="concluding-quote glass-panel">
-      <div class="quote-symbol font-serif">“</div>
       <p class="quote-text font-serif">
-        «Todos los síntomas del enfermo han abandonado su significado originario y se han incorporado a un sentido nuevo en la relación con el médico... El hombre que en la relación con el médico ha pasado a ser normal y libre del efecto de unas mociones pulsionales reprimidas, <strong>sigue siéndolo también en su vida propia cuando el médico se ha hecho a un lado</strong>.»
+        «El hombre que en la relación con el médico ha pasado a ser libre del efecto de sus mociones reprimidas, <strong>sigue siéndolo también en su vida propia cuando el médico se ha hecho a un lado</strong>.»
       </p>
-      <div class="quote-ref font-mono">Sigmund Freud · 27ª Conferencia, pág. 404</div>
+      <div class="quote-ref font-mono">— Sigmund Freud · Conferencia 27, pág. 404</div>
     </div>
 
-    <!-- Interactive Tools & Actions -->
+    <!-- Presentation Action Buttons -->
     <div class="summary-actions">
       <button class="action-btn print-btn" @click="handlePrint">
         <svg class="act-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -57,7 +56,7 @@
           <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
           <rect x="6" y="14" width="12" height="8"></rect>
         </svg>
-        <span>Imprimir / Exportar a PDF (14 Diapositivas)</span>
+        <span>Imprimir / Guardar en PDF</span>
       </button>
 
       <button class="action-btn notes-btn" @click="$emit('open-notes')">
@@ -65,10 +64,8 @@
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
           <polyline points="14 2 14 8 20 8"></polyline>
           <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        <span>Abrir Notas de Ponente / Coloquio</span>
+        <span>Abrir Notas de Orador (🎙️)</span>
       </button>
 
       <button class="action-btn restart-btn" @click="$emit('go-first')">
@@ -76,14 +73,8 @@
           <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
           <path d="M3 3v5h5"></path>
         </svg>
-        <span>Volver al Inicio</span>
+        <span>Volver a la Portada</span>
       </button>
-    </div>
-
-    <!-- Academic Metadata Footer -->
-    <div class="academic-credits">
-      <span>Fuente: <em>Conferencias de introducción al psicoanálisis</em> (Parte III), Obras Completas, Vol. XVI, Amorrortu Editores.</span>
-      <span>Aplicación interactiva optimizada para despliegue web en Vercel.</span>
     </div>
   </div>
 </template>
@@ -127,7 +118,7 @@ function handlePrint() {
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -149,10 +140,11 @@ function handlePrint() {
   border-top: 3px solid var(--gold-primary);
   display: flex;
   flex-direction: column;
+  border-radius: var(--radius-md);
 }
 
 .thesis-num {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
   color: var(--gold-primary);
   letter-spacing: 0.08em;
@@ -166,25 +158,20 @@ function handlePrint() {
 }
 
 .thesis-body {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: #CBD5E1;
   line-height: 1.45;
 }
 
-.concluding-quote {
-  position: relative;
-  padding: 1rem 1.6rem;
-  background: rgba(212, 175, 55, 0.06);
-  border-left: 3px solid var(--gold-primary);
-  margin-bottom: 1rem;
+.thesis-body strong {
+  color: var(--gold-light);
 }
 
-.quote-symbol {
-  position: absolute;
-  top: -8px;
-  left: 12px;
-  font-size: 3rem;
-  color: rgba(212, 175, 55, 0.2);
+.concluding-quote {
+  padding: 1rem 1.6rem;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
+  margin-bottom: 1rem;
 }
 
 .quote-text {
@@ -192,8 +179,7 @@ function handlePrint() {
   font-style: italic;
   color: var(--gold-light);
   line-height: 1.45;
-  margin-bottom: 0.4rem;
-  padding-left: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .quote-text strong {
@@ -211,7 +197,7 @@ function handlePrint() {
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 0.8rem;
+  margin-top: auto;
 }
 
 .action-btn {
@@ -264,23 +250,9 @@ function handlePrint() {
   color: #FFFFFF;
 }
 
-.academic-credits {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 0.6rem;
-  margin-top: auto;
-}
-
 @media (max-width: 1024px) {
   .theses-grid {
     grid-template-columns: 1fr;
-  }
-  .summary-actions, .academic-credits {
-    flex-direction: column;
-    align-items: flex-start;
   }
   .slide-summary {
     padding: 1.5rem;

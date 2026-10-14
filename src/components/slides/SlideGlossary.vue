@@ -2,134 +2,89 @@
   <div class="slide-glossary animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · Léxico Técnico</span>
-        <span class="category-tag">Vocabulario Fundamental</span>
+        <span class="glass-pill">12 · Diccionario Rápido</span>
+        <span class="category-tag">Términos Clave de Freud</span>
       </div>
       <h2 class="slide-title font-display">
-        Glosario Conceptual: <span class="text-gold">La 27ª Conferencia</span>
+        Glosario en <span class="text-gold">1 Frase Sencilla</span>
       </h2>
       <p class="slide-subtitle">
-        Términos metapsicológicos indispensables para la comprensión del texto freudiano
+        Los conceptos que necesitas dominar para tu examen o exposición, sin rodeos:
       </p>
     </div>
 
-    <!-- Search & Filter Controls -->
-    <div class="glossary-controls">
-      <input 
-        v-model="searchTerm" 
-        type="text" 
-        placeholder="Buscar término (ej. contrainvestidura, libido, repetición...)"
-        class="glossary-search glass-panel"
-      />
-      <div class="term-count font-mono">{{ filteredTerms.length }} conceptos</div>
-    </div>
-
-    <!-- Terms Grid -->
+    <!-- 6 Simple Concept Cards -->
     <div class="terms-grid">
-      <div 
-        v-for="t in filteredTerms" 
-        :key="t.german"
-        class="term-card glass-panel"
-        :class="{ active: selectedTerm?.german === t.german }"
-        @click="selectedTerm = t"
-      >
-        <div class="term-top">
-          <span class="term-es font-serif">{{ t.es }}</span>
-          <span class="term-de font-mono">{{ t.german }}</span>
+      <div class="term-card glass-panel" v-for="t in simpleTerms" :key="t.name">
+        <div class="term-header">
+          <span class="term-icon">{{ t.icon }}</span>
+          <div>
+            <h4 class="term-name font-serif">{{ t.name }}</h4>
+            <span class="term-de font-mono">{{ t.german }}</span>
+          </div>
         </div>
-        <p class="term-short">{{ t.definition }}</p>
-        <div class="term-footer">
-          <span class="term-ref">{{ t.pageRef }}</span>
-          <span class="view-tag">Ver detalle</span>
+        <p class="term-definition font-serif">{{ t.definition }}</p>
+        <div class="term-example">
+          <strong>Ejemplo fácil:</strong> {{ t.example }}
         </div>
       </div>
     </div>
 
-    <!-- Modal/Drawer for Selected Term Deep Inspection -->
-    <transition name="fade">
-      <div v-if="selectedTerm" class="term-inspector glass-panel">
-        <div class="inspector-header">
-          <div>
-            <h3 class="inspect-title font-serif">{{ selectedTerm.es }}</h3>
-            <span class="inspect-de font-mono">{{ selectedTerm.german }} · {{ selectedTerm.pageRef }}</span>
-          </div>
-          <button class="close-btn" @click="selectedTerm = null">✕</button>
-        </div>
-        <p class="inspect-def">{{ selectedTerm.fullExplanation }}</p>
-        <div class="inspect-quote font-serif">
-          «{{ selectedTerm.freudQuote }}»
-        </div>
-      </div>
-    </transition>
+    <!-- Bottom Tip -->
+    <div class="glossary-tip glass-panel">
+      <span class="tip-sparkle">💡</span>
+      <span class="tip-content font-serif">
+        <strong>Para recordar en clase:</strong> La transferencia no es algo que inventó Freud; ocurre en toda relación humana (te enamoras o desconfías de alguien nuevo por tu pasado). Lo revolucionario de Freud fue <em>analizarla</em> en vez de dejarse engañar por ella.
+      </span>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-
-const searchTerm = ref('');
-const selectedTerm = ref(null);
-
-const terms = [
+const simpleTerms = [
   {
-    es: "Trasferencia",
+    icon: "🔄",
+    name: "Transferencia",
     german: "Übertragung",
-    pageRef: "págs. 401–403",
-    definition: "Proceso inconsciente por el cual el paciente adjudica a la persona del analista afectos, deseos e impulsos reprimidos dirigidos originariamente a las figuras primarias de la infancia.",
-    fullExplanation: "No es un mero capricho del paciente ni un error de la cura: es la manifestación directa de la naturaleza de la neurosis. Se despliega como la mayor resistencia pero, interpretada, se erige en el instrumento terapéutico insustituible.",
-    freudQuote: "Toda esa proclividad del afecto venía de otra parte, estaba ya preparada en el sujeto, y con motivo del tratamiento analítico se transfirió sobre la persona del médico."
+    definition: "Revivir en el presente con el terapeuta los mismos amores, odios o miedos que sentías hacia tus padres en la infancia.",
+    example: "Si tu padre te criticaba mucho, sientes que el analista te está juzgando en secreto."
   },
   {
-    es: "Contrainvestidura",
-    german: "Gegenbesetzung",
-    pageRef: "pág. 397",
-    definition: "Gasto de energía anímica erigido por el Yo preconsciente para mantener reprimida una moción pulsional que resultaría intolerable para la conciencia.",
-    fullExplanation: "En el tratamiento clínico, la contrainvestidura se percibe directamente bajo la forma de 'resistencia'. No pertenece al inconsciente sino al Yo, por lo que este debe ser convencido mediante interpretación de resignarla.",
-    freudQuote: "La contrainvestidura, o resistencia, no pertenece al inconciente, sino al yo, que es nuestro colaborador, y esto es así por más que aquella no esté destinada a ser conciente."
+    icon: "🛡️",
+    name: "Resistencia",
+    german: "Widerstand",
+    definition: "La fuerza de defensa del paciente que se niega a recordar o sentir el dolor reprimido.",
+    example: "Quedarse mudo en la sesión, llegar tarde o decir 'no se me ocurre nada'."
   },
   {
-    es: "Neurosis Artificial de Transferencia",
-    german: "Künstliche Übertragungsneurose",
-    pageRef: "pág. 404",
-    definition: "Nueva formación patológica generada en el tratamiento analítico que reemplaza a la enfermedad originaria traída a la consulta.",
-    fullExplanation: "Todos los síntomas antiguos abandonan su formulación previa y se reorganizan en torno a la relación con el médico. Al disolver esta neurosis artificial en el vínculo analítico, se cura la neurosis histórica del sujeto.",
-    freudQuote: "No es entonces incorrecto decir que ya no se está tratando con la enfermedad anterior del paciente, sino con una neurosis recién creada y recreada que sustituye a la primera."
+    icon: "🎭",
+    name: "Neurosis Artificial",
+    german: "Übertragungsneurose",
+    definition: "La nueva versión de la enfermedad que se recrea en la consulta entre el paciente y el médico.",
+    example: "El paciente ya no sufre por su pasado lejano: sufre por si el analista lo quiere o lo rechaza hoy."
   },
   {
-    es: "Ambivalencia de Sentimientos",
-    german: "Gefühlsambivalenz",
-    pageRef: "pág. 403",
-    definition: "Coexistencia simultánea y originaria de impulsos de amor y de odio dirigidos hacia el mismo objeto psíquico.",
-    fullExplanation: "Explica por qué la transferencia tierna muta súbitamente en hostilidad o por qué el paciente alterna entre la devoción ciega y el desacato rebelde. Ambas son expresiones de un idéntico lazo libidinal.",
-    freudQuote: "Los sentimientos hostiles importan un vínculo afectivo a igual título que los tiernos, así como el desacato implica la misma dependencia que el acatamiento, aunque de signo contrario."
+    icon: "☯️",
+    name: "Ambivalencia",
+    german: "Ambivalenz",
+    definition: "Sentir al mismo tiempo amor y odio intensos hacia la misma persona.",
+    example: "Admirar apasionadamente al terapeuta un día y rebelarse furioso contra él a la semana siguiente."
   },
   {
-    es: "Mudar Repetición en Recuerdo",
-    german: "Wiederholung in Erinnerung umwandeln",
-    pageRef: "pág. 403",
-    definition: "Operación técnica central del psicoanálisis mediante la cual la actuación en presente del paciente es reintegrada a su condición de memoria histórica reprimida.",
-    fullExplanation: "El paciente tiende a actuar en vez de recordar. El analista frustra la satisfacción en acto y conduce al paciente a reconocer la raíz infantil de lo que está sintiendo en la sesión.",
-    freudQuote: "Forzamos al enfermo a mudar su repetición en recuerdo. Y entonces la trasferencia se convierte en el mejor instrumento de la cura."
+    icon: "🎞️",
+    name: "Repetición vs. Recuerdo",
+    german: "Wiederholen vs. Erinnern",
+    definition: "La regla de oro: lo que no puedes recordar con palabras, tu cuerpo y tus emociones lo actúan en la vida real.",
+    example: "En vez de recordar que sufrías abandono, le exiges al médico que te prometa que nunca te dejará."
   },
   {
-    es: "Investidura de Objeto",
-    german: "Objektbesetzung",
-    pageRef: "págs. 405–407",
-    definition: "Dirección de la energía libidinal hacia personas, representaciones o seres del mundo exterior.",
-    fullExplanation: "Es la condición de posibilidad de la transferencia y de la curación analítica. En las neurosis narcisistas (psicosis), la libido ha sido replegada sobre el propio Yo (libido yoica), imposibilitando el influjo terapéutico.",
-    freudQuote: "Un ser humano es accesible también desde su costado intelectual únicamente en la medida en que es capaz de investir libidinosamente objetos."
+    icon: "🪞",
+    name: "Libido Narcisista",
+    german: "Ich-Libido",
+    definition: "Tener la energía afectiva totalmente replegada sobre uno mismo, sin poder interesarse por nadie más.",
+    example: "La razón por la que en la psicosis no funciona el análisis: el paciente es indiferente al médico."
   }
 ];
-
-const filteredTerms = computed(() => {
-  if (!searchTerm.value.trim()) return terms;
-  const q = searchTerm.value.toLowerCase();
-  return terms.filter(t => 
-    t.es.toLowerCase().includes(q) || 
-    t.german.toLowerCase().includes(q) || 
-    t.definition.toLowerCase().includes(q)
-  );
-});
 </script>
 
 <style scoped>
@@ -163,7 +118,7 @@ const filteredTerms = computed(() => {
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -173,50 +128,21 @@ const filteredTerms = computed(() => {
   color: var(--text-muted);
 }
 
-.glossary-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-.glossary-search {
-  flex-grow: 1;
-  max-width: 500px;
-  padding: 0.55rem 1rem;
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid var(--border-gold);
-  border-radius: var(--radius-sm);
-  color: #FFFFFF;
-  font-size: 0.85rem;
-}
-
-.glossary-search:focus {
-  outline: none;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-}
-
-.term-count {
-  font-size: 0.75rem;
-  color: var(--gold-light);
-}
-
 .terms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.9rem;
+  gap: 1rem;
   margin-bottom: 0.8rem;
   flex-grow: 1;
 }
 
 .term-card {
-  padding: 0.9rem 1.1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
-  transition: all 0.2s ease;
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .term-card:hover {
@@ -224,106 +150,73 @@ const filteredTerms = computed(() => {
   border-color: var(--gold-primary);
 }
 
-.term-card.active {
-  border-color: var(--gold-primary);
-  background: rgba(212, 175, 55, 0.1);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
-}
-
-.term-top {
+.term-header {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 0.4rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-.term-es {
+.term-icon {
+  font-size: 1.5rem;
+}
+
+.term-name {
   font-size: 1.15rem;
   color: #FFFFFF;
-  font-weight: 700;
   line-height: 1.2;
 }
 
 .term-de {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--gold-primary);
 }
 
-.term-short {
-  font-size: 0.8rem;
-  color: #CBD5E1;
+.term-definition {
+  font-size: 0.88rem;
+  color: var(--gold-light);
   line-height: 1.35;
   margin-bottom: 0.6rem;
   flex-grow: 1;
 }
 
-.term-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.72rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 0.4rem;
+.term-example {
+  padding: 0.5rem 0.7rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  color: #CBD5E1;
+  line-height: 1.35;
+  border-left: 2px solid var(--gold-primary);
 }
 
-.term-ref {
-  color: var(--text-dim);
-}
-
-.view-tag {
-  color: var(--gold-light);
-}
-
-.term-inspector {
-  padding: 1rem 1.4rem;
-  background: rgba(15, 23, 42, 0.95);
-  border: 1px solid var(--gold-primary);
-  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7);
-  margin-top: auto;
-}
-
-.inspector-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.4rem;
-}
-
-.inspect-title {
-  font-size: 1.35rem;
-  color: var(--gold-light);
-}
-
-.inspect-de {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  color: var(--text-dim);
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.close-btn:hover {
+.term-example strong {
   color: #FFFFFF;
 }
 
-.inspect-def {
-  font-size: 0.9rem;
-  color: #E2E8F0;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+.glossary-tip {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.75rem 1.2rem;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
+  margin-top: auto;
 }
 
-.inspect-quote {
-  font-size: 0.95rem;
-  font-style: italic;
-  color: #FDF4DC;
+.tip-sparkle {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.tip-content {
+  font-size: 0.92rem;
+  color: #F8FAFC;
   line-height: 1.4;
-  border-left: 2px solid var(--gold-primary);
-  padding-left: 0.8rem;
+}
+
+.tip-content strong {
+  color: var(--gold-light);
 }
 
 @media (max-width: 1024px) {

@@ -2,87 +2,65 @@
   <div class="slide-suggestion animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · págs. 405–406</span>
-        <span class="category-tag">Polémica Epistemológica</span>
+        <span class="glass-pill">10 · El Gran Debate</span>
+        <span class="category-tag">Conferencia 27 · págs. 405–406</span>
       </div>
       <h2 class="slide-title font-display">
-        Transferencia, Sugestión e <span class="text-gold">Hipnosis</span>
+        ¿Es el Psicoanálisis una simple <span class="text-gold">Sugestión?</span>
       </h2>
       <p class="slide-subtitle">
-        La réplica de Freud a la objeción incisiva del auditorio médico
+        La dura pregunta que los médicos de la época le hicieron a Sigmund Freud:
       </p>
     </div>
 
-    <!-- The Great Audience Objection Dialog Box -->
-    <div class="objection-card glass-panel">
-      <div class="objection-header">
-        <span class="objection-badge">⚠️ LA OBJECIÓN PROVOCADORA DEL AUDITORIO (pág. 406)</span>
-      </div>
-      <p class="objection-quote font-serif">
-        «¿Conque ha admitido finalmente que trabaja con el poder auxiliar de la sugestión como los hipnotizadores? Hace ya tiempo que lo sospechábamos. Pero entonces, ¿para qué todo el rodeo por los recuerdos del pasado, el inconsciente y las interpretaciones si lo único eficaz sigue siendo la sugestión? ¿Por qué no aplica la sugestión directa contra los síntomas, como los hipnotizadores honestos?»
+    <!-- The Provocative Question -->
+    <div class="question-banner glass-panel">
+      <div class="q-badge font-display">❓ LA CRÍTICA DEL AUDITORIO (pág. 406):</div>
+      <p class="q-text font-serif">
+        «Doctor Freud: si el paciente solo se cura porque confía ciegamente en usted y lo admira... ¿no es eso exactamente lo mismo que la hipnosis? <strong>¿Para qué perder meses buscando traumas del pasado si al final lo único que funciona es la sugestión?</strong>»
       </p>
     </div>
 
-    <!-- Comparative Matrix: Hypnosis vs Psychoanalysis -->
-    <div class="comparison-matrix">
-      <!-- Hypnosis Column -->
-      <div class="matrix-col hypnosis-col glass-panel">
-        <div class="matrix-header">
-          <span class="col-icon">🌀</span>
+    <!-- The 2 Opposite Approaches -->
+    <div class="methods-grid">
+      <!-- Method 1: Hypnosis -->
+      <div class="method-card glass-panel method-hypnosis">
+        <div class="method-header">
+          <span class="m-icon">🌀</span>
           <div>
-            <h3 class="col-title font-display">Hipnosis Tradicional</h3>
-            <span class="col-sub">Bernheim · Sugestión Directa</span>
+            <h4 class="m-title font-serif">La Hipnosis Clásica</h4>
+            <span class="m-sub">El camino autoritario</span>
           </div>
         </div>
-
-        <ul class="matrix-points">
-          <li>
-            <strong>Fundamento Teórico:</strong> Da por sentado un hecho bruto e inexplicable: la «sugestionabilidad humana». Ignora su origen libidinal.
-          </li>
-          <li>
-            <strong>Manejo del Síntoma:</strong> Prohíbe al síntoma manifestarse mediante el mandato autoritario del médico («¡Usted ya no tiene dolor!»).
-          </li>
-          <li>
-            <strong>Destino de la Represión:</strong> Deja las represiones intactas bajo tierra. El síntoma migra o reaparece al desvanecerse el influjo del médico.
-          </li>
-          <li>
-            <strong>Relación de Poder:</strong> Mantiene al paciente en sumisión y dependencia infantil permanente.
-          </li>
+        <ul class="m-points">
+          <li><strong>Cómo opera:</strong> Le ordena al paciente: <em>«¡Te ordeno que no sientas más angustia!»</em>.</li>
+          <li><strong>El problema:</strong> Tapa el síntoma con la autoridad del médico, pero no quita la causa.</li>
+          <li><strong>Consecuencia:</strong> El paciente queda dependiente del hipnotizador y el síntoma vuelve a brotar.</li>
         </ul>
       </div>
 
-      <!-- Psychoanalysis Column -->
-      <div class="matrix-col analysis-col glass-panel">
-        <div class="matrix-header">
-          <span class="col-icon">🛋️</span>
+      <!-- Method 2: Psychoanalysis -->
+      <div class="method-card glass-panel method-analysis">
+        <div class="method-header">
+          <span class="m-icon">🛋️</span>
           <div>
-            <h3 class="col-title font-display">Terapia Psicoanalítica</h3>
-            <span class="col-sub">Freud · Disolución de la Transferencia</span>
+            <h4 class="m-title font-serif">El Psicoanálisis</h4>
+            <span class="m-sub">El camino de la autonomía</span>
           </div>
         </div>
-
-        <ul class="matrix-points">
-          <li>
-            <strong>Fundamento Teórico:</strong> Descubre que la sugestión proviene de la <em>actividad de la libido y la investidura de objeto</em>.
-          </li>
-          <li>
-            <strong>Manejo del Síntoma:</strong> No prohíbe el síntoma; remonta sus raíces causales a través del recuerdo y la asociación libre.
-          </li>
-          <li>
-            <strong>Destino de la Represión:</strong> Cancela la contrainvestidura; eleva la moción reprimida a la conciencia para resolver el conflicto.
-          </li>
-          <li>
-            <strong>Relación de Poder:</strong> Disuelve la transferencia al final de la cura: el médico se retira y el paciente adquiere plena autonomía.
-          </li>
+        <ul class="m-points">
+          <li><strong>Cómo opera:</strong> Usa la confianza transferencial para que el paciente <em>pierda el miedo a recordar</em>.</li>
+          <li><strong>La solución:</strong> Desentierra el trauma, lo hace consciente y disuelve el conflicto desde la raíz.</li>
+          <li><strong>Consecuencia:</strong> Al final, el analista se retira y el paciente queda 100% libre e independiente.</li>
         </ul>
       </div>
     </div>
 
-    <!-- Freud's Famous Paradoxical Summary -->
-    <div class="epilogue-quote glass-panel">
-      <span class="quote-symbol font-serif">“</span>
-      <p class="quote-text font-serif">
-        «Hemos abandonado la hipnosis en nuestra técnica sólo para redescubrir la sugestión bajo la forma de la trasferencia... pero la usamos para obligar al Yo a librar una batalla normal que lo libere definitivamente.» (pág. 406)
+    <!-- Takeaway in 1 Line -->
+    <div class="suggestion-footer glass-panel">
+      <span class="s-icon">💡</span>
+      <p class="s-text font-serif">
+        <strong>En una frase:</strong> El hipnotizador usa su poder para imponer su voluntad al paciente; el psicoanalista usa el lazo afectivo para devolverle al paciente el control de su propia vida.
       </p>
     </div>
   </div>
@@ -102,7 +80,7 @@
 }
 
 .slide-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .header-badge-row {
@@ -122,7 +100,7 @@
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -132,121 +110,122 @@
   color: var(--text-muted);
 }
 
-.objection-card {
-  padding: 0.9rem 1.4rem;
+.question-banner {
+  padding: 1rem 1.4rem;
   background: rgba(239, 68, 68, 0.05);
   border-left: 3px solid #EF4444;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
-.objection-header {
-  margin-bottom: 0.3rem;
-}
-
-.objection-badge {
+.q-badge {
   font-size: 0.72rem;
   font-weight: 800;
   color: #F87171;
   letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
 }
 
-.objection-quote {
-  font-size: 0.98rem;
+.q-text {
+  font-size: 1.05rem;
   font-style: italic;
   color: #FEE2E2;
   line-height: 1.45;
 }
 
-.comparison-matrix {
+.q-text strong {
+  color: #FFFFFF;
+}
+
+.methods-grid {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
-  gap: 1.2rem;
-  margin-bottom: 0.8rem;
+  gap: 1.4rem;
+  margin-bottom: 1rem;
   flex-grow: 1;
 }
 
-.matrix-col {
-  padding: 1.1rem;
+.method-card {
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
 }
 
-.hypnosis-col {
+.method-hypnosis {
   border-top: 3px solid #64748B;
   background: rgba(15, 23, 42, 0.5);
 }
 
-.analysis-col {
+.method-analysis {
   border-top: 3px solid var(--gold-primary);
   background: rgba(212, 175, 55, 0.05);
 }
 
-.matrix-header {
+.method-header {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 0.8rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.col-icon {
+.m-icon {
   font-size: 1.8rem;
 }
 
-.col-title {
-  font-size: 1.15rem;
+.m-title {
+  font-size: 1.25rem;
   color: #FFFFFF;
-  line-height: 1.2;
 }
 
-.col-sub {
+.m-sub {
   font-size: 0.75rem;
   color: var(--gold-light);
 }
 
-.matrix-points {
+.m-points {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
-.matrix-points strong {
-  color: #F1F5F9;
-  display: block;
-  margin-bottom: 0.1rem;
+.m-points strong {
+  color: #FFFFFF;
 }
 
-.epilogue-quote {
-  position: relative;
+.suggestion-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   padding: 0.8rem 1.4rem;
-  background: rgba(212, 175, 55, 0.06);
-  border-left: 2px solid var(--gold-primary);
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
-.quote-symbol {
-  position: absolute;
-  top: -6px;
-  left: 10px;
-  font-size: 2.5rem;
-  color: rgba(212, 175, 55, 0.2);
+.s-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
-.quote-text {
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--gold-light);
+.s-text {
+  font-size: 0.98rem;
+  color: #F8FAFC;
   line-height: 1.4;
-  padding-left: 1rem;
+}
+
+.s-text strong {
+  color: var(--gold-light);
 }
 
 @media (max-width: 1024px) {
-  .comparison-matrix {
+  .methods-grid {
     grid-template-columns: 1fr;
   }
   .slide-suggestion {

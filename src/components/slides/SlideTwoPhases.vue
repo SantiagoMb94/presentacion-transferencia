@@ -2,129 +2,61 @@
   <div class="slide-two-phases animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · págs. 395–397</span>
-        <span class="category-tag">Técnica Psicoanalítica</span>
+        <span class="glass-pill">03 · El Método de Freud</span>
+        <span class="category-tag">Conferencia 27 · págs. 395–397</span>
       </div>
       <h2 class="slide-title font-display">
-        La Meta de la Cura y el <span class="text-gold">Método en Dos Fases</span>
+        «Saber» no es Curar: <span class="text-gold">El Método en 2 Pasos</span>
       </h2>
       <p class="slide-subtitle">
-        ¿Por qué el simple saber intelectual del analista no disuelve los síntomas neuróticos?
+        ¿Por qué no basta con explicarle al paciente cuál es su trauma psicológico?
       </p>
     </div>
 
-    <!-- The 3 Classic Formulas -->
-    <div class="formulas-bar">
-      <div class="formula-pill glass-panel">
-        <span class="formula-num font-mono">I</span>
-        <span class="formula-text font-serif">Hacer conciente lo inconciente</span>
+    <!-- The Big Mistake in Plain Words -->
+    <div class="mistake-card glass-panel">
+      <div class="mistake-badge font-display">⚠️ EL ERROR TÉCNICO INICIAL DE FREUD («Estrechez de miras»)</div>
+      <p class="mistake-desc font-serif">
+        «Al principio creíamos que era muy fácil: bastaba con adivinar el trauma inconsciente del paciente y decírselo. <strong>Pero eso no cura a nadie</strong>. El paciente guarda esa explicación intelectual en un bolsillo mental, pero su inconsciente y sus síntomas siguen exactamente iguales.» (pág. 397)
+      </p>
+    </div>
+
+    <!-- The 2 Real Phases -->
+    <div class="phases-row">
+      <div class="phase-box glass-panel">
+        <div class="phase-badge font-mono">PASO 1</div>
+        <div class="phase-icon">🔍</div>
+        <h3 class="phase-title font-serif">Rastrear el Recuerdo</h3>
+        <p class="phase-text">
+          Buscar pacientemente en la memoria dónde se reprimió el dolor o el deseo prohibido original.
+        </p>
+        <span class="phase-tag">Encontrar la escena olvidada</span>
       </div>
-      <div class="formula-pill glass-panel">
-        <span class="formula-num font-mono">II</span>
-        <span class="formula-text font-serif">Cancelación de las represiones</span>
-      </div>
-      <div class="formula-pill glass-panel">
-        <span class="formula-num font-mono">III</span>
-        <span class="formula-text font-serif">Llenado de las lagunas amnésicas</span>
+
+      <div class="phase-separator font-serif">➔</div>
+
+      <div class="phase-box glass-panel highlight-box">
+        <div class="phase-badge badge-gold font-mono">PASO 2 · EL DECISIVO</div>
+        <div class="phase-icon">🛡️</div>
+        <h3 class="phase-title font-serif">Vencer la Resistencia</h3>
+        <p class="phase-text">
+          El paciente tiene terror de revivir ese dolor. Hay que ayudarle a perder el miedo y derribar la barrera defensiva de su Yo.
+        </p>
+        <span class="phase-tag tag-gold">Superar la resistencia</span>
       </div>
     </div>
 
-    <!-- The Error of Narrow-Mindedness vs The Two Phases -->
-    <div class="main-two-columns">
-      <!-- Left Column: The Historical Technical Error -->
-      <div class="error-box glass-panel">
-        <div class="error-header">
-          <span class="error-tag">El Antiguo Error Técnico</span>
-          <span class="error-name font-display">«La Estrechez de Miras»</span>
-        </div>
-        <p class="error-desc font-serif">
-          «Antaño creíamos que era muy simple: bastaba con colegir lo inconciente y enunciárselo al paciente...»
-        </p>
-
-        <div class="error-verdict glass-panel">
-          <div class="verdict-icon">⚠️</div>
-          <div class="verdict-text">
-            <strong>Fracaso del Saber Intelectual:</strong>
-            <p>Nuestro saber sobre lo inconsciente no equivale al saber de él. Cuando se lo comunicamos, el paciente lo almacena <em>junto a</em> su inconsciente, no en lugar de él. La represión sigue intacta.</p>
-          </div>
-        </div>
-
-        <div class="causal-therapy-badge">
-          <span class="badge-title font-display">¿Es el Psicoanálisis una Terapia Causal?</span>
-          <p class="badge-body">
-            Sí, en cuanto no ataca superficialmente el síntoma, sino que persigue el encadenamiento causal hasta las represiones y disposiciones pulsionales.
-          </p>
-        </div>
-      </div>
-
-      <!-- Right Column: The 2-Phase Interactive Workflow -->
-      <div class="phases-box glass-panel">
-        <div class="phases-header">
-          <span class="phases-tag font-display">El Auténtico Dispositivo Analítico</span>
-          <span class="phases-sub">Seleccione una fase para inspeccionar su operatoria:</span>
-        </div>
-
-        <div class="stepper-row">
-          <div 
-            class="step-card" 
-            :class="{ active: activeStep === 1 }"
-            @click="activeStep = 1"
-          >
-            <div class="step-badge font-mono">FASE 1</div>
-            <div class="step-title font-serif">Rebusca de la Represión</div>
-            <div class="step-sub">Localización Tópica</div>
-          </div>
-
-          <div class="step-arrow font-serif">➔</div>
-
-          <div 
-            class="step-card" 
-            :class="{ active: activeStep === 2 }"
-            @click="activeStep = 2"
-          >
-            <div class="step-badge font-mono">FASE 2</div>
-            <div class="step-title font-serif">Eliminación de la Resistencia</div>
-            <div class="step-sub">Vencer la Contrainvestidura</div>
-          </div>
-        </div>
-
-        <!-- Step Details Card -->
-        <div class="step-detail-card glass-panel">
-          <div class="step-meta">
-            <span class="meta-badge">{{ activeStep === 1 ? 'Objetivo Tópico' : 'Objetivo Dinámico' }}</span>
-            <span class="meta-pages">Conferencia 27, pág. 397</span>
-          </div>
-
-          <h3 class="step-detail-heading font-serif">
-            {{ activeStep === 1 ? '1. Pesquisar en el recuerdo el lugar de la represión' : '2. Confrontar y remover la resistencia del Yo' }}
-          </h3>
-
-          <p class="step-detail-text">
-            {{ activeStep === 1 
-              ? 'Debemos representarnos a eso inconciente tópicamente; rebuscar en su memoria el punto exacto en que la moción pulsional fue sofocada y expulsada de la conciencia. Pero hallar la represión no basta si una fuerza la custodia.' 
-              : 'La resistencia brota de la contrainvestidura (Gegenbesetzung) que el Yo erigió para reprimir la moción chocante. Esta contrainvestidura no pertenece al inconsciente sino al Yo, nuestro colaborador. La resistencia debe resignarse tan pronto el Yo tome conocimiento de ella mediante la interpretación.' 
-            }}
-          </p>
-
-          <div class="step-formula font-serif">
-            <span class="formula-icon">★</span>
-            <span>
-              {{ activeStep === 1 
-                ? 'Regla: «Primero la rebusca de la represión, después la eliminación de la resistencia que la mantiene en pie».' 
-                : 'Mecanismo: «El Yo resigna la contrainvestidura cuando la interpretación le revela el costo neurótico del síntoma».' 
-              }}
-            </span>
-          </div>
-        </div>
-      </div>
+    <!-- Bottom Punchline -->
+    <div class="bottom-formula glass-panel">
+      <span class="formula-icon">💡</span>
+      <span class="formula-text font-serif">
+        <strong>La clave de Freud:</strong> La cura no es una clase de psicología. Para que el síntoma desaparezca, el paciente debe <em>volver a sentir</em> el conflicto en un espacio seguro y elaborarlo, no solo saberlo en teoría.
+      </span>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-
-const activeStep = ref(1);
 </script>
 
 <style scoped>
@@ -144,7 +76,7 @@ const activeStep = ref(1);
 .header-badge-row {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .category-tag {
@@ -158,7 +90,7 @@ const activeStep = ref(1);
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -168,256 +100,138 @@ const activeStep = ref(1);
   color: var(--text-muted);
 }
 
-.formulas-bar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.mistake-card {
+  padding: 1rem 1.4rem;
+  background: rgba(239, 68, 68, 0.06);
+  border-left: 3px solid #EF4444;
   margin-bottom: 1.2rem;
 }
 
-.formula-pill {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.6rem 1rem;
-  border: 1px solid var(--border-gold);
-}
-
-.formula-num {
-  font-weight: 700;
-  color: var(--gold-primary);
-  font-size: 1rem;
-}
-
-.formula-text {
-  font-size: 1.05rem;
-  color: var(--gold-light);
-  font-style: italic;
-}
-
-.main-two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 1.5rem;
-  flex-grow: 1;
-}
-
-.error-box {
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  border-left: 3px solid var(--accent-crimson);
-}
-
-.error-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
-}
-
-.error-tag {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #F87171;
-  letter-spacing: 0.05em;
-}
-
-.error-name {
-  font-size: 1.3rem;
-  color: #FFFFFF;
-}
-
-.error-desc {
-  font-size: 1.05rem;
-  font-style: italic;
-  color: #CBD5E1;
-  margin-bottom: 1rem;
-}
-
-.error-verdict {
-  display: flex;
-  gap: 0.8rem;
-  padding: 0.8rem 1rem;
-  background: rgba(239, 68, 68, 0.08);
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  margin-bottom: 1rem;
-}
-
-.verdict-icon {
-  font-size: 1.4rem;
-}
-
-.verdict-text {
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: #FEE2E2;
-}
-
-.verdict-text strong {
-  display: block;
-  color: #FCA5A5;
-  margin-bottom: 0.2rem;
-}
-
-.causal-therapy-badge {
-  margin-top: auto;
-  padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: var(--radius-sm);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.badge-title {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--gold-primary);
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 0.2rem;
-}
-
-.badge-body {
-  font-size: 0.85rem;
-  color: #94A3B8;
-  line-height: 1.4;
-}
-
-.phases-box {
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.phases-header {
-  margin-bottom: 0.8rem;
-}
-
-.phases-tag {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--gold-light);
-  display: block;
-}
-
-.phases-sub {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-}
-
-.stepper-row {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.step-card {
-  flex: 1;
-  padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.step-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.step-card.active {
-  background: rgba(212, 175, 55, 0.12);
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
-
-.step-badge {
+.mistake-badge {
   font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--gold-primary);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.2rem;
+  font-weight: 800;
+  color: #F87171;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
 }
 
-.step-title {
+.mistake-desc {
   font-size: 1.05rem;
-  font-weight: 700;
+  color: #FEE2E2;
+  line-height: 1.45;
+}
+
+.mistake-desc strong {
   color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.step-sub {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.step-arrow {
-  color: var(--gold-primary);
-  font-size: 1.2rem;
-}
-
-.step-detail-card {
+.phases-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
   flex-grow: 1;
-  padding: 1.2rem;
+}
+
+.phase-box {
+  flex: 1;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
-  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-align: center;
+  align-items: center;
 }
 
-.step-meta {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.4rem;
-  font-size: 0.75rem;
-}
-
-.meta-badge {
-  color: var(--gold-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.meta-pages {
-  color: var(--text-dim);
-}
-
-.step-detail-heading {
-  font-size: 1.3rem;
-  color: #FFFFFF;
+.phase-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
   margin-bottom: 0.6rem;
 }
 
-.step-detail-text {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #CBD5E1;
-  margin-bottom: 1rem;
+.badge-gold {
+  color: #080C14;
+  background: var(--gold-primary);
 }
 
-.step-formula {
-  margin-top: auto;
-  padding: 0.8rem;
-  background: rgba(212, 175, 55, 0.06);
-  border-left: 2px solid var(--gold-primary);
-  font-size: 0.95rem;
-  font-style: italic;
+.phase-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.phase-title {
+  font-size: 1.35rem;
+  color: #FFFFFF;
+  margin-bottom: 0.4rem;
+}
+
+.phase-text {
+  font-size: 0.92rem;
+  color: #CBD5E1;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  max-width: 380px;
+}
+
+.phase-tag {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.tag-gold {
   color: var(--gold-light);
+  font-weight: 700;
+}
+
+.highlight-box {
+  border-color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.phase-separator {
+  font-size: 1.8rem;
+  color: var(--gold-primary);
+}
+
+.bottom-formula {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.8rem;
+  padding: 0.8rem 1.4rem;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
+  margin-top: auto;
 }
 
 .formula-icon {
-  color: var(--gold-primary);
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+
+.formula-text {
+  font-size: 0.98rem;
+  color: #F8FAFC;
+  line-height: 1.4;
+}
+
+.formula-text strong {
+  color: var(--gold-light);
 }
 
 @media (max-width: 1024px) {
-  .formulas-bar {
-    grid-template-columns: 1fr;
+  .phases-row {
+    flex-direction: column;
   }
-  .main-two-columns {
-    grid-template-columns: 1fr;
+  .phase-separator {
+    transform: rotate(90deg);
   }
   .slide-two-phases {
     padding: 1.5rem;

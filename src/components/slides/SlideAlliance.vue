@@ -2,97 +2,73 @@
   <div class="slide-alliance animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · págs. 397–398</span>
-        <span class="category-tag">Dinámica de Fuerzas</span>
+        <span class="glass-pill">04 · Las Herramientas</span>
+        <span class="category-tag">Conferencia 27 · págs. 397–398</span>
       </div>
       <h2 class="slide-title font-display">
-        Las Fuerzas en Juego y las <span class="text-gold">Analogías Didácticas</span>
+        Las 2 Fuerzas y las <span class="text-gold">Analogías de Freud</span>
       </h2>
       <p class="slide-subtitle">
-        ¿Con qué recursos cuenta el análisis para incitar al Yo a resignar su contrainvestidura?
+        ¿Cómo logra el terapeuta que el paciente descubra lo que tiene reprimido?
       </p>
     </div>
 
-    <!-- The 2 Patient Driving Forces -->
+    <!-- The 2 Forces -->
     <div class="forces-row">
       <div class="force-card glass-panel">
-        <div class="force-icon-box">❤️</div>
-        <div class="force-body">
-          <div class="force-label">Fuerza Impulsora I</div>
-          <h3 class="force-title font-serif">El Afán de Curación</h3>
-          <p class="force-desc">
-            El dolor y el padecimiento subjetivo del enfermo que lo movieron a pedir auxilio y avenirse al pacto de trabajo analítico.
-          </p>
+        <div class="force-icon">❤️</div>
+        <div class="force-info">
+          <div class="force-label">Fuerza 1</div>
+          <h4 class="force-name font-serif">Las Ganas de Sanar</h4>
+          <p class="force-desc">El sufrimiento real del paciente es su mayor motor: quiere dejar de sufrir.</p>
         </div>
       </div>
 
       <div class="force-card glass-panel">
-        <div class="force-icon-box">💡</div>
-        <div class="force-body">
-          <div class="force-label">Fuerza Impulsora II</div>
-          <h3 class="force-title font-serif">La Inteligencia Reforzada</h3>
-          <p class="force-desc">
-            La capacidad intelectual del paciente, armada y guiada mediante las <em>representaciones-expectativa</em> provistas por la interpretación analítica.
-          </p>
+        <div class="force-icon">💡</div>
+        <div class="force-info">
+          <div class="force-label">Fuerza 2</div>
+          <h4 class="force-name font-serif">La Inteligencia Guiada</h4>
+          <p class="force-desc">El analista no da órdenes: le presta un mapa mental para saber dónde buscar.</p>
         </div>
       </div>
     </div>
 
-    <!-- The Two Analogies Grid -->
+    <!-- The 2 Simple Analogies -->
     <div class="analogies-grid">
       <div class="analogy-card glass-panel">
-        <div class="analogy-badge">
-          <span class="badge-icon">🎈</span>
-          <span>Analogía 1 · El Firmamento</span>
+        <div class="analogy-top">
+          <span class="analogy-emoji">🎈</span>
+          <span class="analogy-tag font-display">Analogía 1 · El Globo en el Cielo</span>
         </div>
-        <h4 class="analogy-title font-serif">El Aeróstato en el Cielo</h4>
         <p class="analogy-quote font-serif">
-          «Si yo les digo: <em>'Miren al cielo, se ve un aeróstato'</em>, ustedes lo descubrirán mucho más fácilmente que si me limito a exhortarlos a que busquen con la mirada a ver si hallan alguna cosa.»
+          «Si yo les digo: <em>'Miren al cielo, allá va un aeróstato'</em>, ustedes lo verán enseguida. Pero si solo les digo que miren a ver qué encuentran, no verán nada.»
         </p>
         <div class="analogy-lesson">
-          <strong>Función técnica:</strong> Suministrar una representación-expectativa anticipatoria para que la atención se oriente con precisión en el material caótico del recuerdo.
+          <strong>En cristiano:</strong> El analista te dice qué buscar entre tus recuerdos para que no te pierdas en el caos.
         </div>
       </div>
 
       <div class="analogy-card glass-panel">
-        <div class="analogy-badge">
-          <span class="badge-icon">🔬</span>
-          <span>Analogía 2 · El Laboratorio</span>
+        <div class="analogy-top">
+          <span class="analogy-emoji">🔬</span>
+          <span class="analogy-tag font-display">Analogía 2 · El Microscopio</span>
         </div>
-        <h4 class="analogy-title font-serif">El Estudiante ante el Microscopio</h4>
         <p class="analogy-quote font-serif">
-          «También el estudiante que mira por primera vez con el microscopio es instruido por el profesor acerca de lo que debe ver; de lo contrario no ve nada, aunque eso esté plenamente visible ahí.»
+          «El estudiante que mira al microscopio por primera vez no ve nada si el profesor no le dice qué célula observar, aunque esté justo delante de sus ojos.»
         </p>
         <div class="analogy-lesson">
-          <strong>Función técnica:</strong> El ojo inexperto mira sin ver; el saber teórico del analista presta la lente que hace discernible lo reprimido frente a la censura.
+          <strong>En cristiano:</strong> Tus traumas están ahí visibles, pero necesitas una guía experta para distinguirlos.
         </div>
       </div>
     </div>
 
-    <!-- The Temporal Difference: Child Ego vs Adult Ego -->
-    <div class="temporal-card glass-panel">
-      <div class="temporal-header">
-        <span class="temporal-tag font-display">La Ventaja Temporal del Análisis (pág. 398)</span>
-      </div>
-      <div class="temporal-columns">
-        <div class="ego-col past">
-          <div class="ego-title">El Yo Infantil del Pasado</div>
-          <ul>
-            <li>Débil, inmaduro e inexperto.</li>
-            <li>Percibió la exigencia pulsional como un peligro mortal catastrófico.</li>
-            <li>No tuvo otro recurso que la <strong>represión ciega</strong> y la huida neurótica.</li>
-          </ul>
-        </div>
-        <div class="temporal-vs font-serif">VS</div>
-        <div class="ego-col present">
-          <div class="ego-title">El Yo Adulto del Presente</div>
-          <ul>
-            <li>Fuerte, maduro, consolidado y experimentado.</li>
-            <li>Capaz de tolerar y tramitar la tensión pulsional.</li>
-            <li><strong>Cuenta con un aliado poderoso:</strong> el médico analista.</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Contrast Box: Child vs Adult -->
+    <div class="contrast-box glass-panel">
+      <span class="contrast-icon">🛡️</span>
+      <p class="contrast-text font-serif">
+        <strong>La gran ventaja del presente:</strong> Cuando eras niño y reprimiste ese trauma, estabas solo, indefenso y asustado. <strong>Hoy eres un adulto maduro y tienes al terapeuta a tu lado como aliado</strong> para mirar ese miedo a la cara.
+      </p>
     </div>
   </div>
 </template>
@@ -117,7 +93,7 @@
 .header-badge-row {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .category-tag {
@@ -131,7 +107,7 @@
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -145,84 +121,82 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .force-card {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  padding: 1rem 1.4rem;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
   border: 1px solid var(--border-gold);
 }
 
-.force-icon-box {
-  font-size: 2.2rem;
-  width: 54px;
-  height: 54px;
-  border-radius: var(--radius-md);
+.force-icon {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
   background: rgba(212, 175, 55, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.force-body {
-  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .force-label {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--gold-primary);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
-.force-title {
-  font-size: 1.25rem;
+.force-name {
+  font-size: 1.2rem;
   color: #FFFFFF;
-  margin-bottom: 0.2rem;
 }
 
 .force-desc {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: #CBD5E1;
-  line-height: 1.4;
 }
 
 .analogies-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .analogy-card {
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--border-subtle);
 }
 
-.analogy-badge {
+.analogy-top {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--gold-light);
   margin-bottom: 0.5rem;
 }
 
-.analogy-title {
-  font-size: 1.25rem;
-  color: #FFFFFF;
-  margin-bottom: 0.5rem;
+.analogy-emoji {
+  font-size: 1.3rem;
+}
+
+.analogy-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
 }
 
 .analogy-quote {
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   font-style: italic;
   color: #E2E8F0;
   line-height: 1.45;
@@ -232,74 +206,45 @@
 
 .analogy-lesson {
   padding: 0.6rem 0.8rem;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
-  color: #94A3B8;
-  line-height: 1.4;
+  background: rgba(255, 255, 255, 0.03);
   border-left: 2px solid var(--gold-primary);
+  font-size: 0.85rem;
+  color: #CBD5E1;
+  border-radius: var(--radius-sm);
 }
 
-.temporal-card {
-  padding: 1rem 1.4rem;
+.analogy-lesson strong {
+  color: var(--gold-light);
+}
+
+.contrast-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.4rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
   margin-top: auto;
 }
 
-.temporal-header {
-  margin-bottom: 0.6rem;
+.contrast-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
 }
 
-.temporal-tag {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--gold-primary);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.temporal-columns {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.ego-col {
-  flex: 1;
-}
-
-.ego-title {
+.contrast-text {
   font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
+  color: #D1FAE5;
+  line-height: 1.4;
 }
 
-.ego-col.past .ego-title { color: #F87171; }
-.ego-col.present .ego-title { color: #34D399; }
-
-.ego-col ul {
-  list-style: none;
-  font-size: 0.82rem;
-  color: #CBD5E1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.ego-col li::before {
-  content: "• ";
-  color: var(--gold-primary);
-}
-
-.temporal-vs {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: var(--text-dim);
+.contrast-text strong {
+  color: #FFFFFF;
 }
 
 @media (max-width: 1024px) {
-  .forces-row, .analogies-grid, .temporal-columns {
+  .forces-row, .analogies-grid {
     grid-template-columns: 1fr;
-    flex-direction: column;
   }
   .slide-alliance {
     padding: 1.5rem;

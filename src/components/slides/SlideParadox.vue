@@ -2,94 +2,61 @@
   <div class="slide-paradox animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · pág. 403</span>
-        <span class="category-tag">Regla Técnica de Oro</span>
+        <span class="glass-pill">07 · La Regla de Oro</span>
+        <span class="category-tag">Conferencia 27 · pág. 403</span>
       </div>
       <h2 class="slide-title font-display">
-        La Gran Paradoja y el <span class="text-gold">Manejo Técnico</span>
+        La Regla de Oro: <span class="text-gold">¿Qué debe hacer el Analista?</span>
       </h2>
       <p class="slide-subtitle">
-        ¿Cómo se transforma la más poderosa amenaza para la cura en su instrumento insuperable?
+        Cuando el paciente te declara amor apasionado o rabia profunda: ¿Cómo reaccionar?
       </p>
     </div>
 
-    <!-- The Two False Exits -->
-    <div class="false-exits-row">
-      <div class="exit-card glass-panel error-exit">
-        <div class="exit-header">
-          <span class="cross-icon">✕</span>
-          <span class="exit-label">Error Técnico 1 · El Abandono Ético</span>
-        </div>
-        <h4 class="exit-title font-serif">Ceder a las Demandas</h4>
-        <p class="exit-desc">
-          «Queda excluido ceder a las demandas del paciente derivadas de su trasferencia...» Ceder consumaría una satisfacción sustitutiva incestuosa o acting out que liquidaría la cura analítica.
+    <!-- The 2 Big Traps to Avoid -->
+    <div class="traps-grid">
+      <div class="trap-card glass-panel">
+        <div class="trap-badge font-display">❌ GRAVE ERROR 1</div>
+        <h4 class="trap-title font-serif">Ceder a la Demanda Amorosa</h4>
+        <p class="trap-text">
+          Tener un romance o corresponder al paciente. Es una falta ética total que destruye el tratamiento y solo alimenta la enfermedad.
         </p>
       </div>
 
-      <div class="exit-card glass-panel error-exit">
-        <div class="exit-header">
-          <span class="cross-icon">✕</span>
-          <span class="exit-label">Error Técnico 2 · La Reacción Moral</span>
-        </div>
-        <h4 class="exit-title font-serif">Rechazo con Indignación</h4>
-        <p class="exit-desc">
-          «...y sería absurdo rechazarlas inamistosamente o con indignación.» El rechazo moralista repite traumáticamente la censura y la frialdad de las figuras parentales represoras.
+      <div class="trap-card glass-panel">
+        <div class="trap-badge font-display">❌ GRAVE ERROR 2</div>
+        <h4 class="trap-title font-serif">Rechazar con Indignación Moral</h4>
+        <p class="trap-text">
+          Ofenderse, regañar al paciente o expulsarlo. Eso repite el mismo rechazo y castigo que el paciente sufrió en su infancia.
         </p>
       </div>
     </div>
 
-    <!-- The Core Analytic Operation: Mudar la repetición en recuerdo -->
+    <!-- The Analytic Solution: The Magic Formula -->
     <div class="solution-hero glass-panel">
-      <div class="solution-content">
-        <div class="solution-badge font-display">EL GIRO TÉCNICO MAGISTRAL</div>
-        <h3 class="solution-title font-serif">
-          «Mudar la Repetición en Recuerdo»
-        </h3>
-        <p class="solution-explanation font-serif">
-          Superamos la transferencia cuando demostramos pacientemente al enfermo que sus intensos sentimientos <strong>no provienen de la situación presente y no valen para la persona del médico</strong>, sino que repiten ciegamente vivencias, frustraciones y deseos de su infancia remota.
-        </p>
-
-        <div class="interactive-transformation">
-          <div class="trans-box threat-box" :class="{ muted: transformed }">
-            <span class="trans-state">EN APARIENCIA</span>
-            <div class="trans-title">La Mayor Amenaza</div>
-            <p>Resistencia violenta, rebelión erótica u hostilidad que paraliza el análisis.</p>
-          </div>
-
-          <button class="transform-btn" @click="transformed = !transformed">
-            <span>{{ transformed ? '↺ Reiniciar Enigma' : '⚡ Operar Interpretación' }}</span>
-          </button>
-
-          <div class="trans-box tool-box" :class="{ active: transformed }">
-            <span class="trans-state">EN LA CLÍNICA</span>
-            <div class="trans-title">El Mejor Instrumento</div>
-            <p>Hacer visible en vivo la pulsión reprimida para desarticular el síntoma.</p>
-          </div>
-        </div>
-      </div>
+      <div class="solution-badge font-display">✅ LA FÓRMULA MAGISTRAL DE FREUD:</div>
+      <h3 class="solution-heading font-serif">
+        «Mudar la Repetición en Recuerdo»
+      </h3>
+      <p class="solution-explanation font-serif">
+        El analista le demuestra pacientemente al paciente:  
+        <span class="quote-callout">
+          «Lo que sientes hoy <strong>no es por mí</strong> ni nace de esta habitación. Estás <strong>repitiendo</strong> sin darte cuenta el amor o la rabia que sentiste en tu infancia. Vamos a recordar quién era esa persona original.»
+        </span>
+      </p>
     </div>
 
-    <!-- The Grand Freud Quote -->
-    <div class="climax-quote glass-panel">
-      <p class="quote-italic font-serif">
-        «Y entonces la trasferencia, que en cualquier caso parecía significar la más poderosa amenaza para la cura, se convierte en el <strong>mejor instrumento de ella</strong>, con cuya ayuda pueden desplegarse los más cerrados abanicos de la vida anímica.» (Freud, pág. 403)
+    <!-- The Grand Paradox Result -->
+    <div class="paradox-result glass-panel">
+      <span class="paradox-icon">🏆</span>
+      <p class="paradox-text font-serif">
+        <strong>La Gran Paradoja:</strong> La transferencia, que parecía el peligro más mortal para destruir la cura, se convierte en <strong>el mejor instrumento de ella</strong>: porque permite ver el trauma en vivo, en la sesión, para disolverlo para siempre.
       </p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { playSuccessChime } from '../../utils/sound.js';
-
-const transformed = ref(false);
-
-function triggerTransform() {
-  transformed.value = !transformed.value;
-  if (transformed.value) {
-    playSuccessChime();
-  }
-}
 </script>
 
 <style scoped>
@@ -123,7 +90,7 @@ function triggerTransform() {
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -133,70 +100,57 @@ function triggerTransform() {
   color: var(--text-muted);
 }
 
-.false-exits-row {
+.traps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.error-exit {
-  padding: 1rem 1.2rem;
-  border-left: 3px solid var(--accent-crimson);
-  background: rgba(239, 68, 68, 0.04);
+.trap-card {
+  padding: 1rem 1.3rem;
+  border-left: 3px solid #EF4444;
+  background: rgba(239, 68, 68, 0.05);
 }
 
-.exit-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.cross-icon {
-  color: #F87171;
-  font-weight: 800;
-  font-size: 1rem;
-}
-
-.exit-label {
+.trap-badge {
   font-size: 0.72rem;
   font-weight: 800;
   color: #F87171;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
 }
 
-.exit-title {
-  font-size: 1.2rem;
+.trap-title {
+  font-size: 1.25rem;
   color: #FFFFFF;
   margin-bottom: 0.3rem;
 }
 
-.exit-desc {
-  font-size: 0.85rem;
+.trap-text {
+  font-size: 0.88rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
 .solution-hero {
-  padding: 1.3rem 1.6rem;
+  padding: 1.2rem 1.6rem;
   border: 1px solid var(--border-gold);
-  background: linear-gradient(180deg, rgba(212, 175, 55, 0.07) 0%, rgba(15, 23, 42, 0.6) 100%);
-  margin-bottom: 0.8rem;
+  background: rgba(212, 175, 55, 0.08);
+  margin-bottom: 1rem;
 }
 
 .solution-badge {
   font-size: 0.78rem;
   font-weight: 800;
-  color: var(--gold-primary);
+  color: #34D399;
   letter-spacing: 0.08em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
-.solution-title {
+.solution-heading {
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: var(--gold-light);
   margin-bottom: 0.5rem;
 }
 
@@ -204,112 +158,51 @@ function triggerTransform() {
   font-size: 1.05rem;
   color: #E2E8F0;
   line-height: 1.45;
-  margin-bottom: 1rem;
-  max-width: 950px;
 }
 
-.interactive-transformation {
+.quote-callout {
+  display: block;
+  font-style: italic;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--gold-primary);
+  margin-top: 0.5rem;
+}
+
+.quote-callout strong {
+  color: var(--gold-light);
+}
+
+.paradox-result {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-}
-
-.trans-box {
-  flex: 1;
-  padding: 0.8rem 1rem;
-  border-radius: var(--radius-sm);
-  transition: all 0.3s ease;
-}
-
-.threat-box {
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-}
-
-.threat-box.muted {
-  opacity: 0.45;
-  filter: grayscale(0.6);
-}
-
-.tool-box {
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  opacity: 0.5;
-  transition: all 0.3s ease;
-}
-
-.tool-box.active {
-  opacity: 1;
-  background: rgba(16, 185, 129, 0.15);
-  border-color: #34D399;
-  box-shadow: 0 0 25px rgba(52, 211, 153, 0.25);
-}
-
-.trans-state {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: var(--text-dim);
-  display: block;
-}
-
-.trans-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 0.2rem;
-}
-
-.trans-box p {
-  font-size: 0.8rem;
-  color: #CBD5E1;
-  line-height: 1.35;
-}
-
-.transform-btn {
-  padding: 0.7rem 1.2rem;
-  background: linear-gradient(135deg, #D4AF37 0%, #B89220 100%);
-  color: #080C14;
-  font-weight: 700;
-  font-size: 0.85rem;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-  transition: all 0.2s ease;
-}
-
-.transform-btn:hover {
-  transform: scale(1.04);
-}
-
-.climax-quote {
+  gap: 1rem;
   padding: 0.8rem 1.4rem;
-  border-left: 3px solid var(--gold-primary);
-  background: rgba(212, 175, 55, 0.04);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   margin-top: auto;
 }
 
-.quote-italic {
-  font-size: 1.05rem;
-  font-style: italic;
-  color: var(--gold-light);
-  line-height: 1.45;
+.paradox-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
 }
 
-.quote-italic strong {
+.paradox-text {
+  font-size: 0.98rem;
+  color: #D1FAE5;
+  line-height: 1.4;
+}
+
+.paradox-text strong {
   color: #FFFFFF;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 @media (max-width: 1024px) {
-  .false-exits-row {
+  .traps-grid {
     grid-template-columns: 1fr;
-  }
-  .interactive-transformation {
-    flex-direction: column;
   }
   .slide-paradox {
     padding: 1.5rem;

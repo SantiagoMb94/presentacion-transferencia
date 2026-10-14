@@ -1,43 +1,54 @@
 <template>
   <div class="hero-slide animate-fade-in">
     <div class="hero-grid">
-      <!-- Left Column: Title & Context -->
+      <!-- Left Column: Title & Key Message -->
       <div class="hero-content">
         <div class="badge-row">
           <span class="glass-pill">
             <span class="pulse-dot"></span>
-            Obras Completas · Amorrortu Vol. XVI
+            Sigmund Freud · 27ª Conferencia
           </span>
           <span class="glass-pill tag-pill">
-            Conferencia 27 · págs. 392–407
+            Psicoanálisis Clínico
           </span>
         </div>
 
         <h1 class="hero-title font-display">
           La <span class="text-gold-gradient">Transferencia</span>
-          <span class="subtitle-block font-serif">en la Teoría y Técnica del Psicoanálisis</span>
+          <span class="subtitle-block font-serif">De mayor obstáculo al motor de la curación</span>
         </h1>
 
-        <p class="hero-description">
-          Un recorrido riguroso y dinámico por la <strong>27ª Conferencia de Introducción al Psicoanálisis</strong> (1916–1917) de <strong>Sigmund Freud</strong>. De la resistencia más temible al instrumento soberano de la curación.
-        </p>
-
-        <div class="freud-quote-card glass-panel">
-          <div class="quote-mark font-serif">“</div>
-          <p class="quote-text font-serif">
-            «En la terapia, sin duda, reside toda la posibilidad de cultivar el psicoanálisis... un hecho nuevo sin cuya comprensión los procesos patológicos quedarían sensiblemente incompletos.»
+        <!-- The Big Idea in Plain Spanish -->
+        <div class="big-idea-card glass-panel">
+          <div class="idea-header font-display">
+            <span class="idea-sparkle">💡</span> LA IDEA CENTRAL EN 1 FRASE:
+          </div>
+          <p class="idea-text font-serif">
+            El paciente no recuerda su pasado doloroso: <strong>lo revive y actúa en vivo con el terapeuta</strong> (enamorándose, enojándose o callando). La genialidad de Freud fue usar esa repetición para curarlo.
           </p>
-          <div class="quote-author">
-            <span class="author-name">Sigmund Freud</span>
-            <span class="author-meta">Viena, 1916 · pág. 392</span>
+        </div>
+
+        <!-- 3 Quick Takeaways -->
+        <div class="quick-pills-row">
+          <div class="quick-pill">
+            <span class="pill-emoji">🎯</span>
+            <span><strong>Qué es:</strong> Repetir en el presente afectos del pasado</span>
+          </div>
+          <div class="quick-pill">
+            <span class="pill-emoji">⚡</span>
+            <span><strong>El peligro:</strong> Puede frenar o sabotear la terapia</span>
+          </div>
+          <div class="quick-pill">
+            <span class="pill-emoji">🔑</span>
+            <span><strong>La cura:</strong> Convertir la repetición en recuerdo</span>
           </div>
         </div>
 
         <!-- Action Bar -->
         <div class="hero-actions">
           <button class="primary-btn" @click="$emit('next')">
-            <span>Iniciar Exposición</span>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <span>Comenzar Exposición</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </button>
@@ -47,12 +58,12 @@
               <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
               <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
             </svg>
-            <span>Ver Índice (14 Diapositivas)</span>
+            <span>Ver Índice Rápido</span>
           </button>
         </div>
 
         <div class="quick-shortcuts-hint">
-          <span>Usa <kbd>→</kbd> o <kbd>Espacio</kbd> para avanzar · <kbd>F</kbd> Pantalla completa · <kbd>N</kbd> Notas de orador</span>
+          <span>Usa <kbd>→</kbd> para avanzar · <kbd>F</kbd> Pantalla completa · <kbd>N</kbd> Notas para quien expone</span>
         </div>
       </div>
 
@@ -66,8 +77,8 @@
           />
           <div class="portrait-overlay"></div>
           <div class="portrait-caption">
-            <div class="caption-title font-display">Sigmund Freud (1856–1939)</div>
-            <div class="caption-sub">Berggasse 19, Viena · Las Conferencias de Introducción</div>
+            <div class="caption-title font-display">Sigmund Freud</div>
+            <div class="caption-sub">«En la terapia reside toda la posibilidad del psicoanálisis»</div>
           </div>
         </div>
       </div>
@@ -91,9 +102,9 @@ defineEmits(['next', 'open-overview']);
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
-  max-width: 1400px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  max-width: 1350px;
   width: 100%;
   align-items: center;
 }
@@ -101,8 +112,7 @@ defineEmits(['next', 'open-overview']);
 .badge-row {
   display: flex;
   gap: 0.8rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .pulse-dot {
@@ -116,10 +126,9 @@ defineEmits(['next', 'open-overview']);
 }
 
 .hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
   font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -0.02em;
   color: #FFFFFF;
   margin-bottom: 1.2rem;
 }
@@ -132,68 +141,73 @@ defineEmits(['next', 'open-overview']);
 
 .subtitle-block {
   display: block;
-  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
   font-weight: 400;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-.hero-description {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #CBD5E1;
-  margin-bottom: 1.8rem;
-  max-width: 620px;
-}
-
-.freud-quote-card {
-  position: relative;
-  padding: 1.2rem 1.6rem;
-  background: rgba(212, 175, 55, 0.05);
-  border-left: 3px solid var(--gold-primary);
-  margin-bottom: 2rem;
-  max-width: 640px;
-}
-
-.quote-mark {
-  position: absolute;
-  top: -10px;
-  left: 12px;
-  font-size: 3.5rem;
-  line-height: 1;
-  color: rgba(212, 175, 55, 0.2);
-}
-
-.quote-text {
-  font-size: 1.15rem;
-  font-style: italic;
-  line-height: 1.5;
   color: var(--gold-light);
-  margin-bottom: 0.5rem;
+  margin-top: 0.4rem;
+  font-style: italic;
 }
 
-.quote-author {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.8rem;
-  font-size: 0.85rem;
+.big-idea-card {
+  padding: 1.1rem 1.4rem;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
+  margin-bottom: 1.2rem;
 }
 
-.author-name {
+.idea-header {
+  font-size: 0.75rem;
+  font-weight: 800;
   color: var(--gold-primary);
-  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.author-meta {
-  color: var(--text-dim);
+.idea-text {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  color: #F8FAFC;
+}
+
+.idea-text strong {
+  color: var(--gold-light);
+}
+
+.quick-pills-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quick-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: #CBD5E1;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.45rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.quick-pill strong {
+  color: #FFFFFF;
+}
+
+.pill-emoji {
+  font-size: 1rem;
 }
 
 .hero-actions {
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -223,12 +237,12 @@ defineEmits(['next', 'open-overview']);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1.4rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-gold);
   color: var(--text-main);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.25s ease;
@@ -246,7 +260,7 @@ defineEmits(['next', 'open-overview']);
 }
 
 .quick-shortcuts-hint {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-dim);
 }
 
@@ -259,7 +273,6 @@ defineEmits(['next', 'open-overview']);
   font-family: var(--font-mono);
 }
 
-/* Right Column Visual */
 .hero-visual {
   display: flex;
   justify-content: center;
@@ -269,17 +282,11 @@ defineEmits(['next', 'open-overview']);
 .portrait-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 460px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   border: 1px solid var(--border-gold);
   box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.15);
-  transition: transform 0.4s ease;
-}
-
-.portrait-container:hover {
-  transform: translateY(-4px) scale(1.01);
-  border-color: var(--gold-primary);
 }
 
 .freud-image {
@@ -287,7 +294,6 @@ defineEmits(['next', 'open-overview']);
   height: auto;
   display: block;
   object-fit: cover;
-  filter: contrast(1.05) brightness(0.96);
 }
 
 .portrait-overlay {
@@ -304,7 +310,7 @@ defineEmits(['next', 'open-overview']);
 }
 
 .caption-title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--gold-light);
 }
@@ -312,6 +318,7 @@ defineEmits(['next', 'open-overview']);
 .caption-sub {
   font-size: 0.85rem;
   color: var(--text-muted);
+  font-style: italic;
 }
 
 @media (max-width: 1024px) {
@@ -325,7 +332,7 @@ defineEmits(['next', 'open-overview']);
   }
   .hero-visual {
     order: -1;
-    max-width: 380px;
+    max-width: 340px;
     margin: 0 auto;
   }
 }
