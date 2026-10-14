@@ -1,0 +1,187 @@
+/* Modern Psychoanalytic Presentation Design System */
+:root {
+  --bg-primary: #080C14;
+  --bg-secondary: #0F172A;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --border-gold: rgba(212, 175, 55, 0.28);
+  --border-gold-glow: rgba(212, 175, 55, 0.55);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+
+  --gold-primary: #D4AF37;
+  --gold-light: #F4E4BA;
+  --gold-dark: #997B24;
+  --amber-glow: rgba(212, 175, 55, 0.15);
+
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  --text-gold: #E6C875;
+
+  --accent-crimson: #EF4444;
+  --accent-emerald: #10B981;
+  --accent-blue: #3B82F6;
+  --accent-purple: #8B5CF6;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  --shadow-gold: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
+  --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.06) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(30, 58, 138, 0.12) 0%, transparent 50%),
+              var(--bg-primary);
+}
+
+/* Typography Helpers */
+.font-serif { font-family: var(--font-serif); }
+.font-display { font-family: var(--font-display); }
+.font-sans { font-family: var(--font-sans); }
+.font-mono { font-family: var(--font-mono); }
+
+.text-gold { color: var(--gold-primary); }
+.text-gold-light { color: var(--gold-light); }
+.text-muted { color: var(--text-muted); }
+.text-dim { color: var(--text-dim); }
+
+/* Glassmorphism Cards */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--border-gold);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(212, 175, 55, 0.45); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Custom Scrollbars for notes and glossary */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+/* Laser Pointer Effect */
+.laser-spot {
+  pointer-events: none;
+  position: fixed;
+  z-index: 99999;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FF3B30;
+  box-shadow: 0 0 15px #FF3B30, 0 0 30px #FF3B30, 0 0 45px rgba(255, 59, 48, 0.8);
+  transform: translate(-50%, -50%);
+  transition: width 0.1s, height 0.1s;
+}
+
+/* Print / PDF Export Stylesheet */
+@media print {
+  html, body {
+    overflow: visible !important;
+    height: auto !important;
+    background: #080C14 !important;
+    color: #F1F5F9 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #app {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .slide-container-print {
+    display: block !important;
+    page-break-after: always;
+    break-after: page;
+    min-height: 100vh;
+    padding: 2.5rem !important;
+    box-sizing: border-box;
+  }
+}
