@@ -2,14 +2,22 @@
   <div class="slide-breakdown animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">05 · El Giro Inesperado</span>
+        <span class="glass-pill">Diapositiva 06</span>
         <span class="category-tag">Conferencia 27 · págs. 399–401</span>
       </div>
       <h2 class="slide-title font-display">
-        La Crisis Clínica: <span class="text-gold">Del Amor al Silencio</span>
+        El Asombro Clínico: <span class="text-gold">La Irrupción de la Transferencia</span>
       </h2>
       <p class="slide-subtitle">
-        El imprevisto que desconcertó a Freud: cuando todo parecía ir perfecto...
+        «Creíamos haber racionalizado la situación como un problema aritmético; y hete aquí que se filtró algo imprevisto...»
+      </p>
+    </div>
+
+    <!-- Epistemological Break Context -->
+    <div class="break-context glass-panel">
+      <div class="context-label font-display">LA FRACTURA DEL CÁLCULO RACIONAL (pág. 399)</div>
+      <p class="context-body font-serif">
+        Freud relata el desconcierto que vivieron los primeros psicoanalistas. Parecía que la técnica operaba con exactitud matemática: se buscaban recuerdos, se interpretaban resistencias y los síntomas cedían. De pronto, en todos los pacientes histéricos y obsesivos sin excepción, sobrevino un comportamiento anómalo que amenazaba con liquidar la terapia:
       </p>
     </div>
 
@@ -17,52 +25,46 @@
     <div class="stages-grid">
       <!-- Stage 1: The Honeymoon -->
       <div class="stage-card glass-panel honeymoon-card">
-        <div class="stage-badge badge-green">FASE 1 · «LA LUNA DE MIEL»</div>
-        <h3 class="stage-title font-serif">Todo Parece Maravilloso</h3>
+        <div class="stage-badge badge-green font-mono">ETAPA 1 · LA COLABORACIÓN IDÍLICA</div>
+        <h3 class="stage-title font-serif">«La Primavera del Análisis»</h3>
         <ul class="stage-bullets">
           <li>
-            <span class="bullet-icon">🌸</span>
-            <span><strong>El paciente es devoto:</strong> Es amable, puntual, agradecido y halaga al médico sin parar.</span>
+            <strong>Devoción personal:</strong> El paciente se muestra extraordinariamente obsequioso, dócil y agradecido hacia la persona del analista.
           </li>
           <li>
-            <span class="bullet-icon">🗣️</span>
-            <span><strong>En casa lo confirman:</strong> «En casa no habla de otra cosa, dice que usted es un genio».</span>
+            <strong>Progreso asociativo:</strong> Asimila interpretaciones complejas con asombrosa lucidez y los síntomas remiten con rapidez visible.
           </li>
           <li>
-            <span class="bullet-icon">📈</span>
-            <span><strong>Mejoría rápida:</strong> Los síntomas parecen desaparecer como por arte de magia.</span>
+            <strong>El eco familiar:</strong> Los parientes informan complacidos: <em>«Está entusiasmado con usted, todo lo que dice es para él como una revelación... no habla de otra cosa»</em>.
           </li>
         </ul>
-        <div class="stage-footer">Parece que el caso ya está ganado... pero es una trampa.</div>
+        <div class="stage-footer">Parece un éxito rotundo, pero es el preludio de la tormenta clínica.</div>
       </div>
 
       <!-- Stage 2: The Crash -->
       <div class="stage-card glass-panel crash-card">
-        <div class="stage-badge badge-red">FASE 2 · EL FRENO DE MANO</div>
+        <div class="stage-badge badge-red font-mono">ETAPA 2 · LA CRISIS REPENTINA</div>
         <h3 class="stage-title font-serif">«Un buen día se estropea...»</h3>
         <ul class="stage-bullets">
           <li>
-            <span class="bullet-icon">🛑</span>
-            <span><strong>Mutismo repentino:</strong> El paciente se calla y jura que <em>«no se le ocurre nada»</em>.</span>
+            <strong>Parálisis y mutismo:</strong> El paciente asevera tajante que <em>«nada más se le ocurre»</em>, transgrediendo la regla fundamental de la asociación libre.
           </li>
           <li>
-            <span class="bullet-icon">👀</span>
-            <span><strong>Olvida la terapia:</strong> Ya no le interesan sus síntomas; solo le obsesiona la persona del médico.</span>
+            <strong>Olvido de la enfermedad:</strong> Sus propios conflictos patológicos dejan de importarle; toda su atención se concentra en la persona y vida privada del médico.
           </li>
           <li>
-            <span class="bullet-icon">🔥</span>
-            <span><strong>Feroz resistencia:</strong> O se declara enamorado/a locamente, o entra en desconfianza total.</span>
+            <strong>Violenta resistencia:</strong> Emerge una demanda amorosa vehemente, celos o una hostilidad suspicaz que detiene el trabajo.
           </li>
         </ul>
-        <div class="stage-footer">El tratamiento queda completamente paralizado.</div>
+        <div class="stage-footer">El tratamiento se detiene frente a una barrera infranqueable.</div>
       </div>
     </div>
 
-    <!-- The Revelation in 1 Sentence -->
+    <!-- The Freud Diagnostic Revelation -->
     <div class="revelation-box glass-panel">
-      <div class="revelation-title font-display">💡 ¿QUÉ HA OCURRIDO AQUÍ REALMENTE?</div>
+      <div class="revelation-title font-display">EL DIAGNÓSTICO DE FREUD (pág. 400)</div>
       <p class="revelation-text font-serif">
-        El paciente ha volcado sobre el médico <strong>sentimientos intensísimos (de amor o de rabia) que no son para el médico</strong>. Vienen de su pasado infantil y estaban latentes. Eso es la <strong>TRANSFERENCIA</strong>.
+        «El paciente ha transferido sobre el médico intensos sentimientos que ni la conducta de este ni la relación nacida de la cura justifican. Toda esa proclividad del afecto venía de otra parte, <strong>estaba ya preparada en el sujeto y con ocasión del análisis se transfirió sobre el médico</strong>.»
       </p>
     </div>
   </div>
@@ -82,7 +84,7 @@
 }
 
 .slide-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -110,18 +112,40 @@
 .slide-subtitle {
   font-size: 1rem;
   color: var(--text-muted);
+  font-style: italic;
+}
+
+.break-context {
+  padding: 0.75rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border-gold);
+  margin-bottom: 0.8rem;
+}
+
+.context-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.context-body {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.4;
 }
 
 .stages-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 1.4rem;
+  margin-bottom: 0.8rem;
   flex-grow: 1;
 }
 
 .stage-card {
-  padding: 1.3rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-subtle);
@@ -129,87 +153,80 @@
 }
 
 .honeymoon-card {
-  background: rgba(16, 185, 129, 0.05);
+  background: rgba(16, 185, 129, 0.04);
   border-top: 3px solid #10B981;
 }
 
 .crash-card {
-  background: rgba(239, 68, 68, 0.05);
+  background: rgba(239, 68, 68, 0.04);
   border-top: 3px solid #EF4444;
 }
 
 .stage-badge {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   padding: 0.2rem 0.6rem;
   border-radius: 9999px;
   width: fit-content;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .badge-green { background: rgba(16, 185, 129, 0.2); color: #34D399; }
 .badge-red { background: rgba(239, 68, 68, 0.2); color: #F87171; }
 
 .stage-title {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   color: #FFFFFF;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .stage-bullets {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.6rem;
   flex-grow: 1;
 }
 
 .stage-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
-.bullet-icon {
-  font-size: 1rem;
-  margin-top: 0.1rem;
-  flex-shrink: 0;
-}
-
 .stage-bullets strong {
   color: #FFFFFF;
+  display: block;
+  margin-bottom: 0.1rem;
 }
 
 .stage-footer {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-dim);
   font-style: italic;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 0.5rem;
+  padding-top: 0.4rem;
   margin-top: 0.6rem;
 }
 
 .revelation-box {
-  padding: 1rem 1.6rem;
+  padding: 0.85rem 1.4rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
 .revelation-title {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   color: var(--gold-primary);
   letter-spacing: 0.08em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .revelation-text {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #F8FAFC;
   line-height: 1.45;
 }

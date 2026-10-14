@@ -2,69 +2,77 @@
   <div class="slide-dilemma animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">01 · Punto de Partida</span>
+        <span class="glass-pill">Diapositiva 02</span>
         <span class="category-tag">Conferencia 27 · págs. 392–394</span>
       </div>
       <h2 class="slide-title font-display">
-        ¿Por qué la Terapia no es <span class="text-gold">Magia?</span>
+        El Dilema Terapéutico y los <span class="text-gold">Cuatro Límites</span>
       </h2>
       <p class="slide-subtitle">
-        Freud se pregunta: ¿Dónde puede intervenir realmente un tratamiento psicológico?
+        ¿Dónde hay espacio legítimo para una intervención terapéutica en la contracción de la neurosis?
       </p>
     </div>
 
-    <!-- 4 Clear Cards with Icons -->
+    <!-- Clinical Context Banner -->
+    <div class="context-banner glass-panel">
+      <div class="context-tag font-display">EL PLANTEAMIENTO DE FREUD</div>
+      <p class="context-desc font-serif">
+        Al cierre de sus coloquios sobre la formación de síntomas, Freud anticipa la expectativa de sus oyentes: esperan un método curativo todopoderoso. Sin embargo, para evitar ilusiones falsas, somete a examen cuatro factores causales y delimita qué está fuera del alcance de la medicina anímica:
+      </p>
+    </div>
+
+    <!-- 4 Refined Analytical Cards -->
     <div class="limits-grid">
       <div class="limit-card glass-panel">
-        <div class="limit-header">
-          <span class="limit-icon">🧬</span>
-          <span class="limit-badge badge-gray">Inmodificable</span>
+        <div class="limit-top">
+          <span class="limit-roman font-mono">I</span>
+          <span class="limit-badge badge-gray">Factor Constitucional</span>
         </div>
-        <h3 class="limit-title font-serif">1. La Genética y Herencia</h3>
-        <p class="limit-desc">
-          Viene de nacimiento. Es el límite biológico del cuerpo; ninguna palabra o terapia puede cambiar los genes.
+        <h4 class="limit-heading font-serif">Disposición Hereditaria</h4>
+        <p class="limit-text">
+          Es el límite biológico e innato del sujeto. Freud reconoce sentir su enorme poder en cada paciente, pero constata con realismo que ninguna intervención psicológica puede alterar la carga hereditaria.
         </p>
       </div>
 
       <div class="limit-card glass-panel">
-        <div class="limit-header">
-          <span class="limit-icon">👶</span>
-          <span class="limit-badge badge-blue">Hecho Consumado</span>
+        <div class="limit-top">
+          <span class="limit-roman font-mono">II</span>
+          <span class="limit-badge badge-blue">Determinismo Histórico</span>
         </div>
-        <h3 class="limit-title font-serif">2. La Infancia Pasada</h3>
-        <p class="limit-desc">
-          Las vivencias traumáticas tempranas ya ocurrieron. No podemos viajar al pasado para hacer que no existieran.
+        <h4 class="limit-heading font-serif">Vivencias Infantiles</h4>
+        <p class="limit-text">
+          Las huellas mnémicas tempranas son los cimientos del síntoma. Sin embargo, pertenecen al pasado consumado: ningún tratamiento puede retroceder en el tiempo para impedir que hayan acontecido.
         </p>
       </div>
 
       <div class="limit-card glass-panel">
-        <div class="limit-header">
-          <span class="limit-icon">🏚️</span>
+        <div class="limit-top">
+          <span class="limit-roman font-mono">III</span>
           <span class="limit-badge badge-purple">Realidad Externa</span>
         </div>
-        <h3 class="limit-title font-serif">3. La Pobreza o Mala Suerte</h3>
-        <p class="limit-desc">
-          El terapeuta no es un rey mago: no regala dinero, trabajo ni soluciona mágicamente los problemas económicos.
+        <h4 class="limit-heading font-serif">Frustración Social y Pobreza</h4>
+        <p class="limit-text">
+          Desamparo material, infortunios matrimoniales y miseria. Freud ironiza: los médicos no son el emperador José II repartiendo favores milagrosos; el psicoanálisis no es beneficencia social.
         </p>
       </div>
 
       <div class="limit-card glass-panel">
-        <div class="limit-header">
-          <span class="limit-icon">⚖️</span>
-          <span class="limit-badge badge-rose">Falso Mito</span>
+        <div class="limit-top">
+          <span class="limit-roman font-mono">IV</span>
+          <span class="limit-badge badge-rose">Prejuicio Desmentido</span>
         </div>
-        <h3 class="limit-title font-serif">4. El Mito del Sexo Libre</h3>
-        <p class="limit-desc">
-          El psicoanálisis <strong>NO</strong> receta libertinaje sexual ni actúa como guía moral. No le dice al paciente qué hacer con su vida.
+        <h4 class="limit-heading font-serif">La Moral y el «Goce Sexual»</h4>
+        <p class="limit-text">
+          Freud refuta el falso reproche de que el análisis incita al libertinaje. En el neurótico se libra una batalla entre pulsión y represión; empujarlo al desenfreno no cura el conflicto interior.
         </p>
       </div>
     </div>
 
-    <!-- The Punchy Conclusion in Plain Spanish -->
-    <div class="conclusion-box glass-panel">
-      <div class="conclusion-badge font-display">💡 ENTONCES, ¿EN QUÉ CONSISTE LA TERAPIA?</div>
-      <p class="conclusion-text font-serif">
-        La terapia no cambia el mundo exterior ni borra el pasado. Su único objetivo es <strong>hacer consciente lo reprimido</strong> para que el paciente aprenda a <strong>confesarse la verdad a sí mismo</strong> y tome decisiones libres y autónomas.
+    <!-- The Technical Consequence -->
+    <div class="consequence-box glass-panel">
+      <div class="consequence-label font-display">LA VERDADERA TAREA DEL ANALISTA (pág. 395)</div>
+      <p class="consequence-text font-serif">
+        Rehusando convertirse en mentor moral, el analista opera sobre un único terreno: <strong>hacer consciente lo reprimido</strong> para que el paciente aprenda a <strong>autoconfesarse la verdad</strong> y adquiera la autonomía necesaria para resolver su conflicto vital.
       </p>
     </div>
   </div>
@@ -84,7 +92,7 @@
 }
 
 .slide-header {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .header-badge-row {
@@ -114,18 +122,41 @@
   color: var(--text-muted);
 }
 
+.context-banner {
+  padding: 0.8rem 1.3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border-gold);
+  margin-bottom: 1rem;
+}
+
+.context-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+}
+
+.context-desc {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.45;
+}
+
 .limits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-  margin-bottom: 1.4rem;
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .limit-card {
-  padding: 1.2rem;
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -134,23 +165,26 @@
   border-color: var(--gold-primary);
 }
 
-.limit-header {
+.limit-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
-.limit-icon {
-  font-size: 1.8rem;
+.limit-roman {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--gold-primary);
 }
 
 .limit-badge {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0.2rem 0.5rem;
   border-radius: 9999px;
+  letter-spacing: 0.04em;
 }
 
 .badge-gray { background: rgba(148, 163, 184, 0.15); color: #CBD5E1; }
@@ -158,45 +192,41 @@
 .badge-purple { background: rgba(168, 85, 247, 0.15); color: #D8B4FE; }
 .badge-rose { background: rgba(244, 63, 94, 0.15); color: #FDA4AF; }
 
-.limit-title {
+.limit-heading {
   font-size: 1.15rem;
   color: #FFFFFF;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   line-height: 1.25;
 }
 
-.limit-desc {
-  font-size: 0.88rem;
+.limit-text {
+  font-size: 0.85rem;
   line-height: 1.45;
   color: #CBD5E1;
 }
 
-.limit-desc strong {
-  color: var(--gold-light);
-}
-
-.conclusion-box {
-  padding: 1.1rem 1.6rem;
+.consequence-box {
+  padding: 0.9rem 1.4rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
-.conclusion-badge {
-  font-size: 0.78rem;
+.consequence-label {
+  font-size: 0.72rem;
   font-weight: 800;
   color: var(--gold-primary);
   letter-spacing: 0.08em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
-.conclusion-text {
-  font-size: 1.1rem;
+.consequence-text {
+  font-size: 1rem;
   color: #F8FAFC;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
-.conclusion-text strong {
+.consequence-text strong {
   color: var(--gold-light);
 }
 

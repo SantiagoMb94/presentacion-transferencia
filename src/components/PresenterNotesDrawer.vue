@@ -13,7 +13,10 @@
       <div class="drawer-body">
         <!-- Time Badge -->
         <div class="time-box">
-          <span class="time-icon">⏱️</span>
+          <svg class="time-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
           <span class="time-text">Tiempo estimado de exposición: <strong>{{ currentSlide.speakerNotes?.timeEstimate || '3-4 min' }}</strong></span>
         </div>
 
@@ -142,6 +145,13 @@ defineEmits(['close']);
   font-size: 0.82rem;
   color: var(--gold-light);
   border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.time-svg-icon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold-primary);
+  flex-shrink: 0;
 }
 
 .note-section {

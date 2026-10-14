@@ -1,53 +1,64 @@
 <template>
   <div class="hero-slide animate-fade-in">
     <div class="hero-grid">
-      <!-- Left Column: Title & Key Message -->
+      <!-- Left Column: Title & Key Context -->
       <div class="hero-content">
         <div class="badge-row">
           <span class="glass-pill">
-            <span class="pulse-dot"></span>
-            Sigmund Freud · 27ª Conferencia
+            <span class="crest-symbol">§</span>
+            Sigmund Freud · Conferencia 27
           </span>
           <span class="glass-pill tag-pill">
-            Psicoanálisis Clínico
+            Obras Completas · Tomo XVI (Amorrortu)
           </span>
         </div>
 
         <h1 class="hero-title font-display">
           La <span class="text-gold-gradient">Transferencia</span>
-          <span class="subtitle-block font-serif">De mayor obstáculo al motor de la curación</span>
+          <span class="subtitle-block font-serif">De la resistencia más temible al instrumento soberano de la curación</span>
         </h1>
 
-        <!-- The Big Idea in Plain Spanish -->
-        <div class="big-idea-card glass-panel">
-          <div class="idea-header font-display">
-            <span class="idea-sparkle">💡</span> LA IDEA CENTRAL EN 1 FRASE:
+        <!-- Context & Clinical Significance -->
+        <div class="context-card glass-panel">
+          <div class="context-header font-display">
+            <span class="header-indicator">CONTEXTO HISTÓRICO Y CLÍNICO</span>
           </div>
-          <p class="idea-text font-serif">
-            El paciente no recuerda su pasado doloroso: <strong>lo revive y actúa en vivo con el terapeuta</strong> (enamorándose, enojándose o callando). La genialidad de Freud fue usar esa repetición para curarlo.
+          <p class="context-text font-serif">
+            Hacia el final de sus conferencias universitarias en Viena (1916–1917), Freud aborda por primera vez ante el público médico la <strong>terapia psicoanalítica</strong>. En ella revela el hallazgo que transformó el tratamiento: el paciente no recuerda sus traumas infantiles con palabras, sino que <strong>los revive y actúa en tiempo real sobre la persona del analista</strong>.
           </p>
         </div>
 
-        <!-- 3 Quick Takeaways -->
-        <div class="quick-pills-row">
-          <div class="quick-pill">
-            <span class="pill-emoji">🎯</span>
-            <span><strong>Qué es:</strong> Repetir en el presente afectos del pasado</span>
+        <!-- 3 Core Foundations -->
+        <div class="foundations-grid">
+          <div class="foundation-item">
+            <div class="item-marker font-mono">01</div>
+            <div class="item-body">
+              <div class="item-title">El Fenómeno Ineludible</div>
+              <p class="item-desc">El paciente no rememora su pasado reprimido: lo actúa y transfiere sobre la persona del médico.</p>
+            </div>
           </div>
-          <div class="quick-pill">
-            <span class="pill-emoji">⚡</span>
-            <span><strong>El peligro:</strong> Puede frenar o sabotear la terapia</span>
+
+          <div class="foundation-item">
+            <div class="item-marker font-mono">02</div>
+            <div class="item-body">
+              <div class="item-title">La Mayor Resistencia</div>
+              <p class="item-desc">Al irrumpir, amenaza con paralizar la cura: surge como reclamo amoroso ciego o abierta hostilidad.</p>
+            </div>
           </div>
-          <div class="quick-pill">
-            <span class="pill-emoji">🔑</span>
-            <span><strong>La cura:</strong> Convertir la repetición en recuerdo</span>
+
+          <div class="foundation-item">
+            <div class="item-marker font-mono">03</div>
+            <div class="item-body">
+              <div class="item-title">El Instrumento Soberano</div>
+              <p class="item-desc">Al interpretar el afecto, la repetición se muda en recuerdo consciente y emancipa al sujeto.</p>
+            </div>
           </div>
         </div>
 
         <!-- Action Bar -->
         <div class="hero-actions">
           <button class="primary-btn" @click="$emit('next')">
-            <span>Comenzar Exposición</span>
+            <span>Iniciar Exposición</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -58,12 +69,12 @@
               <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
               <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
             </svg>
-            <span>Ver Índice Rápido</span>
+            <span>Ver Índice Temático (14 Diapositivas)</span>
           </button>
         </div>
 
         <div class="quick-shortcuts-hint">
-          <span>Usa <kbd>→</kbd> para avanzar · <kbd>F</kbd> Pantalla completa · <kbd>N</kbd> Notas para quien expone</span>
+          <span>Avanzar: <kbd>→</kbd> o <kbd>Espacio</kbd> · Pantalla completa: <kbd>F</kbd> · Notas de exposición: <kbd>N</kbd></span>
         </div>
       </div>
 
@@ -77,8 +88,8 @@
           />
           <div class="portrait-overlay"></div>
           <div class="portrait-caption">
-            <div class="caption-title font-display">Sigmund Freud</div>
-            <div class="caption-sub">«En la terapia reside toda la posibilidad del psicoanálisis»</div>
+            <div class="caption-title font-display">Sigmund Freud (1856–1939)</div>
+            <div class="caption-sub font-serif">«En la terapia reside toda la posibilidad de cultivar el psicoanálisis» (pág. 392)</div>
           </div>
         </div>
       </div>
@@ -102,7 +113,7 @@ defineEmits(['next', 'open-overview']);
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.25fr 0.75fr;
   gap: 3rem;
   max-width: 1350px;
   width: 100%;
@@ -112,25 +123,21 @@ defineEmits(['next', 'open-overview']);
 .badge-row {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-.pulse-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--gold-primary);
-  display: inline-block;
-  box-shadow: 0 0 8px var(--gold-primary);
-  animation: pulseGold 2s infinite;
+.crest-symbol {
+  color: var(--gold-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-size: clamp(2.3rem, 3.8vw, 3.4rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.12;
   color: #FFFFFF;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
 }
 
 .text-gold-gradient {
@@ -141,73 +148,84 @@ defineEmits(['next', 'open-overview']);
 
 .subtitle-block {
   display: block;
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
   font-weight: 400;
   color: var(--gold-light);
-  margin-top: 0.4rem;
+  margin-top: 0.35rem;
   font-style: italic;
 }
 
-.big-idea-card {
-  padding: 1.1rem 1.4rem;
-  background: rgba(212, 175, 55, 0.08);
+.context-card {
+  padding: 1rem 1.4rem;
+  background: rgba(212, 175, 55, 0.06);
   border-left: 3px solid var(--gold-primary);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
 }
 
-.idea-header {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--gold-primary);
-  letter-spacing: 0.08em;
+.context-header {
   margin-bottom: 0.3rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
-.idea-text {
-  font-size: 1.1rem;
+.header-indicator {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--gold-primary);
+}
+
+.context-text {
+  font-size: 1.05rem;
   line-height: 1.45;
-  color: #F8FAFC;
+  color: #E2E8F0;
 }
 
-.idea-text strong {
-  color: var(--gold-light);
-}
-
-.quick-pills-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.quick-pill {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.92rem;
-  color: #CBD5E1;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 0.45rem 0.8rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.quick-pill strong {
+.context-text strong {
   color: #FFFFFF;
 }
 
-.pill-emoji {
-  font-size: 1rem;
+.foundations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.foundation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.6rem 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+}
+
+.item-marker {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  opacity: 0.8;
+  margin-top: 0.1rem;
+}
+
+.item-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.15rem;
+}
+
+.item-desc {
+  font-size: 0.78rem;
+  color: #94A3B8;
+  line-height: 1.35;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   flex-wrap: wrap;
 }
 
@@ -215,11 +233,11 @@ defineEmits(['next', 'open-overview']);
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 0.85rem 1.8rem;
+  padding: 0.8rem 1.8rem;
   background: linear-gradient(135deg, #D4AF37 0%, #B89220 100%);
   color: #080C14;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.95rem;
   border: none;
   border-radius: var(--radius-md);
   cursor: pointer;
@@ -237,12 +255,12 @@ defineEmits(['next', 'open-overview']);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.85rem 1.4rem;
+  padding: 0.8rem 1.4rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-gold);
   color: var(--text-main);
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.25s ease;
@@ -255,8 +273,8 @@ defineEmits(['next', 'open-overview']);
 }
 
 .btn-icon {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
 }
 
 .quick-shortcuts-hint {
@@ -282,7 +300,7 @@ defineEmits(['next', 'open-overview']);
 .portrait-container {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 440px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   border: 1px solid var(--border-gold);
@@ -310,7 +328,7 @@ defineEmits(['next', 'open-overview']);
 }
 
 .caption-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--gold-light);
 }
@@ -319,12 +337,16 @@ defineEmits(['next', 'open-overview']);
   font-size: 0.85rem;
   color: var(--text-muted);
   font-style: italic;
+  margin-top: 0.2rem;
 }
 
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  .foundations-grid {
+    grid-template-columns: 1fr;
   }
   .hero-slide {
     padding: 1.5rem;
@@ -332,7 +354,7 @@ defineEmits(['next', 'open-overview']);
   }
   .hero-visual {
     order: -1;
-    max-width: 340px;
+    max-width: 320px;
     margin: 0 auto;
   }
 }

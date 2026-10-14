@@ -2,70 +2,78 @@
   <div class="slide-typology animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">06 · Clasificación Clínica</span>
+        <span class="glass-pill">Diapositiva 07</span>
         <span class="category-tag">Conferencia 27 · págs. 401–403</span>
       </div>
       <h2 class="slide-title font-display">
-        Las 3 Caras de la <span class="text-gold">Transferencia</span>
+        Las Tres Modalidades de la <span class="text-gold">Transferencia</span>
       </h2>
       <p class="slide-subtitle">
-        El afecto del paciente hacia el terapeuta adopta tres formas muy distintas:
+        La investidura afectiva proyectada sobre el analista se manifiesta bajo tres formas clínicas:
       </p>
     </div>
 
-    <!-- 3 Simple Type Cards -->
+    <!-- Context Banner -->
+    <div class="context-banner glass-panel">
+      <div class="context-label font-display">LA DIFERENCIACIÓN CLÍNICA DE FREUD</div>
+      <p class="context-text font-serif">
+        Freud advierte que la transferencia no es un fenómeno uniforme. Los componentes de la libido infantil pueden arribar a la sesión bajo ropajes sublimes de amistad, pasiones amorosas desbordadas o rebeliones hostiles:
+      </p>
+    </div>
+
+    <!-- 3 Refined Analytical Cards -->
     <div class="types-grid">
       <!-- Type 1: Tierna / Sublimada -->
       <div class="type-card glass-panel type-tender">
         <div class="type-header">
-          <span class="type-icon">🤝</span>
-          <span class="type-badge badge-green">EL MOTOR DE LA CURA</span>
+          <span class="type-roman font-mono">I</span>
+          <span class="type-badge badge-green font-mono">MOTOR DE LA CURA</span>
         </div>
-        <h3 class="type-title font-serif">1. Afecto de Confianza</h3>
-        <p class="type-desc font-serif">«Transferencia Positiva Tierna»</p>
-        <ul class="type-traits">
-          <li><strong>Qué siente:</strong> Cariño sincero, respeto, admiración intelectual y simpatía.</li>
-          <li><strong>Efecto en la sesión:</strong> El paciente confía, escucha las interpretaciones y avanza con ganas.</li>
-          <li><strong>Veredicto:</strong> Es la mejor aliada del tratamiento.</li>
+        <h4 class="type-title font-serif">Positiva Tierna (Sublimada)</h4>
+        <div class="type-sub">Componentes libidinales atenuados</div>
+        <ul class="type-points">
+          <li><strong>Manifestación:</strong> Sentimientos de estima, respeto intelectual, confianza y amistad idealizada.</li>
+          <li><strong>Efecto clínico:</strong> Presta al analista la autoridad necesaria para que sus interpretaciones sean asimiladas.</li>
+          <li><strong>Rol en la cura:</strong> Es la gran aliada del tratamiento mientras no degenere en pasión ciega.</li>
         </ul>
       </div>
 
       <!-- Type 2: Erótica / Pasional -->
       <div class="type-card glass-panel type-erotic">
         <div class="type-header">
-          <span class="type-icon">🔥</span>
-          <span class="type-badge badge-red">PELIGRO / RESISTENCIA</span>
+          <span class="type-roman font-mono">II</span>
+          <span class="type-badge badge-red font-mono">RESISTENCIA SEVERA</span>
         </div>
-        <h3 class="type-title font-serif">2. Enamoramiento Ciego</h3>
-        <p class="type-desc font-serif">«Transferencia Positiva Erótica»</p>
-        <ul class="type-traits">
-          <li><strong>Qué siente:</strong> Pasión desbordada, reclamos de amor carnal, celos y exigencia de exclusividad.</li>
-          <li><strong>Efecto en la sesión:</strong> Ya no le interesa curarse; solo busca ser amado/a por el médico.</li>
-          <li><strong>Veredicto:</strong> Se convierte en la peor resistencia.</li>
+        <h4 class="type-title font-serif">Positiva Erótica (Pasional)</h4>
+        <div class="type-sub">Demanda amorosa no desexualizada</div>
+        <ul class="type-points">
+          <li><strong>Manifestación:</strong> Reclamos vehementes de correspondencia amorosa, celos y exigencia de exclusividad.</li>
+          <li><strong>Efecto clínico:</strong> El paciente renuncia al interés por sus síntomas y pretende convertir la cura en romance.</li>
+          <li><strong>Rol en la cura:</strong> Una de las mayores amenazas; sustituye el trabajo de recordar por el reclamo en acto.</li>
         </ul>
       </div>
 
       <!-- Type 3: Negativa / Hostil -->
       <div class="type-card glass-panel type-hostile">
         <div class="type-header">
-          <span class="type-icon">⚡</span>
-          <span class="type-badge badge-amber">REBELDÍA / SUSPICACIA</span>
+          <span class="type-roman font-mono">III</span>
+          <span class="type-badge badge-amber font-mono">AMBIVALENCIA AFECTIVA</span>
         </div>
-        <h3 class="type-title font-serif">3. Hostilidad y Desacato</h3>
-        <p class="type-desc font-serif">«Transferencia Negativa»</p>
-        <ul class="type-traits">
-          <li><strong>Qué siente:</strong> Encono, reproches, desconfianza continua y ganas de desobedecer las reglas.</li>
-          <li><strong>Efecto en la sesión:</strong> Pone en duda todo lo que dice el terapeuta.</li>
-          <li><strong>Veredicto:</strong> Refleja la ambivalencia (el odio es amor reprimido).</li>
+        <h4 class="type-title font-serif">Negativa (Hostil)</h4>
+        <div class="type-sub">Sentimientos de desacato y desconfianza</div>
+        <ul class="type-points">
+          <li><strong>Manifestación:</strong> Suspicacia, encono, reproches constantes y rebelión contra las reglas del encuadre.</li>
+          <li><strong>Efecto clínico:</strong> El desacato manifiesta la misma dependencia psíquica que la sumisión, pero de signo invertido.</li>
+          <li><strong>Rol en la cura:</strong> Refleja la ambivalencia primordial: el odio y el amor coexisten hacia el mismo objeto.</li>
         </ul>
       </div>
     </div>
 
-    <!-- Takeaway in 1 Line -->
-    <div class="gender-note glass-panel">
-      <span class="note-icon">💡</span>
-      <span class="note-text font-serif">
-        <strong>Regla de Freud:</strong> El paciente no se enamora ni se enfurece por cómo es el terapeuta en la vida real. Está repitiendo en el diván el mismo patrón de amor u odio con el que se vinculó con sus padres en la niñez.
+    <!-- Takeaway in Context -->
+    <div class="typology-footer glass-panel">
+      <span class="footer-label font-display">UNIVERSALIDAD DEL FENÓMENO (pág. 402):</span>
+      <span class="footer-desc font-serif">
+        La transferencia no depende del atractivo físico ni de la edad del médico: se repite idéntica con ancianos, jóvenes, hombres y mujeres. Esto demuestra con rigor científico que su fuerza proviene de las fijaciones arcaicas del propio paciente.
       </span>
     </div>
   </div>
@@ -85,7 +93,7 @@
 }
 
 .slide-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -115,11 +123,32 @@
   color: var(--text-muted);
 }
 
+.context-banner {
+  padding: 0.75rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border-gold);
+  margin-bottom: 0.8rem;
+}
+
+.context-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.context-text {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.4;
+}
+
 .types-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   flex-grow: 1;
 }
 
@@ -144,19 +173,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-.type-icon {
-  font-size: 1.8rem;
+.type-roman {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--gold-primary);
 }
 
 .type-badge {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 800;
   padding: 0.2rem 0.5rem;
   border-radius: 9999px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 .badge-green { background: rgba(16, 185, 129, 0.2); color: #34D399; }
@@ -164,19 +195,19 @@
 .badge-amber { background: rgba(245, 158, 11, 0.2); color: #FBBF24; }
 
 .type-title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #FFFFFF;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 
-.type-desc {
-  font-size: 0.85rem;
+.type-sub {
+  font-size: 0.8rem;
   color: var(--gold-light);
   font-style: italic;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 
-.type-traits {
+.type-points {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -186,11 +217,11 @@
   line-height: 1.4;
 }
 
-.type-traits strong {
+.type-points strong {
   color: #FFFFFF;
 }
 
-.gender-note {
+.typology-footer {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -200,19 +231,18 @@
   margin-top: auto;
 }
 
-.note-icon {
-  font-size: 1.2rem;
+.footer-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
   flex-shrink: 0;
 }
 
-.note-text {
-  font-size: 0.95rem;
+.footer-desc {
+  font-size: 0.92rem;
   color: #F8FAFC;
   line-height: 1.4;
-}
-
-.note-text strong {
-  color: var(--gold-light);
 }
 
 @media (max-width: 1024px) {

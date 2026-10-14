@@ -2,65 +2,77 @@
   <div class="slide-suggestion animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">10 · El Gran Debate</span>
+        <span class="glass-pill">Diapositiva 11</span>
         <span class="category-tag">Conferencia 27 · págs. 405–406</span>
       </div>
       <h2 class="slide-title font-display">
-        ¿Es el Psicoanálisis una simple <span class="text-gold">Sugestión?</span>
+        La Polémica Epistemológica: <span class="text-gold">Psicoanálisis vs. Sugestión</span>
       </h2>
       <p class="slide-subtitle">
-        La dura pregunta que los médicos de la época le hicieron a Sigmund Freud:
+        La réplica de Sigmund Freud a la objeción incisiva de la comunidad médica
       </p>
     </div>
 
-    <!-- The Provocative Question -->
-    <div class="question-banner glass-panel">
-      <div class="q-badge font-display">❓ LA CRÍTICA DEL AUDITORIO (pág. 406):</div>
-      <p class="q-text font-serif">
-        «Doctor Freud: si el paciente solo se cura porque confía ciegamente en usted y lo admira... ¿no es eso exactamente lo mismo que la hipnosis? <strong>¿Para qué perder meses buscando traumas del pasado si al final lo único que funciona es la sugestión?</strong>»
+    <!-- The Provocative Medical Objection -->
+    <div class="objection-card glass-panel">
+      <div class="objection-label font-display">LA ACUSACIÓN DEL AUDITORIO (pág. 406)</div>
+      <p class="objection-quote font-serif">
+        «¿Conque ha admitido finalmente que trabaja con el poder auxiliar de la sugestión como los hipnotizadores? Hace tiempo que lo sospechábamos. Pero entonces, <strong>¿para qué todo el rodeo por los recuerdos del pasado, el inconsciente y las interpretaciones si lo único eficaz sigue siendo la sugestión?</strong> ¿Por qué no aplica sugestión directa contra los síntomas como los hipnotizadores honestos?»
       </p>
     </div>
 
-    <!-- The 2 Opposite Approaches -->
+    <!-- Rigorous Comparative Matrix -->
     <div class="methods-grid">
       <!-- Method 1: Hypnosis -->
       <div class="method-card glass-panel method-hypnosis">
         <div class="method-header">
-          <span class="m-icon">🌀</span>
+          <span class="method-roman font-mono">A</span>
           <div>
-            <h4 class="m-title font-serif">La Hipnosis Clásica</h4>
-            <span class="m-sub">El camino autoritario</span>
+            <h4 class="method-title font-serif">Hipnosis Tradicional (Bernheim)</h4>
+            <span class="method-sub">La sugestión autoritaria directa</span>
           </div>
         </div>
-        <ul class="m-points">
-          <li><strong>Cómo opera:</strong> Le ordena al paciente: <em>«¡Te ordeno que no sientas más angustia!»</em>.</li>
-          <li><strong>El problema:</strong> Tapa el síntoma con la autoridad del médico, pero no quita la causa.</li>
-          <li><strong>Consecuencia:</strong> El paciente queda dependiente del hipnotizador y el síntoma vuelve a brotar.</li>
+        <ul class="method-points">
+          <li>
+            <strong>Mecanismo de acción:</strong> Ordena al síntoma desaparecer mediante el mandato vertical del médico (<em>«¡Usted ya no tiene dolor!»</em>).
+          </li>
+          <li>
+            <strong>Destino de la represión:</strong> Deja la causa inconsciente intacta; el síntoma migra o reaparece al desvanecerse el influjo del hipnotizador.
+          </li>
+          <li>
+            <strong>Vínculo subjetivo:</strong> Mantiene al paciente en una sumisión infantil y dependencia perpetua del médico.
+          </li>
         </ul>
       </div>
 
       <!-- Method 2: Psychoanalysis -->
       <div class="method-card glass-panel method-analysis">
         <div class="method-header">
-          <span class="m-icon">🛋️</span>
+          <span class="method-roman font-mono">B</span>
           <div>
-            <h4 class="m-title font-serif">El Psicoanálisis</h4>
-            <span class="m-sub">El camino de la autonomía</span>
+            <h4 class="method-title font-serif">Terapia Psicoanalítica (Freud)</h4>
+            <span class="method-sub">La sugestión transferencial como palanca de autonomía</span>
           </div>
         </div>
-        <ul class="m-points">
-          <li><strong>Cómo opera:</strong> Usa la confianza transferencial para que el paciente <em>pierda el miedo a recordar</em>.</li>
-          <li><strong>La solución:</strong> Desentierra el trauma, lo hace consciente y disuelve el conflicto desde la raíz.</li>
-          <li><strong>Consecuencia:</strong> Al final, el analista se retira y el paciente queda 100% libre e independiente.</li>
+        <ul class="method-points">
+          <li>
+            <strong>Mecanismo de acción:</strong> Descubre que la sugestión proviene de la <em>libido de objeto</em>; no prohíbe el síntoma, sino que busca su raíz histórica.
+          </li>
+          <li>
+            <strong>Destino de la represión:</strong> Vence la resistencia del Yo, eleva lo reprimido a la conciencia y resuelve el conflicto en su origen.
+          </li>
+          <li>
+            <strong>Vínculo subjetivo:</strong> Disuelve la transferencia al término de la cura: el médico se retira y el sujeto adquiere plena libertad.
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Takeaway in 1 Line -->
-    <div class="suggestion-footer glass-panel">
-      <span class="s-icon">💡</span>
-      <p class="s-text font-serif">
-        <strong>En una frase:</strong> El hipnotizador usa su poder para imponer su voluntad al paciente; el psicoanalista usa el lazo afectivo para devolverle al paciente el control de su propia vida.
+    <!-- Epistemological Synthesis -->
+    <div class="epilogue-box glass-panel">
+      <span class="epilogue-label font-display">LA RESPUESTA CULMINANTE DE FREUD (pág. 406):</span>
+      <p class="epilogue-text font-serif">
+        «Hemos abandonado la hipnosis en nuestra técnica sólo para <strong>redescubrir la sugestión bajo la forma de la trasferencia</strong>... pero con una diferencia decisiva: no la usamos para imponer nuestra voluntad al enfermo, sino para obligar al Yo a librar la batalla decisiva que cancele sus represiones.»
       </p>
     </div>
   </div>
@@ -80,7 +92,7 @@
 }
 
 .slide-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -110,42 +122,42 @@
   color: var(--text-muted);
 }
 
-.question-banner {
-  padding: 1rem 1.4rem;
+.objection-card {
+  padding: 0.85rem 1.3rem;
   background: rgba(239, 68, 68, 0.05);
   border-left: 3px solid #EF4444;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
-.q-badge {
+.objection-label {
   font-size: 0.72rem;
   font-weight: 800;
   color: #F87171;
   letter-spacing: 0.06em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
-.q-text {
-  font-size: 1.05rem;
+.objection-quote {
+  font-size: 0.98rem;
   font-style: italic;
   color: #FEE2E2;
   line-height: 1.45;
 }
 
-.q-text strong {
+.objection-quote strong {
   color: #FFFFFF;
 }
 
 .methods-grid {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
-  gap: 1.4rem;
-  margin-bottom: 1rem;
+  gap: 1.3rem;
+  margin-bottom: 0.8rem;
   flex-grow: 1;
 }
 
 .method-card {
-  padding: 1.2rem;
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-subtle);
@@ -165,62 +177,72 @@
 .method-header {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.m-icon {
-  font-size: 1.8rem;
+.method-roman {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.m-title {
-  font-size: 1.25rem;
+.method-title {
+  font-size: 1.2rem;
   color: #FFFFFF;
 }
 
-.m-sub {
+.method-sub {
   font-size: 0.75rem;
   color: var(--gold-light);
 }
 
-.m-points {
+.method-points {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  font-size: 0.88rem;
+  gap: 0.55rem;
+  font-size: 0.85rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
-.m-points strong {
+.method-points strong {
   color: #FFFFFF;
 }
 
-.suggestion-footer {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.8rem 1.4rem;
+.epilogue-box {
+  padding: 0.85rem 1.4rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
-.s-icon {
-  font-size: 1.2rem;
-  flex-shrink: 0;
+.epilogue-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
 }
 
-.s-text {
+.epilogue-text {
   font-size: 0.98rem;
   color: #F8FAFC;
   line-height: 1.4;
 }
 
-.s-text strong {
+.epilogue-text strong {
   color: var(--gold-light);
 }
 

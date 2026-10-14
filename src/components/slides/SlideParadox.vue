@@ -2,55 +2,61 @@
   <div class="slide-paradox animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">07 · La Regla de Oro</span>
+        <span class="glass-pill">Diapositiva 08</span>
         <span class="category-tag">Conferencia 27 · pág. 403</span>
       </div>
       <h2 class="slide-title font-display">
-        La Regla de Oro: <span class="text-gold">¿Qué debe hacer el Analista?</span>
+        La Regla Técnica de Oro: <span class="text-gold">Mudar la Repetición en Recuerdo</span>
       </h2>
       <p class="slide-subtitle">
-        Cuando el paciente te declara amor apasionado o rabia profunda: ¿Cómo reaccionar?
+        ¿Cómo debe actuar el analista ante las demandas amorosas u hostiles del paciente?
       </p>
     </div>
 
-    <!-- The 2 Big Traps to Avoid -->
+    <!-- Historical and Clinical Context -->
+    <div class="context-banner glass-panel">
+      <div class="context-tag font-display">EL ANTECEDENTE HISTÓRICO Y LA ÉTICA ANALÍTICA</div>
+      <p class="context-desc font-serif">
+        En los albores de la técnica, el enamoramiento transferencial aterrorizó a los primeros médicos (como a Josef Breuer en el caso de «Anna O.»). Freud comprendió que el afecto no debe eludirse con pánico ni aprovecharse con liviandad; exige una posición técnica rigurosa:
+      </p>
+    </div>
+
+    <!-- The 2 Antithetical Errors -->
     <div class="traps-grid">
       <div class="trap-card glass-panel">
-        <div class="trap-badge font-display">❌ GRAVE ERROR 1</div>
-        <h4 class="trap-title font-serif">Ceder a la Demanda Amorosa</h4>
+        <div class="trap-marker font-mono">ERROR A · LA ENTREGA</div>
+        <h4 class="trap-title font-serif">Ceder a las Demandas Amorosas</h4>
         <p class="trap-text">
-          Tener un romance o corresponder al paciente. Es una falta ética total que destruye el tratamiento y solo alimenta la enfermedad.
+          Consumar un vínculo amoroso o erótico con el paciente es una transgresión ética inadmisible. Clínicamente, constituiría una satisfacción sustitutiva que clausura el análisis y confirma la neurosis.
         </p>
       </div>
 
       <div class="trap-card glass-panel">
-        <div class="trap-badge font-display">❌ GRAVE ERROR 2</div>
+        <div class="trap-marker font-mono">ERROR B · LA CONDENA</div>
         <h4 class="trap-title font-serif">Rechazar con Indignación Moral</h4>
         <p class="trap-text">
-          Ofenderse, regañar al paciente o expulsarlo. Eso repite el mismo rechazo y castigo que el paciente sufrió en su infancia.
+          «Sería absurdo rechazarlas inamistosamente o con indignación» (pág. 403). La ofensa moralista del médico reeditaría de forma traumática el rechazo y la censura de las figuras parentales reprimidas.
         </p>
       </div>
     </div>
 
-    <!-- The Analytic Solution: The Magic Formula -->
-    <div class="solution-hero glass-panel">
-      <div class="solution-badge font-display">✅ LA FÓRMULA MAGISTRAL DE FREUD:</div>
-      <h3 class="solution-heading font-serif">
-        «Mudar la Repetición en Recuerdo»
-      </h3>
-      <p class="solution-explanation font-serif">
-        El analista le demuestra pacientemente al paciente:  
-        <span class="quote-callout">
-          «Lo que sientes hoy <strong>no es por mí</strong> ni nace de esta habitación. Estás <strong>repitiendo</strong> sin darte cuenta el amor o la rabia que sentiste en tu infancia. Vamos a recordar quién era esa persona original.»
+    <!-- The Master Analytic Solution -->
+    <div class="solution-card glass-panel">
+      <div class="solution-label font-display">LA OPERACIÓN INTERPRETATIVA FUNDAMENTAL</div>
+      <h3 class="solution-heading font-serif">«Mudar la Repetición en Recuerdo»</h3>
+      <p class="solution-text font-serif">
+        El analista demuestra al enfermo que sus intensos sentimientos <strong>no provienen de la situación presente y no valen para la persona del médico</strong>, sino que repiten afectos olvidados de su infancia temprana:
+        <span class="solution-formula">
+          «Superamos la trasferencia demostrando que el paciente actúa en el presente lo que no ha podido recordar en palabras.»
         </span>
       </p>
     </div>
 
-    <!-- The Grand Paradox Result -->
-    <div class="paradox-result glass-panel">
-      <span class="paradox-icon">🏆</span>
-      <p class="paradox-text font-serif">
-        <strong>La Gran Paradoja:</strong> La transferencia, que parecía el peligro más mortal para destruir la cura, se convierte en <strong>el mejor instrumento de ella</strong>: porque permite ver el trauma en vivo, en la sesión, para disolverlo para siempre.
+    <!-- The Climax Paradox -->
+    <div class="paradox-footer glass-panel">
+      <span class="paradox-tag font-display">LA GRAN PARADOJA FREUDIANA (pág. 403):</span>
+      <p class="paradox-quote font-serif">
+        «Y entonces la trasferencia, que en cualquier caso parecía significar la más poderosa amenaza para la cura, se convierte en el <strong>mejor instrumento de ella</strong>, con cuya ayuda pueden desplegarse los más cerrados abanicos de la vida anímica.»
       </p>
     </div>
   </div>
@@ -70,7 +76,7 @@
 }
 
 .slide-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -100,21 +106,42 @@
   color: var(--text-muted);
 }
 
+.context-banner {
+  padding: 0.75rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border-gold);
+  margin-bottom: 0.8rem;
+}
+
+.context-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.context-desc {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.4;
+}
+
 .traps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .trap-card {
   padding: 1rem 1.3rem;
   border-left: 3px solid #EF4444;
-  background: rgba(239, 68, 68, 0.05);
+  background: rgba(239, 68, 68, 0.04);
 }
 
-.trap-badge {
-  font-size: 0.72rem;
+.trap-marker {
+  font-size: 0.7rem;
   font-weight: 800;
   color: #F87171;
   letter-spacing: 0.06em;
@@ -122,26 +149,27 @@
 }
 
 .trap-title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #FFFFFF;
   margin-bottom: 0.3rem;
 }
 
 .trap-text {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
-.solution-hero {
-  padding: 1.2rem 1.6rem;
+.solution-card {
+  padding: 1.1rem 1.6rem;
   border: 1px solid var(--border-gold);
-  background: rgba(212, 175, 55, 0.08);
-  margin-bottom: 1rem;
+  background: rgba(212, 175, 55, 0.07);
+  margin-bottom: 0.8rem;
+  flex-grow: 1;
 }
 
-.solution-badge {
-  font-size: 0.78rem;
+.solution-label {
+  font-size: 0.72rem;
   font-weight: 800;
   color: #34D399;
   letter-spacing: 0.08em;
@@ -149,55 +177,54 @@
 }
 
 .solution-heading {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--gold-light);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-.solution-explanation {
-  font-size: 1.05rem;
+.solution-text {
+  font-size: 1rem;
   color: #E2E8F0;
   line-height: 1.45;
 }
 
-.quote-callout {
+.solution-formula {
   display: block;
   font-style: italic;
   color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0.6rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.5rem 0.9rem;
   border-radius: var(--radius-sm);
   border-left: 2px solid var(--gold-primary);
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
-.quote-callout strong {
-  color: var(--gold-light);
-}
-
-.paradox-result {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.paradox-footer {
   padding: 0.8rem 1.4rem;
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.25);
   margin-top: auto;
 }
 
-.paradox-icon {
-  font-size: 1.6rem;
-  flex-shrink: 0;
+.paradox-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #34D399;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.2rem;
 }
 
-.paradox-text {
-  font-size: 0.98rem;
+.paradox-quote {
+  font-size: 0.95rem;
   color: #D1FAE5;
   line-height: 1.4;
 }
 
-.paradox-text strong {
+.paradox-quote strong {
   color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 1024px) {

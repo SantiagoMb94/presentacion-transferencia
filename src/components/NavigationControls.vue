@@ -32,8 +32,16 @@
         :title="isMuted ? 'Activar Sonidos (M)' : 'Silenciar Sonidos (M)'"
         @click="$emit('toggle-audio')"
       >
-        <span class="icon-sym">{{ isMuted ? '🔇' : '🔔' }}</span>
-        <span class="btn-label">{{ isMuted ? 'Mudo' : 'Sonido' }}</span>
+        <svg v-if="!isMuted" class="nav-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <svg v-else class="nav-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <span class="btn-label">{{ isMuted ? 'Silencio' : 'Audio' }}</span>
       </button>
 
       <!-- Presenter Notes Toggle -->
@@ -43,7 +51,12 @@
         title="Notas de Orador / Ponente (N)"
         @click="$emit('toggle-notes')"
       >
-        <span class="icon-sym">🎙️</span>
+        <svg class="nav-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <line x1="12" y1="19" x2="12" y2="23"></line>
+          <line x1="8" y1="23" x2="16" y2="23"></line>
+        </svg>
         <span class="btn-label">Orador</span>
       </button>
 
@@ -260,6 +273,13 @@ function handleProgressClick(e) {
 .highlight-btn.active {
   background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(16, 185, 129, 0.25));
   border-color: #34D399;
+}
+
+.nav-svg-icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+  flex-shrink: 0;
 }
 
 .btn-laser-dot {

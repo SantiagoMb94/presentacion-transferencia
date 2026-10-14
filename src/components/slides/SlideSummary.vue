@@ -2,40 +2,41 @@
   <div class="slide-summary animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">14 · Resumen Final</span>
-        <span class="category-tag">Conclusión Magistral</span>
+        <span class="glass-pill">Diapositiva 14</span>
+        <span class="category-tag">Conclusión y Clausura</span>
+        <span class="page-pill font-mono">Conferencia 27 · págs. 392–407</span>
       </div>
       <h2 class="slide-title font-display">
-        Lo que Debes Recordar: <span class="text-gold">3 Lecciones de Oro</span>
+        Síntesis Magistral y <span class="text-gold">Tres Tesis de Clausura</span>
       </h2>
       <p class="slide-subtitle">
-        Las 3 ideas que debes llevarte de la 27ª Conferencia de Sigmund Freud:
+        Los postulados definitivos de Sigmund Freud para la técnica psicoanalítica y la ética del tratamiento:
       </p>
     </div>
 
-    <!-- 3 Big Clear Cards -->
+    <!-- 3 Big Rigorous Analytical Cards -->
     <div class="theses-grid">
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">LECCIÓN 1</div>
-        <h4 class="thesis-heading font-serif">1. La Transferencia es Inevitable</h4>
-        <p class="thesis-body">
-          No es un error del médico ni un capricho del paciente: <strong>es la enfermedad misma saliendo a la superficie</strong>. Lo que no podemos recordar, lo actuamos.
+        <div class="thesis-num font-mono">TESIS I · EL FENÓMENO CLÍNICO</div>
+        <h4 class="thesis-heading font-serif">La Inevitabilidad de la Transferencia</h4>
+        <p class="thesis-body font-serif">
+          No es un obstáculo fortuito ni una indiscreción del paciente: <strong>es la neurosis misma desplegándose en acto</strong>. Lo que no puede evocarse en el recuerdo consciente se descarga forzosamente sobre el médico, convirtiéndose en el único terreno donde el síntoma puede ser transformado.
         </p>
       </div>
 
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">LECCIÓN 2</div>
-        <h4 class="thesis-heading font-serif">2. Ni Romance ni Regaño</h4>
-        <p class="thesis-body">
-          El analista renuncia a dos tentaciones: <strong>no cede al amor</strong> y <strong>no se ofende con el odio</strong>. Su trabajo es mostrarle al paciente que está repitiendo su niñez.
+        <div class="thesis-num font-mono">TESIS II · LA POSICIÓN ÉTICA</div>
+        <h4 class="thesis-heading font-serif">Ni Consumación ni Juicio Moral</h4>
+        <p class="thesis-body font-serif">
+          El analista rehúsa los dos extremos simétricos: <strong>no cede a las demandas amorosas</strong> (lo que arruinaría la cura con una satisfacción sustitutiva) y <strong>no se ofende moralmente ante el odio</strong>. Su función soberana es interpretar para «mudar la repetición en recuerdo».
         </p>
       </div>
 
       <div class="thesis-card glass-panel">
-        <div class="thesis-num font-mono">LECCIÓN 3</div>
-        <h4 class="thesis-heading font-serif">3. La Meta es la Libertad</h4>
-        <p class="thesis-body">
-          Al resolver el conflicto con el médico, el paciente se libera de sus viejos traumas. <strong>El médico se hace a un lado</strong> y la persona vive con autonomía propia.
+        <div class="thesis-num font-mono">TESIS III · EL FIN DEL TRATAMIENTO</div>
+        <h4 class="thesis-heading font-serif">La Emancipación y la Retirada</h4>
+        <p class="thesis-body font-serif">
+          Al tramitar y disolver la neurosis artificial transferencial, el sujeto queda liberado de sus fijaciones infantiles reprimidas. El psicoanálisis no busca la servidumbre: <strong>el analista se hace a un lado</strong> y el paciente conquista su propia autonomía vital.
         </p>
       </div>
     </div>
@@ -43,29 +44,30 @@
     <!-- The Climax Freud Quote -->
     <div class="concluding-quote glass-panel">
       <p class="quote-text font-serif">
-        «El hombre que en la relación con el médico ha pasado a ser libre del efecto de sus mociones reprimidas, <strong>sigue siéndolo también en su vida propia cuando el médico se ha hecho a un lado</strong>.»
+        «El hombre que en la relación con el médico ha pasado a ser normal y libre del efecto de unas mociones reprimidas, <strong>sigue siéndolo también en su vida propia cuando el médico se ha hecho a un lado</strong>.»
       </p>
-      <div class="quote-ref font-mono">— Sigmund Freud · Conferencia 27, pág. 404</div>
+      <div class="quote-ref font-mono">— Sigmund Freud · Conferencia 27, pág. 404 (Amorrortu Editores)</div>
     </div>
 
     <!-- Presentation Action Buttons -->
-    <div class="summary-actions">
+    <div class="summary-actions no-print">
       <button class="action-btn print-btn" @click="handlePrint">
         <svg class="act-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="6 9 6 2 18 2 18 9"></polyline>
           <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
           <rect x="6" y="14" width="12" height="8"></rect>
         </svg>
-        <span>Imprimir / Guardar en PDF</span>
+        <span>Guardar en PDF / Imprimir</span>
       </button>
 
       <button class="action-btn notes-btn" @click="$emit('open-notes')">
         <svg class="act-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <line x1="12" y1="19" x2="12" y2="23"></line>
+          <line x1="8" y1="23" x2="16" y2="23"></line>
         </svg>
-        <span>Abrir Notas de Orador (🎙️)</span>
+        <span>Modo Orador / Ponente</span>
       </button>
 
       <button class="action-btn restart-btn" @click="$emit('go-first')">
@@ -73,7 +75,7 @@
           <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
           <path d="M3 3v5h5"></path>
         </svg>
-        <span>Volver a la Portada</span>
+        <span>Volver al Inicio (Portada)</span>
       </button>
     </div>
   </div>
@@ -103,6 +105,7 @@ function handlePrint() {
 
 .header-badge-row {
   display: flex;
+  align-items: center;
   gap: 0.8rem;
   margin-bottom: 0.3rem;
 }
@@ -113,6 +116,14 @@ function handlePrint() {
   text-transform: uppercase;
   color: var(--gold-primary);
   background: rgba(212, 175, 55, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.page-pill {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.04);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
 }
@@ -136,11 +147,19 @@ function handlePrint() {
 }
 
 .thesis-card {
-  padding: 1.2rem;
+  padding: 1.3rem;
   border-top: 3px solid var(--gold-primary);
   display: flex;
   flex-direction: column;
   border-radius: var(--radius-md);
+  background: rgba(14, 20, 32, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.thesis-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold-light);
 }
 
 .thesis-num {
@@ -152,15 +171,17 @@ function handlePrint() {
 }
 
 .thesis-heading {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #FFFFFF;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.25;
 }
 
 .thesis-body {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #CBD5E1;
-  line-height: 1.45;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .thesis-body strong {
@@ -168,9 +189,10 @@ function handlePrint() {
 }
 
 .concluding-quote {
-  padding: 1rem 1.6rem;
+  padding: 1.1rem 1.8rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
+  border-radius: var(--radius-sm);
   margin-bottom: 1rem;
 }
 
@@ -179,7 +201,7 @@ function handlePrint() {
   font-style: italic;
   color: var(--gold-light);
   line-height: 1.45;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 .quote-text strong {
@@ -188,7 +210,7 @@ function handlePrint() {
 
 .quote-ref {
   text-align: right;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--text-dim);
 }
 
@@ -198,13 +220,14 @@ function handlePrint() {
   align-items: center;
   flex-wrap: wrap;
   margin-top: auto;
+  padding-top: 0.5rem;
 }
 
 .action-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.65rem 1.2rem;
+  padding: 0.65rem 1.3rem;
   border-radius: var(--radius-sm);
   font-size: 0.88rem;
   font-weight: 600;
@@ -237,6 +260,7 @@ function handlePrint() {
 
 .notes-btn:hover {
   background: rgba(212, 175, 55, 0.12);
+  color: #FFFFFF;
 }
 
 .restart-btn {

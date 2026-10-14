@@ -2,14 +2,14 @@
   <div class="slide-clinical-lab animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">Conferencia 27 · Casos Prácticos</span>
-        <span class="category-tag">Laboratorio Clínico</span>
+        <span class="glass-pill">Diapositiva 12</span>
+        <span class="category-tag">Casos Clínicos · págs. 400–404</span>
       </div>
       <h2 class="slide-title font-display">
-        Laboratorio Clínico: <span class="text-gold">Dilemas Técnicos</span>
+        Laboratorio Clínico: <span class="text-gold">Tres Dilemas Técnicos</span>
       </h2>
       <p class="slide-subtitle">
-        Aplique los principios freudianos de la Conferencia 27 para resolver estas viñetas analíticas:
+        Ponga a prueba su criterio técnico analítico ante estas tres viñetas clínicas de Freud:
       </p>
     </div>
 
@@ -23,8 +23,8 @@
         @click="selectCase(idx)"
       >
         <span class="tab-badge font-mono">0{{ idx + 1 }}</span>
-        <span>{{ c.title.split(':')[0] }}</span>
-        <span v-if="caseStates[idx].solved" class="tab-check">✓</span>
+        <span>{{ c.shortName }}</span>
+        <span v-if="caseStates[idx].solved" class="tab-check font-mono">RESUELTO</span>
       </button>
     </div>
 
@@ -32,15 +32,15 @@
     <div class="vignette-card glass-panel">
       <div class="vignette-header">
         <h3 class="vignette-title font-serif">{{ activeCase.title }}</h3>
-        <span class="vignette-tag">Situación de Consultorio</span>
+        <span class="vignette-tag font-mono">SITUACIÓN EN DIVÁN</span>
       </div>
       <p class="vignette-text font-serif">
         «{{ activeCase.vignette }}»
       </p>
 
       <div class="question-prompt">
-        <span class="prompt-icon">⚖️</span>
-        <span class="prompt-text">¿Cuál debe ser la intervención del analista según la técnica freudiana?</span>
+        <span class="prompt-badge font-mono">DECISIÓN CLÍNICA</span>
+        <span class="prompt-text">¿Cuál debe ser la intervención del analista según la técnica de la Conferencia 27?</span>
       </div>
 
       <!-- Multiple Choice Options -->
@@ -61,10 +61,9 @@
       <transition name="fade">
         <div v-if="selectedOpt !== null" class="feedback-card" :class="activeOpt.isCorrect ? 'correct' : 'incorrect'">
           <div class="feedback-header">
-            <span class="feedback-icon">{{ activeOpt.isCorrect ? '✓' : '✕' }}</span>
             <span class="feedback-verdict font-display">{{ activeOpt.verdict }}</span>
           </div>
-          <p class="feedback-body">{{ activeOpt.feedback }}</p>
+          <p class="feedback-body font-serif">{{ activeOpt.feedback }}</p>
         </div>
       </transition>
     </div>
@@ -81,75 +80,78 @@ const currentCaseIndex = ref(0);
 const cases = [
   {
     id: "caso1",
-    title: "Caso A: La Declaración Intempestiva de Amor",
+    shortName: "Caso I: Amor Intempestivo",
+    title: "Caso I: La Declaración Intempestiva de Amor",
     vignette: "Una paciente interrumpe la asociación libre, se incorpora en el diván y le confiesa: 'Doctor, me he dado cuenta de que usted es el único hombre que puede hacerme feliz. Solo su correspondencia amorosa me curará; nada de lo que hablemos tiene sentido si usted no me ama'.",
     options: [
       {
         text: "Aceptar discretamente un lazo romántico fuera del consultorio para no frustrar la mejoría de la paciente.",
-        verdict: "Error Deontológico Fatal",
-        feedback: "Freud señala: Queda tajantemente excluido ceder a las demandas amorosas. Ceder consumaría una satisfacción neurótica incestuosa que destruye la cura.",
+        verdict: "Error Deontológico Inadmisible",
+        feedback: "Queda terminantemente excluido ceder a las demandas amorosas de la transferencia. Ceder consuma una satisfacción patológica sustitutiva que destruye el análisis y reedita el incesto infantil reprimido.",
         isCorrect: false
       },
       {
-        text: "Indignarse con reproche moral y expulsar a la paciente por faltar a la seriedad del contrato terapéutico.",
+        text: "Indignarse con reproche moral y expulsar a la paciente por faltar al respeto del contrato médico.",
         verdict: "Error Técnico Moralista",
-        feedback: "«Sería absurdo rechazarlas inamistosamente o con indignación». El rechazo moralista repite traumáticamente la condena represiva infantil.",
+        feedback: "Freud señala: «Sería absurdo rechazarlas inamistosamente o con indignación». El rechazo moralista del analista confirma de modo traumático la condena y el castigo que el sujeto sufrió en su infancia.",
         isCorrect: false
       },
       {
-        text: "Interpretar que su amor no nace de la persona del médico, sino que es una reedición de afectos infantiles reprimidos.",
-        verdict: "Conducta Psicoanalítica Correcta",
-        feedback: "¡Exacto! Regla de oro freudiana: se demuestra al paciente que sus sentimientos son una repetición histórica para «mudar la repetición en recuerdo».",
+        text: "Interpretar que su amor no nace de la persona del médico, sino que es una repetición histórica que debe ser recordada.",
+        verdict: "Intervención Psicoanalítica Correcta",
+        feedback: "¡Exacto! Regla técnica maestra: se demuestra al paciente que sus afectos reviven figuras primarias de su pasado para «mudar la repetición en recuerdo», transformando la resistencia en palanca curativa.",
         isCorrect: true
       }
     ]
   },
   {
     id: "caso2",
-    title: "Caso B: El Silencio Repentino («Nada más se me ocurre»)",
-    vignette: "Un paciente que venía asociando con brillante fluidez se queda callado durante diez minutos. Al ser interrogado, responde con indiferencia que su mente está completamente en blanco y que el análisis ya no le despierta interés.",
+    shortName: "Caso II: Silencio Repentino",
+    title: "Caso II: La Parálisis Asociativa («Nada más se me ocurre»)",
+    vignette: "Un paciente que venía asociando con brillante fluidez y mejoría sintomática enmudece durante varios minutos. Al preguntarle, responde con frialdad que su mente está en blanco y que el análisis ya no le interesa en lo absoluto.",
     options: [
       {
-        text: "Interpretar que la transferencia tierna se ha convertido en resistencia o que una moción erótica/hostil hacia el médico está siendo censurada.",
+        text: "Interpretar que la transferencia tierna se ha convertido en resistencia o que una moción erótica/hostil hacia el médico está siendo reprimida.",
         verdict: "Intervención Analítica Certera",
-        feedback: "¡Brillante! Freud advierte en la pág. 400: cuando el paciente transgrede la regla de decir todo aseverando que 'nada se le ocurre', es signo inequívoco de una resistencia transferencial hacia el médico.",
+        feedback: "¡Brillante! Freud enseña en la página 400: cuando un paciente suspende la regla fundamental diciendo que no tiene ocurrencias, es signo inequívoco de que algo relativo a la figura del médico lo perturba y le exige abordaje inmediato.",
         isCorrect: true
       },
       {
         text: "Dar por terminada la sesión y sugerirle que regrese la próxima semana cuando tenga pensamientos más interesantes.",
         verdict: "Abandono Técnico Inadecuado",
-        feedback: "El silencio no es vacío de pensamiento, sino el punto álgido de la resistencia que exige abordaje inmediato.",
+        feedback: "El silencio no es falta de contenido mental, sino el punto de mayor tensión de la resistencia transferencial. Abandonar la sesión confirma la censura del Yo.",
         isCorrect: false
       },
       {
-        text: "Sugerirle libros de psicología o temas intelectuales de conversación para romper el hielo.",
+        text: "Sugerirle lecturas intelectuales o temas de autoayuda para reactivar la conversación.",
         verdict: "Desvío Pedagógico Fútil",
-        feedback: "El analista rehúsa actuar como profesor o animador de charlas; intervenir así es eludir la resistencia.",
+        feedback: "El analista no es un profesor ni un animador social. Intervenir de esa manera elude el conflicto transferencial vivo en el consultorio.",
         isCorrect: false
       }
     ]
   },
   {
     id: "caso3",
-    title: "Caso C: El Paciente Paranoide Indiferente",
-    vignette: "Un paciente con delirios persecutorios complejos y altísima inteligencia asiste al tratamiento, pero escucha todas las interpretaciones con absoluto desapego y frialdad, sin manifestar afecto, interés ni devoción hacia el terapeuta.",
+    shortName: "Caso III: Paranoia Indiferente",
+    title: "Caso III: El Paciente Paranoide Indiferente",
+    vignette: "Un paciente con delirios persecutorios complejos y altísima sagacidad lógica asiste a consulta, pero escucha todas las intervenciones con absoluto desapego y frialdad, sin dirigir interés ni afecto hacia la persona del analista.",
     options: [
       {
-        text: "Multiplicar los argumentos lógicos para convencerlo intelectualmente de que sus sospechas son infundadas.",
+        text: "Multiplicar los argumentos lógicos para convencerlo dialécticamente de que sus sospechas son infundadas.",
         verdict: "Inutilidad Discursiva",
-        feedback: "Freud advierte que los argumentos racionales no operan sin investidura libidinal previa; la sagacidad dialéctica del paranoico es invulnerable a la lógica.",
+        feedback: "Freud advierte que los argumentos racionales no operan sin investidura afectiva previa; la agudeza dialéctica del paranoico desbarata cualquier intento de persuasión lógica.",
         isCorrect: false
       },
       {
-        text: "Diagnosticar una neurosis narcisista: la libido de objeto retirada al Yo bloquea la transferencia e impide la acción terapéutica.",
+        text: "Diagnosticar una neurosis narcisista: la libido de objeto retirada al Yo bloquea la transferencia e impide la acción analítica.",
         verdict: "Diagnóstico Estructural Preciso",
-        feedback: "¡Correcto! Freud concluye que en las neurosis narcisistas falta la capacidad transferencial necesaria; la indiferencia congela el mecanismo de curación.",
+        feedback: "¡Correcto! Freud postula que en las neurosis narcisistas falta la capacidad transferencial necesaria; la indiferencia glacial anula la palanca que posibilita la curación psicoanalítica clásica.",
         isCorrect: true
       },
       {
-        text: "Utilizar hipnosis directa profunda para quebrar su orgullo intelectual.",
+        text: "Utilizar hipnosis directa profunda para forzar su sumisión afectiva.",
         verdict: "Inviable",
-        feedback: "La hipnosis requiere la misma sugestionabilidad libidinal que en el narcisismo psicótico se encuentra anulada.",
+        feedback: "La hipnosis se basa en la misma sugestionabilidad libidinal que en el narcisismo psicótico se encuentra anulada.",
         isCorrect: false
       }
     ]
@@ -208,7 +210,7 @@ function getOptionClass(optIdx) {
 }
 
 .slide-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -228,7 +230,7 @@ function getOptionClass(optIdx) {
 }
 
 .slide-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -241,7 +243,7 @@ function getOptionClass(optIdx) {
 .cases-nav {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 
 .case-tab-btn {
@@ -250,12 +252,12 @@ function getOptionClass(optIdx) {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  padding: 0.6rem 1rem;
+  padding: 0.55rem 1rem;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -273,8 +275,12 @@ function getOptionClass(optIdx) {
 }
 
 .case-tab-btn.solved .tab-check {
-  color: #34D399;
+  font-size: 0.65rem;
   font-weight: 800;
+  color: #34D399;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
 }
 
 .tab-badge {
@@ -283,7 +289,7 @@ function getOptionClass(optIdx) {
 }
 
 .vignette-card {
-  padding: 1.2rem 1.6rem;
+  padding: 1.1rem 1.5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -293,28 +299,28 @@ function getOptionClass(optIdx) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .vignette-title {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   color: var(--gold-light);
 }
 
 .vignette-tag {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   color: var(--text-dim);
 }
 
 .vignette-text {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-style: italic;
   color: #F1F5F9;
-  line-height: 1.45;
-  margin-bottom: 0.8rem;
-  padding: 0.6rem 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+  padding: 0.6rem 0.9rem;
   background: rgba(255, 255, 255, 0.03);
   border-left: 3px solid var(--gold-primary);
   border-radius: var(--radius-sm);
@@ -323,25 +329,37 @@ function getOptionClass(optIdx) {
 .question-prompt {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.88rem;
-  font-weight: 700;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.prompt-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
   color: var(--gold-primary);
-  margin-bottom: 0.8rem;
+  background: rgba(212, 175, 55, 0.12);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.prompt-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 .options-list {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  margin-bottom: 0.8rem;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
 .option-btn {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.75rem 1.1rem;
+  gap: 0.8rem;
+  padding: 0.7rem 1rem;
   text-align: left;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -357,21 +375,21 @@ function getOptionClass(optIdx) {
 }
 
 .opt-letter {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.75rem;
+  font-weight: 800;
   color: var(--gold-light);
   flex-shrink: 0;
 }
 
 .opt-text {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   line-height: 1.35;
 }
 
@@ -391,7 +409,7 @@ function getOptionClass(optIdx) {
 }
 
 .feedback-card {
-  padding: 0.8rem 1.2rem;
+  padding: 0.75rem 1.1rem;
   border-radius: var(--radius-sm);
   margin-top: auto;
 }
@@ -407,30 +425,23 @@ function getOptionClass(optIdx) {
 }
 
 .feedback-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.feedback-icon {
-  font-weight: 800;
-  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .feedback-verdict {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.correct .feedback-verdict, .correct .feedback-icon { color: #34D399; }
-.incorrect .feedback-verdict, .incorrect .feedback-icon { color: #F87171; }
+.correct .feedback-verdict { color: #34D399; }
+.incorrect .feedback-verdict { color: #F87171; }
 
 .feedback-body {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: #F1F5F9;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 @media (max-width: 1024px) {

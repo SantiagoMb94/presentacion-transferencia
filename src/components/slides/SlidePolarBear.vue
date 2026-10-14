@@ -2,67 +2,79 @@
   <div class="slide-polar-bear animate-fade-in">
     <div class="slide-header">
       <div class="header-badge-row">
-        <span class="glass-pill">02 · La Metáfora de Freud</span>
+        <span class="glass-pill">Diapositiva 03</span>
         <span class="category-tag">Conferencia 27 · págs. 394–395</span>
       </div>
       <h2 class="slide-title font-display">
-        La Mente Dividida: <span class="text-gold">El Oso y la Ballena</span>
+        La Tópica del Conflicto: <span class="text-gold">El Oso Polar y la Ballena</span>
       </h2>
       <p class="slide-subtitle">
-        ¿Por qué el neurótico no puede resolver su conflicto interior por su propia cuenta?
+        ¿Por qué el neurótico no puede resolver su conflicto interior mediante la simple fuerza de voluntad?
+      </p>
+    </div>
+
+    <!-- Metapsychological Context Banner -->
+    <div class="context-banner glass-panel">
+      <div class="context-tag font-display">EL APÓLOGO FREUDIANO Y LA ESCISIÓN PSÍQUICA</div>
+      <p class="context-desc font-serif">
+        Freud advierte que el conflicto neurótico <strong>no es una disputa ordinaria</strong> entre dos ideas conscientes situadas en un mismo nivel mental. Es una contienda entre dos fuerzas que habitan sistemas psíquicos incomunicados debido a la barrera de la represión:
       </p>
     </div>
 
     <div class="polar-grid">
-      <!-- Left: Visual Illustration -->
+      <!-- Left: Visual Illustration with Classical Labels -->
       <div class="visual-panel glass-panel">
         <div class="artwork-frame">
           <img 
             src="/assets/bear_whale.jpg" 
-            alt="El Oso Polar y la Ballena"
+            alt="El Oso Polar y la Ballena en el umbral del inconsciente"
             class="artwork-img"
           />
-          <div class="label-bear font-display">🐻 LO CONSCIENTE (El Oso)</div>
-          <div class="label-barrier font-mono">──── BARRERA DE LA REPRESIÓN ────</div>
-          <div class="label-whale font-display">🐋 LO INCONSCIENTE (La Ballena)</div>
+          <div class="label-bear font-display">SISTEMA CONSCIENTE / PRECONSCIENTE (Tierra Firme)</div>
+          <div class="label-barrier font-mono">──── FRONTERA DE LA REPRESIÓN PSÍQUICA ────</div>
+          <div class="label-whale font-display">SISTEMA INCONSCIENTE REPRIMIDO (Profundidades)</div>
         </div>
       </div>
 
-      <!-- Right: Clear 3-Step Explanation -->
+      <!-- Right: Detailed Theoretical Cards -->
       <div class="explanation-panel">
-        <div class="story-card glass-panel">
-          <div class="card-step-num font-mono">01</div>
-          <div class="card-body">
-            <h4 class="card-heading font-serif">🐻 El Oso Polar (Lo Consciente)</h4>
-            <p>Es tu mente despierta, tu moral, tus buenas intenciones y lo que crees que eres. Camina sobre el hielo firme.</p>
+        <div class="concept-card glass-panel">
+          <div class="card-header">
+            <span class="card-symbol font-mono">A</span>
+            <h4 class="card-title font-serif">El Oso Polar (Lo Consciente / Preconsciente)</h4>
           </div>
+          <p class="card-text">
+            Representa las mociones anímicas que han alcanzado la luz: los ideales éticos, el pensamiento verbal estructurado y la exigencia de adaptación al principio de realidad. Camina sobre el hielo firme de la vigilia.
+          </p>
         </div>
 
-        <div class="story-card glass-panel">
-          <div class="card-step-num font-mono">02</div>
-          <div class="card-body">
-            <h4 class="card-heading font-serif">🐋 La Ballena (Lo Inconsciente)</h4>
-            <p>Son los deseos infantiles reprimidos, la rabia o la culpa que enterraste en el fondo del mar para no sufrirlos.</p>
+        <div class="concept-card glass-panel">
+          <div class="card-header">
+            <span class="card-symbol font-mono">B</span>
+            <h4 class="card-title font-serif">La Ballena (Lo Inconsciente Reprimido)</h4>
           </div>
+          <p class="card-text">
+            Representa las aspiraciones pulsionales infantiles sofocadas. Al estar excluida del lenguaje consciente, busca desesperadamente satisfacción a través de los síntomas patológicos en el abismo somático.
+          </p>
         </div>
 
-        <div class="story-card glass-panel highlight-story">
-          <div class="card-step-num font-mono">03</div>
-          <div class="card-body">
-            <h4 class="card-heading font-serif">⚡ El Problema y la Solución</h4>
-            <p class="quote-text font-serif">
-              «Son incapaces de acuerdo como el oso y la ballena: viven en mundos distintos. <strong>La única tarea de la terapia es llevarlos al mismo terreno</strong> para que puedan resolverse.»
-            </p>
+        <div class="concept-card glass-panel highlight-card">
+          <div class="card-header">
+            <span class="card-symbol font-mono">C</span>
+            <h4 class="card-title font-serif">El Encuentro Terapéutico (La Tarea Analítica)</h4>
           </div>
+          <p class="card-text font-serif">
+            «Son tan incapaces de acuerdo como el oso polar y la ballena en el apólogo. <strong>Una decisión efectiva sólo puede producirse si ambos se encuentran en el mismo terreno</strong>. Pienso que la única tarea de la terapia consiste en posibilitar esto.» (pág. 394)
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Bottom Takeaway -->
-    <div class="bear-footer glass-panel">
-      <span class="footer-icon">💡</span>
+    <!-- Takeaway Summary -->
+    <div class="takeaway-footer glass-panel">
+      <span class="footer-tag font-display">CLAVE TÉCNICA:</span>
       <span class="footer-text font-serif">
-        <strong>En palabras sencillas:</strong> No puedes curar una angustia o fobia pensando lógicamente (el oso), porque la raíz está oculta bajo el agua (la ballena). El analista debe ayudar a que la ballena salga a la luz.
+        La transferencia será precisamente el puente viviente donde la pulsión reprimida y el Yo consciente abandonan sus hábitats separados para confrontarse en presencia del analista.
       </span>
     </div>
   </div>
@@ -82,7 +94,7 @@
 }
 
 .slide-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .header-badge-row {
@@ -112,16 +124,37 @@
   color: var(--text-muted);
 }
 
+.context-banner {
+  padding: 0.7rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--border-gold);
+  margin-bottom: 0.8rem;
+}
+
+.context-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.context-desc {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.4;
+}
+
 .polar-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 1.8rem;
-  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 1.5rem;
+  margin-bottom: 0.8rem;
   flex-grow: 1;
 }
 
 .visual-panel {
-  padding: 0.8rem;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
   border-radius: var(--radius-lg);
@@ -131,7 +164,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 280px;
+  min-height: 270px;
   border-radius: var(--radius-md);
   overflow: hidden;
 }
@@ -144,14 +177,15 @@
 
 .label-bear {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  background: rgba(8, 12, 20, 0.85);
+  top: 12px;
+  left: 12px;
+  background: rgba(8, 12, 20, 0.9);
   color: #F8FAFC;
   padding: 0.3rem 0.7rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
   font-weight: 800;
+  letter-spacing: 0.05em;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -161,99 +195,110 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   color: var(--gold-primary);
-  background: rgba(8, 12, 20, 0.9);
+  background: rgba(8, 12, 20, 0.92);
   padding: 0.2rem 0;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .label-whale {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background: rgba(8, 12, 20, 0.85);
+  bottom: 12px;
+  left: 12px;
+  background: rgba(8, 12, 20, 0.9);
   color: #93C5FD;
   padding: 0.3rem 0.7rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
   font-weight: 800;
+  letter-spacing: 0.05em;
   border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .explanation-panel {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.7rem;
   justify-content: center;
 }
 
-.story-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.9rem 1.2rem;
+.concept-card {
+  padding: 0.85rem 1.1rem;
   border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
 }
 
-.card-step-num {
-  font-size: 1.1rem;
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-symbol {
+  font-size: 0.85rem;
   font-weight: 800;
   color: var(--gold-primary);
-  opacity: 0.8;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 175, 55, 0.1);
+  flex-shrink: 0;
 }
 
-.card-body h4 {
-  font-size: 1.15rem;
+.card-title {
+  font-size: 1.1rem;
   color: #FFFFFF;
-  margin-bottom: 0.2rem;
 }
 
-.card-body p {
-  font-size: 0.88rem;
+.card-text {
+  font-size: 0.85rem;
   color: #CBD5E1;
   line-height: 1.4;
 }
 
-.highlight-story {
+.highlight-card {
   border-color: var(--gold-primary);
   background: rgba(212, 175, 55, 0.07);
 }
 
-.highlight-story .quote-text {
-  font-size: 0.98rem;
-  font-style: italic;
+.highlight-card .card-text {
+  font-size: 0.95rem;
+  color: #F8FAFC;
+}
+
+.highlight-card strong {
   color: var(--gold-light);
-  line-height: 1.45;
 }
 
-.quote-text strong {
-  color: #FFFFFF;
-}
-
-.bear-footer {
+.takeaway-footer {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  padding: 0.75rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   background: rgba(212, 175, 55, 0.08);
   border-left: 3px solid var(--gold-primary);
   margin-top: auto;
 }
 
-.footer-icon {
-  font-size: 1.2rem;
+.footer-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
 }
 
 .footer-text {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: #F8FAFC;
   line-height: 1.4;
-}
-
-.footer-text strong {
-  color: var(--gold-light);
 }
 
 @media (max-width: 1024px) {
