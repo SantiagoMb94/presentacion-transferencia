@@ -36,8 +36,8 @@ onUnmounted(() => {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #FF3B30;
-  box-shadow: 0 0 12px #FF3B30, 0 0 24px #FF3B30, 0 0 40px rgba(255, 59, 48, 0.9);
+  background: #E91E63;
+  box-shadow: 0 0 12px #E91E63, 0 0 24px #E91E63, 0 0 40px rgba(233, 30, 99, 0.9);
   pointer-events: none;
   z-index: 99999;
   transform: translate(-50%, -50%);

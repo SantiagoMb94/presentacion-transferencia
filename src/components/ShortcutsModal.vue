@@ -38,7 +38,7 @@ const shortcuts = [
   { keys: ['→', 'Espacio', 'AvPág'], action: 'Avanzar a la siguiente diapositiva' },
   { keys: ['←', 'Retroceso', 'RePág'], action: 'Retroceder a la diapositiva anterior' },
   { keys: ['F'], action: 'Alternar modo Pantalla Completa (Presentación)' },
-  { keys: ['N'], action: 'Abrir / Cerrar Notas de Orador (Modo Ponente)' },
+  { keys: ['N'], action: 'Abrir / Cerrar Notas de Oradora (Modo Ponente)' },
   { keys: ['O'], action: 'Abrir / Cerrar Índice de Diapositivas (Vista global)' },
   { keys: ['P'], action: 'Activar / Desactivar Puntero Láser virtual' },
   { keys: ['M'], action: 'Silenciar / Activar efectos de sonido sintetizados' },
@@ -51,9 +51,9 @@ const shortcuts = [
 .shortcuts-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(4, 7, 13, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(45, 20, 32, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 350;
   display: flex;
   align-items: center;
@@ -64,9 +64,11 @@ const shortcuts = [
 .shortcuts-modal {
   width: 100%;
   max-width: 580px;
-  padding: 1.4rem 1.8rem;
-  border: 1px solid var(--border-gold);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  padding: 1.5rem 1.8rem;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid var(--border-rose);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 50px rgba(184, 58, 100, 0.16);
 }
 
 .modal-header {
@@ -74,20 +76,22 @@ const shortcuts = [
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(184, 58, 100, 0.12);
   padding-bottom: 0.6rem;
 }
 
 .modal-tag {
   font-size: 0.7rem;
   font-weight: 800;
-  color: var(--gold-primary);
+  color: var(--rose-primary);
   letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
 }
 
 .modal-title {
-  font-size: 1.35rem;
-  color: #FFFFFF;
+  font-size: 1.4rem;
+  color: var(--wine-deep);
+  font-weight: 800;
 }
 
 .modal-close-btn {
@@ -96,10 +100,11 @@ const shortcuts = [
   color: var(--text-muted);
   font-size: 1.3rem;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
 .modal-close-btn:hover {
-  color: #FFFFFF;
+  color: var(--rose-primary);
 }
 
 .shortcuts-list {
@@ -113,9 +118,10 @@ const shortcuts = [
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 0.6rem;
-  background: rgba(255, 255, 255, 0.03);
+  padding: 0.45rem 0.75rem;
+  background: rgba(250, 245, 247, 0.85);
   border-radius: var(--radius-sm);
+  border: 1px solid rgba(184, 58, 100, 0.08);
 }
 
 .keys-col {
@@ -124,26 +130,26 @@ const shortcuts = [
 }
 
 .keys-col kbd {
-  background: rgba(212, 175, 55, 0.15);
-  border: 1px solid var(--border-gold);
+  background: var(--rose-light);
+  border: 1px solid var(--border-rose);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  color: var(--gold-light);
+  color: var(--rose-dark);
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 700;
 }
 
 .action-desc {
-  font-size: 0.85rem;
-  color: #CBD5E1;
+  font-size: 0.86rem;
+  color: var(--text-main);
 }
 
 .shortcuts-footer {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--text-dim);
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(184, 58, 100, 0.12);
   padding-top: 0.6rem;
 }
 

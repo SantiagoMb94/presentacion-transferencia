@@ -3,7 +3,7 @@
     <aside v-if="isOpen" class="presenter-drawer glass-panel no-print">
       <div class="drawer-header">
         <div class="header-info">
-          <div class="drawer-tag font-mono">MODO ORADOR / PONENTE</div>
+          <div class="drawer-tag font-mono">MODO ORADORA / PONENTE</div>
           <h3 class="drawer-title font-serif">{{ currentSlide.title }}</h3>
           <span class="drawer-pages font-mono">{{ currentSlide.pages }}</span>
         </div>
@@ -51,7 +51,7 @@
         <div class="tip-box">
           <span class="tip-label font-mono">CONSEJO PARA LA DEFENSA:</span>
           <p class="tip-text">
-            Si algún oyente pregunta si la transferencia ocurre fuera del psicoanálisis, aclare que Freud responde afirmativamente: es una propiedad universal humana, pero solo en psicoanálisis se aísla, analiza e interpreta para no convertirse en sugestión ciega.
+            Si el docente o algún compañero pregunta si la transferencia ocurre fuera del psicoanálisis, aclare con seguridad que Freud responde afirmativamente: es un fenómeno universal humano en relaciones cotidianas, pero solo en el análisis se aísla técnicamente mediante la abstinencia para que no degenere en sugestión ni repetición destructiva.
           </p>
         </div>
       </div>
@@ -74,42 +74,44 @@ defineEmits(['close']);
   top: 60px;
   right: 0;
   bottom: 52px;
-  width: 420px;
+  width: 430px;
   max-width: 90vw;
-  background: rgba(10, 15, 26, 0.94);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-left: 1px solid var(--border-gold);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid var(--border-rose);
   z-index: 200;
   display: flex;
   flex-direction: column;
-  box-shadow: -15px 0 40px rgba(0, 0, 0, 0.7);
+  box-shadow: -15px 0 35px rgba(184, 58, 100, 0.12);
 }
 
 .drawer-header {
   padding: 1.2rem 1.4rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(184, 58, 100, 0.12);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background: var(--rose-light);
 }
 
 .drawer-tag {
   font-size: 0.7rem;
   font-weight: 800;
-  color: var(--gold-primary);
+  color: var(--rose-primary);
   letter-spacing: 0.08em;
   margin-bottom: 0.2rem;
 }
 
 .drawer-title {
-  font-size: 1.2rem;
-  color: #FFFFFF;
+  font-size: 1.25rem;
+  color: var(--wine-deep);
   line-height: 1.25;
+  font-weight: 700;
 }
 
 .drawer-pages {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
 }
 
@@ -117,13 +119,15 @@ defineEmits(['close']);
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   cursor: pointer;
   padding: 0.2rem;
+  line-height: 1;
+  transition: color 0.2s;
 }
 
 .close-btn:hover {
-  color: #FFFFFF;
+  color: var(--rose-primary);
 }
 
 .drawer-body {
@@ -139,18 +143,18 @@ defineEmits(['close']);
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.6rem 0.8rem;
-  background: rgba(212, 175, 55, 0.08);
+  padding: 0.65rem 0.85rem;
+  background: var(--rose-light);
   border-radius: var(--radius-sm);
-  font-size: 0.82rem;
-  color: var(--gold-light);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  font-size: 0.84rem;
+  color: var(--rose-dark);
+  border: 1px solid var(--border-rose);
 }
 
 .time-svg-icon {
   width: 16px;
   height: 16px;
-  stroke: var(--gold-primary);
+  stroke: var(--rose-primary);
   flex-shrink: 0;
 }
 
@@ -161,17 +165,21 @@ defineEmits(['close']);
 }
 
 .section-title {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--gold-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--rose-primary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .section-desc {
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: #CBD5E1;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  background: rgba(250, 240, 244, 0.4);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--border-rose-glow);
 }
 
 .key-points-list {
@@ -186,49 +194,51 @@ defineEmits(['close']);
   align-items: flex-start;
   gap: 0.6rem;
   font-size: 0.88rem;
-  color: #E2E8F0;
-  line-height: 1.4;
+  color: var(--text-main);
+  line-height: 1.45;
 }
 
 .bullet {
-  color: var(--gold-primary);
+  color: var(--rose-primary);
   font-size: 0.8rem;
   margin-top: 0.15rem;
 }
 
 .debate-section {
-  background: rgba(168, 85, 247, 0.06);
-  padding: 0.8rem 1rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  background: var(--accent-lavender-bg);
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(118, 74, 140, 0.2);
 }
 
 .debate-bubble {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-style: italic;
-  color: #E9D5FF;
-  line-height: 1.4;
+  color: var(--accent-lavender);
+  font-weight: 600;
+  line-height: 1.45;
+  margin-top: 0.2rem;
 }
 
 .tip-box {
-  padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 2px solid var(--border-gold);
+  padding: 0.85rem 1rem;
+  background: var(--bg-primary);
+  border-left: 3px solid var(--rose-primary);
   border-radius: var(--radius-sm);
 }
 
 .tip-label {
   font-size: 0.68rem;
   font-weight: 800;
-  color: var(--text-dim);
+  color: var(--rose-primary);
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .tip-text {
-  font-size: 0.8rem;
-  color: #94A3B8;
-  line-height: 1.35;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.42;
 }
 
 /* Slide Transition */

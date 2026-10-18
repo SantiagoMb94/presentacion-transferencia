@@ -73,21 +73,14 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { slides } from './data/slides.js';
 import { playSlideTransitionSound, toggleMute, getMuteState } from './utils/sound.js';
 
-// Slide Components
+// Slide Components (Concise 7-slide structure from girlfriend's summary)
 import SlideCover from './components/slides/SlideCover.vue';
-import SlideDilemma from './components/slides/SlideDilemma.vue';
-import SlidePolarBear from './components/slides/SlidePolarBear.vue';
-import SlideTwoPhases from './components/slides/SlideTwoPhases.vue';
-import SlideAlliance from './components/slides/SlideAlliance.vue';
-import SlideBreakdown from './components/slides/SlideBreakdown.vue';
-import SlideTypology from './components/slides/SlideTypology.vue';
-import SlideParadox from './components/slides/SlideParadox.vue';
-import SlideTreeMetaphor from './components/slides/SlideTreeMetaphor.vue';
-import SlideComparison from './components/slides/SlideComparison.vue';
-import SlideSuggestion from './components/slides/SlideSuggestion.vue';
-import SlideClinicalLab from './components/slides/SlideClinicalLab.vue';
-import SlideGlossary from './components/slides/SlideGlossary.vue';
-import SlideSummary from './components/slides/SlideSummary.vue';
+import SlideTransferRole from './components/slides/SlideTransferRole.vue';
+import SlideTransferTypes from './components/slides/SlideTransferTypes.vue';
+import SlideNeurosisLimits from './components/slides/SlideNeurosisLimits.vue';
+import SlideResistanceRepression from './components/slides/SlideResistanceRepression.vue';
+import SlideDebateQuestions from './components/slides/SlideDebateQuestions.vue';
+import SlideConclusion from './components/slides/SlideConclusion.vue';
 
 // Presentation UI Chrome
 import NavigationControls from './components/NavigationControls.vue';
@@ -98,23 +91,16 @@ import LaserPointer from './components/LaserPointer.vue';
 
 const slideComponentsMap = [
   SlideCover,
-  SlideDilemma,
-  SlidePolarBear,
-  SlideTwoPhases,
-  SlideAlliance,
-  SlideBreakdown,
-  SlideTypology,
-  SlideParadox,
-  SlideTreeMetaphor,
-  SlideComparison,
-  SlideSuggestion,
-  SlideClinicalLab,
-  SlideGlossary,
-  SlideSummary
+  SlideTransferRole,
+  SlideTransferTypes,
+  SlideNeurosisLimits,
+  SlideResistanceRepression,
+  SlideDebateQuestions,
+  SlideConclusion
 ];
 
 const currentIndex = ref(0);
-const transitionDirection = ref('slide-right');
+const transitionDirection = ref('slide-next');
 const isLaserActive = ref(false);
 const isMuted = ref(getMuteState());
 const isNotesOpen = ref(false);
@@ -168,24 +154,17 @@ function toggleNotes() {
 function toggleFullscreen() {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen().catch(() => {});
-    isFullscreen.value = true;
   } else {
     if (document.exitFullscreen) {
-      document.exitFullscreen().catch(() => {});
-      isFullscreen.value = false;
+      document.exitFullscreen();
     }
   }
 }
 
-// Keyboard Navigation Handler
+// Keyboard Navigation Handlers
 function handleKeyDown(e) {
-  // If an input is focused (e.g. glossary search), don't trigger global shortcuts
-  if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) {
-    if (e.key === 'Escape') {
-      e.target.blur();
-    }
-    return;
-  }
+  // Ignore inputs if user is typing
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
   switch (e.key) {
     case 'ArrowRight':
@@ -230,9 +209,17 @@ function handleKeyDown(e) {
       isShortcutsOpen.value = !isShortcutsOpen.value;
       break;
     case 'Escape':
-      isNotesOpen.value = false;
-      isOverviewOpen.value = false;
-      isShortcutsOpen.value = false;
+      if (isNotesOpen.value) isNotesOpen.value = false;
+      if (isOverviewOpen.value) isOverviewOpen.value = false;
+      if (isShortcutsOpen.value) isShortcutsOpen.value = false;
+      break;
+    case 'Home':
+      e.preventDefault();
+      jumpToSlide(0);
+      break;
+    case 'End':
+      e.preventDefault();
+      jumpToSlide(slides.length - 1);
       break;
   }
 }
@@ -345,6 +332,7 @@ onUnmounted(() => {
     min-height: 100vh;
     padding: 2.5rem;
     box-sizing: border-box;
+    background: #FAF5F7;
   }
 }
 </style>

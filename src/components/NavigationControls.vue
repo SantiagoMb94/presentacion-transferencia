@@ -179,11 +179,12 @@ function handleProgressClick(e) {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background: rgba(8, 12, 20, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(184, 58, 100, 0.16);
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(184, 58, 100, 0.04);
 }
 
 .nav-left {
@@ -195,21 +196,21 @@ function handleProgressClick(e) {
 .freud-brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
 }
 
 .brand-crest {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: var(--gold-primary);
+  color: var(--rose-primary);
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border-rose);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(212, 175, 55, 0.08);
+  background: var(--rose-light);
 }
 
 .brand-text {
@@ -218,24 +219,25 @@ function handleProgressClick(e) {
 }
 
 .brand-title {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--wine-deep);
   letter-spacing: 0.04em;
 }
 
 .brand-sub {
   font-size: 0.72rem;
-  color: var(--gold-light);
+  color: var(--rose-dark);
   font-style: italic;
 }
 
 .current-slide-tag {
   font-size: 0.75rem;
   color: var(--text-dim);
-  background: rgba(255, 255, 255, 0.04);
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
+  background: rgba(184, 58, 100, 0.06);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(184, 58, 100, 0.12);
 }
 
 .nav-right {
@@ -248,11 +250,11 @@ function handleProgressClick(e) {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.4rem 0.75rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-sm);
-  color: #CBD5E1;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(184, 58, 100, 0.18);
+  border-radius: 9999px;
+  color: var(--text-muted);
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -260,19 +262,22 @@ function handleProgressClick(e) {
 }
 
 .nav-icon-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
+  background: #FFFFFF;
+  border-color: var(--rose-primary);
+  color: var(--rose-dark);
+  transform: translateY(-1px);
 }
 
 .nav-icon-btn.active {
-  background: rgba(212, 175, 55, 0.15);
-  border-color: var(--gold-primary);
-  color: var(--gold-light);
+  background: var(--rose-light);
+  border-color: var(--rose-primary);
+  color: var(--rose-dark);
 }
 
 .highlight-btn.active {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(16, 185, 129, 0.25));
-  border-color: #34D399;
+  background: linear-gradient(135deg, var(--rose-light), #FFFFFF);
+  border-color: var(--rose-primary);
+  box-shadow: 0 2px 8px rgba(184, 58, 100, 0.2);
 }
 
 .nav-svg-icon {
@@ -283,15 +288,15 @@ function handleProgressClick(e) {
 }
 
 .btn-laser-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #FF3B30;
-  box-shadow: 0 0 6px #FF3B30;
+  background: #E91E63;
+  box-shadow: 0 0 6px #E91E63;
 }
 
 .help-btn {
-  padding: 0.4rem 0.6rem;
+  padding: 0.4rem 0.65rem;
 }
 
 /* Bottom Bar */
@@ -305,11 +310,12 @@ function handleProgressClick(e) {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background: rgba(8, 12, 20, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(184, 58, 100, 0.16);
   z-index: 100;
+  box-shadow: 0 -2px 10px rgba(184, 58, 100, 0.04);
 }
 
 .bottom-left {
@@ -321,10 +327,10 @@ function handleProgressClick(e) {
 .nav-arrow-btn {
   width: 32px;
   height: 32px;
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border-rose);
+  color: var(--wine-deep);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,9 +339,10 @@ function handleProgressClick(e) {
 }
 
 .nav-arrow-btn:hover:not(:disabled) {
-  background: var(--gold-primary);
-  color: #080C14;
-  border-color: var(--gold-primary);
+  background: var(--rose-primary);
+  color: #FFFFFF;
+  border-color: var(--rose-primary);
+  transform: translateY(-1px);
 }
 
 .nav-arrow-btn:disabled {
@@ -354,8 +361,8 @@ function handleProgressClick(e) {
 }
 
 .current-num {
-  color: var(--gold-light);
-  font-weight: 700;
+  color: var(--rose-primary);
+  font-weight: 800;
 }
 
 .divider {
@@ -374,15 +381,15 @@ function handleProgressClick(e) {
 
 .progress-bar-track {
   width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.08);
+  height: 5px;
+  background: rgba(184, 58, 100, 0.1);
   border-radius: 9999px;
   overflow: hidden;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #D4AF37, #F4E4BA);
+  background: linear-gradient(90deg, #B83A64, #D47963);
   transition: width 0.3s ease;
 }
 
@@ -394,7 +401,8 @@ function handleProgressClick(e) {
 
 .bottom-right {
   font-size: 0.95rem;
-  color: var(--gold-light);
+  color: var(--wine-deep);
+  font-weight: 600;
   max-width: 350px;
   white-space: nowrap;
   overflow: hidden;
