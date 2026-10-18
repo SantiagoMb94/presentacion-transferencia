@@ -42,6 +42,7 @@ const shortcuts = [
   { keys: ['O'], action: 'Abrir / Cerrar Índice de Diapositivas (Vista global)' },
   { keys: ['P'], action: 'Activar / Desactivar Puntero Láser virtual' },
   { keys: ['M'], action: 'Silenciar / Activar efectos de sonido sintetizados' },
+  { keys: ['D'], action: 'Descargar presentación en PowerPoint (.pptx)' },
   { keys: ['Esc'], action: 'Cerrar cualquier ventana emergente o cajón' },
   { keys: ['?'], action: 'Abrir esta ventana de ayuda' }
 ];

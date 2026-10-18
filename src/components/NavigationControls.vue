@@ -14,6 +14,23 @@
     </div>
 
     <div class="nav-right">
+      <!-- Download PowerPoint Button -->
+      <button 
+        class="nav-icon-btn download-pptx-btn" 
+        :class="{ loading: isDownloading }"
+        :disabled="isDownloading"
+        title="Descargar presentación completa en PowerPoint (.pptx)"
+        @click="$emit('download-pptx')"
+      >
+        <svg v-if="!isDownloading" class="nav-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span v-else class="spinner-dot"></span>
+        <span class="btn-label">{{ isDownloading ? 'Creando PPT...' : 'Descargar PPT' }}</span>
+      </button>
+
       <!-- Laser Pointer Toggle -->
       <button 
         class="nav-icon-btn" 
@@ -150,13 +167,14 @@ const props = defineProps({
   isLaserActive: { type: Boolean, default: false },
   isMuted: { type: Boolean, default: false },
   isNotesOpen: { type: Boolean, default: false },
-  isFullscreen: { type: Boolean, default: false }
+  isFullscreen: { type: Boolean, default: false },
+  isDownloading: { type: Boolean, default: false }
 });
 
 const emit = defineEmits([
   'prev', 'next', 'toggle-laser', 'toggle-audio', 
   'toggle-notes', 'open-overview', 'toggle-fullscreen', 
-  'open-shortcuts', 'jump'
+  'open-shortcuts', 'jump', 'download-pptx'
 ]);
 
 function handleProgressClick(e) {
@@ -272,6 +290,45 @@ function handleProgressClick(e) {
   background: var(--rose-light);
   border-color: var(--rose-primary);
   color: var(--rose-dark);
+}
+
+/* Download PPTX Button */
+.download-pptx-btn {
+  background: linear-gradient(135deg, #B83A64 0%, #D47963 100%);
+  color: #FFFFFF !important;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px -3px rgba(184, 58, 100, 0.45);
+  padding: 0.42rem 0.95rem;
+}
+
+.download-pptx-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #C74470 0%, #B83A64 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px -2px rgba(184, 58, 100, 0.55);
+  color: #FFFFFF !important;
+}
+
+.download-pptx-btn:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+.download-pptx-btn .nav-svg-icon {
+  stroke: #FFFFFF;
+}
+
+.spinner-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .highlight-btn.active {

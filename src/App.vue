@@ -12,6 +12,7 @@
       :is-muted="isMuted"
       :is-notes-open="isNotesOpen"
       :is-fullscreen="isFullscreen"
+      :is-downloading="isDownloading"
       @prev="prevSlide"
       @next="nextSlide"
       @toggle-laser="toggleLaser"
@@ -21,6 +22,7 @@
       @toggle-fullscreen="toggleFullscreen"
       @open-shortcuts="isShortcutsOpen = true"
       @jump="jumpToSlide"
+      @download-pptx="handleDownloadPptx"
     />
 
     <!-- Main Screen Presentation Canvas (Interactive View) -->
@@ -71,7 +73,9 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { slides } from './data/slides.js';
-import { playSlideTransitionSound, toggleMute, getMuteState } from './utils/sound.js';
+import { playSlideTransitionSound, playSuccessChime, toggleMute, getMuteState } from './utils/sound.js';
+import { exportPresentationToPptx } from './utils/exportPptx.js';
+import confetti from 'canvas-confetti';
 
 // Slide Components (Concise 7-slide structure from girlfriend's summary)
 import SlideCover from './components/slides/SlideCover.vue';
@@ -107,6 +111,7 @@ const isNotesOpen = ref(false);
 const isOverviewOpen = ref(false);
 const isShortcutsOpen = ref(false);
 const isFullscreen = ref(false);
+const isDownloading = ref(false);
 
 const currentSlide = computed(() => slides[currentIndex.value] || slides[0]);
 const currentSlideComponent = computed(() => slideComponentsMap[currentIndex.value] || SlideCover);
@@ -161,6 +166,25 @@ function toggleFullscreen() {
   }
 }
 
+async function handleDownloadPptx() {
+  if (isDownloading.value) return;
+  try {
+    isDownloading.value = true;
+    await exportPresentationToPptx();
+    playSuccessChime();
+    confetti({
+      particleCount: 90,
+      spread: 75,
+      origin: { y: 0.15 },
+      colors: ['#B83A64', '#D47963', '#FAF5F7', '#C67D68', '#4A122A']
+    });
+  } catch (err) {
+    console.error('Error al exportar PowerPoint:', err);
+  } finally {
+    isDownloading.value = false;
+  }
+}
+
 // Keyboard Navigation Handlers
 function handleKeyDown(e) {
   // Ignore inputs if user is typing
@@ -203,6 +227,12 @@ function handleKeyDown(e) {
     case 'M':
       e.preventDefault();
       handleToggleAudio();
+      break;
+    case 'd':
+    case 'D':
+      // Shortcut to download PPT
+      e.preventDefault();
+      handleDownloadPptx();
       break;
     case '?':
       e.preventDefault();
