@@ -21,7 +21,7 @@
             @click="handleSelect(idx)"
           >
             <div class="item-top">
-              <span class="item-num font-mono">0{{ idx + 1 }}</span>
+              <span class="item-num font-mono">{{ String(idx + 1).padStart(2, '0') }}</span>
               <span class="item-pages font-mono">{{ slide.pages }}</span>
             </div>
 

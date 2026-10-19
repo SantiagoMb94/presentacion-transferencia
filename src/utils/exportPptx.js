@@ -8,10 +8,10 @@ export async function exportPresentationToPptx() {
   pres.defineLayout({ name: 'WIDE_16_9', width: 13.333, height: 7.5 });
   pres.layout = 'WIDE_16_9';
 
-  pres.author = 'Sigmund Freud / Exposición Universitaria';
-  pres.company = 'Facultad de Psicología · Psicoanálisis';
+  pres.author = 'Juliana Henao Gutiérrez & Leidy Johanna Rendón Jaramillo';
+  pres.company = 'IUE · Institución Universitaria de Envigado';
   pres.title = 'La Transferencia - 27ª Conferencia (Sigmund Freud)';
-  pres.subject = 'Teoría y Técnica Psicoanalítica · Obras Completas Tomo XVI';
+  pres.subject = 'Materia: Psicoanálisis · Facultad de Psicología';
 
   // Cohesive Feminine Palette
   const C_BG = 'FAF5F7';
@@ -45,7 +45,178 @@ export async function exportPresentationToPptx() {
   }
 
   // ==========================================
-  // SLIDE 1: PORTADA
+  // SLIDE 1: APERTURA INSTITUCIONAL & EXPOSITORAS
+  // ==========================================
+  {
+    const slide = pres.addSlide();
+    slide.background = { color: C_BG };
+
+    // Tag badge: Institution
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 0.8, y: 0.65, w: 4.8, h: 0.35,
+      fill: { color: C_ROSE_LIGHT },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.15
+    });
+    slide.addText('IUE · INSTITUCIÓN UNIVERSITARIA DE ENVIGADO', {
+      x: 0.8, y: 0.65, w: 4.8, h: 0.35,
+      fontSize: 8.5, bold: true, align: 'center', color: C_ROSE_DARK, fontFace: 'Arial'
+    });
+
+    // Tag badge 2: Subject
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 5.75, y: 0.65, w: 2.65, h: 0.35,
+      fill: { color: C_WHITE },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.15
+    });
+    slide.addText('Ψ MATERIA: PSICOANÁLISIS', {
+      x: 5.75, y: 0.65, w: 2.65, h: 0.35,
+      fontSize: 8.5, bold: true, align: 'center', color: C_WINE, fontFace: 'Arial'
+    });
+
+    // Main Title
+    slide.addText('La Transferencia en el Psicoanálisis', {
+      x: 0.8, y: 1.15, w: 7.6, h: 0.85,
+      fontSize: 34, bold: true, color: C_WINE, fontFace: 'Georgia'
+    });
+
+    // Subtitle
+    slide.addText('27ª Conferencia de Introducción al Psicoanálisis · Exposición Académica', {
+      x: 0.8, y: 2.05, w: 7.6, h: 0.45,
+      fontSize: 13, italic: true, color: C_TEXT_MUTED, fontFace: 'Georgia'
+    });
+
+    // Section Title for Presenters
+    slide.addText('INTEGRANTES / EXPOSITORAS', {
+      x: 0.8, y: 2.65, w: 7.6, h: 0.25,
+      fontSize: 8.5, bold: true, color: C_ROSE, fontFace: 'Arial'
+    });
+
+    // Presenter Card 1: Juliana Henao Gutiérrez
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 0.8, y: 2.95, w: 3.7, h: 1.25,
+      fill: { color: C_WHITE },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.12
+    });
+    slide.addShape(pres.ShapeType.oval, {
+      x: 1.0, y: 3.15, w: 0.8, h: 0.8,
+      fill: { color: C_ROSE },
+      line: { color: C_ROSE }
+    });
+    slide.addText('JH', {
+      x: 1.0, y: 3.15, w: 0.8, h: 0.8,
+      fontSize: 14, bold: true, align: 'center', color: C_WHITE, fontFace: 'Georgia'
+    });
+    slide.addText('EXPOSITORA', {
+      x: 1.95, y: 3.1, w: 2.4, h: 0.2,
+      fontSize: 7.5, bold: true, color: C_ROSE, fontFace: 'Arial'
+    });
+    slide.addText('Juliana Henao Gutiérrez', {
+      x: 1.95, y: 3.3, w: 2.4, h: 0.45,
+      fontSize: 11.5, bold: true, color: C_WINE, fontFace: 'Georgia'
+    });
+    slide.addText('Facultad de Psicología · IUE', {
+      x: 1.95, y: 3.75, w: 2.4, h: 0.25,
+      fontSize: 8.5, italic: true, color: C_TEXT_MUTED, fontFace: 'Georgia'
+    });
+
+    // Presenter Card 2: Leidy Johanna Rendón Jaramillo
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 4.7, y: 2.95, w: 3.7, h: 1.25,
+      fill: { color: C_WHITE },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.12
+    });
+    slide.addShape(pres.ShapeType.oval, {
+      x: 4.9, y: 3.15, w: 0.8, h: 0.8,
+      fill: { color: C_ROSE_DARK },
+      line: { color: C_ROSE_DARK }
+    });
+    slide.addText('LR', {
+      x: 4.9, y: 3.15, w: 0.8, h: 0.8,
+      fontSize: 14, bold: true, align: 'center', color: C_WHITE, fontFace: 'Georgia'
+    });
+    slide.addText('EXPOSITORA', {
+      x: 5.85, y: 3.1, w: 2.4, h: 0.2,
+      fontSize: 7.5, bold: true, color: C_ROSE, fontFace: 'Arial'
+    });
+    slide.addText('Leidy Johanna Rendón Jaramillo', {
+      x: 5.85, y: 3.3, w: 2.4, h: 0.45,
+      fontSize: 11.5, bold: true, color: C_WINE, fontFace: 'Georgia'
+    });
+    slide.addText('Facultad de Psicología · IUE', {
+      x: 5.85, y: 3.75, w: 2.4, h: 0.25,
+      fontSize: 8.5, italic: true, color: C_TEXT_MUTED, fontFace: 'Georgia'
+    });
+
+    // Conceptual Metaphor Card: Iceberg & Mirror
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 0.8, y: 4.45, w: 7.6, h: 2.15,
+      fill: { color: C_WHITE },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.12
+    });
+    slide.addShape(pres.ShapeType.rect, {
+      x: 0.8, y: 4.45, w: 0.1, h: 2.15,
+      fill: { color: C_ROSE },
+      line: { color: C_ROSE }
+    });
+    slide.addText('✦ LA METÁFORA DEL ICEBERG Y EL ESPEJO EN PSICOANÁLISIS', {
+      x: 1.05, y: 4.58, w: 7.1, h: 0.25,
+      fontSize: 8.5, bold: true, color: C_ROSE, fontFace: 'Arial'
+    });
+    slide.addText(
+      'La pequeña punta visible sobre la superficie representa la conciencia y el síntoma manifiesto. En las profundidades sumergidas yace la inmensa masa del inconsciente reprimido.\n\nAl contemplarse en las aguas o en la figura del terapeuta como un espejo, el sujeto proyecta y reedita sus vínculos afectivos primordiales: aquello que no logra recordar con palabras conscientes lo actúa y lo revive en la transferencia.',
+      {
+        x: 1.05, y: 4.9, w: 7.1, h: 1.55,
+        fontSize: 9.8, color: C_TEXT, fontFace: 'Georgia', lineSpacingMultiple: 1.15
+      }
+    );
+
+    // Right Side Feature Artwork Card
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 8.75, y: 0.65, w: 3.75, h: 5.95,
+      fill: { color: C_WHITE },
+      line: { color: C_BORDER, width: 1.5 },
+      rectRadius: 0.2
+    });
+
+    try {
+      slide.addImage({
+        path: '/assets/iceberg_psychoanalysis.jpg',
+        x: 8.95, y: 0.85, w: 3.35, h: 3.65,
+        rounding: true
+      });
+    } catch (e) {
+      // Vector fallback if image cannot be loaded
+    }
+
+    slide.addShape(pres.ShapeType.roundRect, {
+      x: 9.05, y: 4.65, w: 3.15, h: 1.75,
+      fill: { color: C_ROSE_LIGHT },
+      line: { color: C_BORDER, width: 1 },
+      rectRadius: 0.12
+    });
+    slide.addText('TÓPICA FREUDIANA & TRANSFERENCIA', {
+      x: 9.15, y: 4.75, w: 2.95, h: 0.2,
+      fontSize: 7.5, bold: true, color: C_ROSE_DARK, fontFace: 'Arial', align: 'center'
+    });
+    slide.addText('El Inconsciente y el Espejo Analítico', {
+      x: 9.15, y: 5.0, w: 2.95, h: 0.35,
+      fontSize: 11, bold: true, color: C_WINE, fontFace: 'Georgia', align: 'center'
+    });
+    slide.addText('«La punta visible es el síntoma consciente; la inmensa masa sumergida es lo reprimido que busca repetirse en el presente de la sesión analítica.»', {
+      x: 9.15, y: 5.35, w: 2.95, h: 0.95,
+      fontSize: 8.5, italic: true, color: C_TEXT_MUTED, fontFace: 'Georgia', align: 'center', lineSpacingMultiple: 1.15
+    });
+
+    slide.addNotes(formatNotes(slides[0]?.speakerNotes));
+  }
+
+  // ==========================================
+  // SLIDE 2: PORTADA TEMÁTICA
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -182,11 +353,11 @@ export async function exportPresentationToPptx() {
       fontSize: 9.5, bold: true, align: 'center', color: C_WINE, fontFace: 'Georgia'
     });
 
-    slide.addNotes(formatNotes(slides[0]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[1]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 2: LA TRANSFERENCIA Y SU PAPEL
+  // SLIDE 3: LA TRANSFERENCIA Y SU PAPEL
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -282,11 +453,11 @@ export async function exportPresentationToPptx() {
       }
     );
 
-    slide.addNotes(formatNotes(slides[1]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[2]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 3: TIPOS Y SUPERACIÓN
+  // SLIDE 4: TIPOS Y SUPERACIÓN
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -373,11 +544,11 @@ export async function exportPresentationToPptx() {
       });
     });
 
-    slide.addNotes(formatNotes(slides[2]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[3]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 4: FACTORES Y LÍMITES
+  // SLIDE 5: FACTORES Y LÍMITES
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -497,11 +668,11 @@ export async function exportPresentationToPptx() {
       });
     });
 
-    slide.addNotes(formatNotes(slides[3]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[4]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 5: RESISTENCIA Y REPRESIÓN
+  // SLIDE 6: RESISTENCIA Y REPRESIÓN
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -635,11 +806,11 @@ export async function exportPresentationToPptx() {
       }
     );
 
-    slide.addNotes(formatNotes(slides[4]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[5]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 6: PREGUNTAS DE DEBATE
+  // SLIDE 7: PREGUNTAS DE DEBATE
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -712,11 +883,11 @@ export async function exportPresentationToPptx() {
       });
     });
 
-    slide.addNotes(formatNotes(slides[5]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[6]?.speakerNotes));
   }
 
   // ==========================================
-  // SLIDE 7: CONCLUSIÓN Y CIERRE
+  // SLIDE 8: CONCLUSIÓN Y CIERRE
   // ==========================================
   {
     const slide = pres.addSlide();
@@ -784,7 +955,7 @@ export async function exportPresentationToPptx() {
       fontSize: 10.5, align: 'center', color: C_TEXT_MUTED, fontFace: 'Arial'
     });
 
-    slide.addNotes(formatNotes(slides[6]?.speakerNotes));
+    slide.addNotes(formatNotes(slides[7]?.speakerNotes));
   }
 
   // Trigger browser download

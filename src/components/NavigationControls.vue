@@ -4,8 +4,8 @@
       <div class="freud-brand">
         <span class="brand-crest font-serif">Ψ</span>
         <div class="brand-text">
-          <span class="brand-title font-display">Sigmund Freud</span>
-          <span class="brand-sub font-serif">27ª Conferencia · La Transferencia</span>
+          <span class="brand-title font-display">IUE · Psicoanálisis</span>
+          <span class="brand-sub font-serif">Juliana Henao · Leidy Rendón · Freud Conf. 27</span>
         </div>
       </div>
       <div class="current-slide-tag font-mono">

@@ -77,7 +77,8 @@ import { playSlideTransitionSound, playSuccessChime, toggleMute, getMuteState } 
 import { exportPresentationToPptx } from './utils/exportPptx.js';
 import confetti from 'canvas-confetti';
 
-// Slide Components (Concise 7-slide structure from girlfriend's summary)
+// Slide Components (8-slide structure with Institutional Authors slide)
+import SlidePresentationAuthors from './components/slides/SlidePresentationAuthors.vue';
 import SlideCover from './components/slides/SlideCover.vue';
 import SlideTransferRole from './components/slides/SlideTransferRole.vue';
 import SlideTransferTypes from './components/slides/SlideTransferTypes.vue';
@@ -94,6 +95,7 @@ import ShortcutsModal from './components/ShortcutsModal.vue';
 import LaserPointer from './components/LaserPointer.vue';
 
 const slideComponentsMap = [
+  SlidePresentationAuthors,
   SlideCover,
   SlideTransferRole,
   SlideTransferTypes,

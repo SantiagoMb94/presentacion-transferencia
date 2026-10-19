@@ -2,15 +2,40 @@ export const presentationMeta = {
   title: "La Transferencia en el Psicoanálisis",
   subtitle: "27ª Conferencia de Introducción al Psicoanálisis (1916–1917)",
   author: "Sigmund Freud",
+  institution: "IUE · Institución Universitaria de Envigado",
+  course: "Materia: Psicoanálisis",
+  presenters: [
+    "Juliana Henao Gutiérrez",
+    "Leidy Johanna Rendón Jaramillo"
+  ],
   work: "Obras Completas, Vol. XVI (Amorrortu Editores, págs. 392–407)",
   edition: "Traducción de José L. Etcheverry",
   category: "Teoría y Técnica Psicoanalítica",
-  totalSlides: 7
+  totalSlides: 8
 };
 
 export const slides = [
   {
     id: 1,
+    slug: "presentacion-autores",
+    title: "Presentación Académica e Institucional",
+    subtitle: "IUE · Institución Universitaria de Envigado · Materia: Psicoanálisis",
+    tag: "Apertura Institucional",
+    pages: "Expositoras & Asignatura",
+    speakerNotes: {
+      timeEstimate: "1-2 min",
+      opening: "«Buenas tardes a todos y todas, profesor(a) y compañeros. Mi nombre es Juliana Henao Gutiérrez y junto a mi compañera Leidy Johanna Rendón Jaramillo, somos estudiantes de la Institución Universitaria de Envigado (IUE). En el marco de la asignatura de Psicoanálisis, hoy tenemos el agrado de exponer sobre 'La Transferencia', a partir de la trascendental 27ª Conferencia de Sigmund Freud.»",
+      keyPoints: [
+        "Presentación de las expositoras: Juliana Henao Gutiérrez y Leidy Johanna Rendón Jaramillo.",
+        "Marco institucional: Institución Universitaria de Envigado (IUE) · Materia: Psicoanálisis.",
+        "Metáfora conceptual de apertura: La imagen del iceberg y el espejo representa la dualidad psíquica. La pequeña punta que sobresale en la superficie es la conciencia y el síntoma manifiesto, mientras que la inmensa masa sumergida encarna el inconsciente reprimido.",
+        "En la transferencia, el analista opera como una superficie reflectante donde el sujeto proyecta y revive vivencias tempranas no resueltas."
+      ],
+      discussionPrompt: "¿Cómo influyen en nuestras relaciones presentes aquellos afectos o vivencias que permanecen sumergidos en nuestro inconsciente?"
+    }
+  },
+  {
+    id: 2,
     slug: "portada",
     title: "La Transferencia en el Psicoanálisis",
     subtitle: "27ª Conferencia de Introducción al Psicoanálisis · Sigmund Freud",
@@ -18,7 +43,7 @@ export const slides = [
     pages: "págs. 392–407",
     speakerNotes: {
       timeEstimate: "2 min",
-      opening: "«Buenas tardes a todos y todas. En esta presentación abordaremos una de las conferencias más trascendentales dictadas por Sigmund Freud: la 27ª Conferencia de sus Lecciones Introductorias al Psicoanálisis, titulada 'La Transferencia'. En ella, Freud revela el motor nuclear de la cura y la paradoja clínica que redefine toda la relación terapéutica.»",
+      opening: "«En esta 27ª Conferencia de sus Lecciones Introductorias al Psicoanálisis dictada en Viena (1916–1917), Freud devela el motor nuclear de la cura y la paradoja clínica que redefine toda la relación terapéutica.»",
       keyPoints: [
         "Encuadre histórico: Viena (1916–1917), primer abordaje público de Freud sobre la técnica terapéutica analítica.",
         "Descubrimiento axial: El paciente no recuerda su pasado reprimido como un archivo histórico; lo actúa en presente sobre el analista.",
@@ -28,7 +53,7 @@ export const slides = [
     }
   },
   {
-    id: 2,
+    id: 3,
     slug: "papel-transferencia",
     title: "La Transferencia y su Papel en la Terapia",
     subtitle: "El motor de la cura y la reproducción viva del pasado reprimido",
@@ -47,7 +72,7 @@ export const slides = [
     }
   },
   {
-    id: 3,
+    id: 4,
     slug: "tipos-transferencia",
     title: "Tipos de Transferencia y su Superación",
     subtitle: "Modalidades clínicas de la investidura afectiva y la técnica de la abstinencia",
@@ -66,7 +91,7 @@ export const slides = [
     }
   },
   {
-    id: 4,
+    id: 5,
     slug: "factores-limites",
     title: "Factores Determinantes y Límites de la Terapia",
     subtitle: "Neurosis de transferencia vs. narcisistas y los cuatro condicionantes de la cura",
@@ -87,7 +112,7 @@ export const slides = [
     }
   },
   {
-    id: 5,
+    id: 6,
     slug: "resistencia-represion",
     title: "El Rol de la Resistencia y la Represión",
     subtitle: "Las fuerzas psíquicas de oposición y la necesidad del trabajo elaborativo",
@@ -106,7 +131,7 @@ export const slides = [
     }
   },
   {
-    id: 6,
+    id: 7,
     slug: "preguntas-debate",
     title: "Preguntas de Debate y Reflexión Clínica",
     subtitle: "Espacio de interacción académica y análisis grupal de casos y dilemas",
@@ -125,7 +150,7 @@ export const slides = [
     }
   },
   {
-    id: 7,
+    id: 8,
     slug: "conclusion",
     title: "Conclusiones y Síntesis Final",
     subtitle: "El valor imperecedero de la Conferencia 27 para la psicología contemporánea",
