@@ -100,7 +100,7 @@ export async function exportPresentationToPptx() {
       line: { color: C_BORDER, width: 1 },
       rectRadius: 0.12
     });
-    slide.addShape(pres.ShapeType.oval, {
+    slide.addShape(pres.ShapeType.ellipse, {
       x: 1.0, y: 3.15, w: 0.8, h: 0.8,
       fill: { color: C_ROSE },
       line: { color: C_ROSE }
@@ -129,7 +129,7 @@ export async function exportPresentationToPptx() {
       line: { color: C_BORDER, width: 1 },
       rectRadius: 0.12
     });
-    slide.addShape(pres.ShapeType.oval, {
+    slide.addShape(pres.ShapeType.ellipse, {
       x: 4.9, y: 3.15, w: 0.8, h: 0.8,
       fill: { color: C_ROSE_DARK },
       line: { color: C_ROSE_DARK }
@@ -184,8 +184,11 @@ export async function exportPresentationToPptx() {
     });
 
     try {
+      const imgPath = typeof window !== 'undefined'
+        ? new URL('/assets/iceberg_psychoanalysis.jpg', window.location.href).href
+        : './public/assets/iceberg_psychoanalysis.jpg';
       slide.addImage({
-        path: '/assets/iceberg_psychoanalysis.jpg',
+        path: imgPath,
         x: 8.95, y: 0.85, w: 3.35, h: 3.65,
         rounding: true
       });
